@@ -28,7 +28,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Create Criteria</string>
+    <string>Create Job</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -139,7 +139,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>320</y>
+     <y>360</y>
      <width>201</width>
      <height>16</height>
     </rect>
@@ -151,8 +151,8 @@
   <widget class="QTextEdit" name="textEdit">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>350</y>
+     <x>40</x>
+     <y>380</y>
      <width>351</width>
      <height>51</height>
     </rect>
@@ -162,7 +162,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>410</y>
+     <y>440</y>
      <width>81</width>
      <height>16</height>
     </rect>
@@ -175,7 +175,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>440</y>
+     <y>470</y>
      <width>81</width>
      <height>16</height>
     </rect>
@@ -184,37 +184,11 @@
     <string>Experience :</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_13">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>500</y>
-     <width>53</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_14">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>470</y>
-     <width>53</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>590</y>
+     <x>150</x>
+     <y>550</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -1234,7 +1208,7 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>410</y>
+     <y>440</y>
      <width>181</width>
      <height>22</height>
     </rect>
@@ -1259,11 +1233,89 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>440</y>
+     <y>470</y>
      <width>271</width>
      <height>22</height>
     </rect>
    </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>330</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Required Skill</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_6">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>330</y>
+     <width>73</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Python</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>C++/C</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>JS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>HTML/CSS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Java</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dart</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Swift</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Kotlin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Go</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Swift</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>R</string>
+    </property>
+   </item>
   </widget>
  </widget>
  <resources/>
