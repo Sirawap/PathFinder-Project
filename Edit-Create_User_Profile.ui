@@ -38,7 +38,7 @@
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>110</y>
+     <y>100</y>
      <width>172</width>
      <height>22</height>
     </rect>
@@ -52,7 +52,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_2"/>
+     <widget class="QLineEdit" name="lineEdit_surname"/>
     </item>
    </layout>
   </widget>
@@ -60,7 +60,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>110</y>
+     <y>100</y>
      <width>101</width>
      <height>22</height>
     </rect>
@@ -74,7 +74,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_3"/>
+     <widget class="QLineEdit" name="lineEdit_age"/>
     </item>
    </layout>
   </widget>
@@ -82,7 +82,7 @@
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>150</y>
+     <y>140</y>
      <width>172</width>
      <height>22</height>
     </rect>
@@ -96,7 +96,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_5"/>
+     <widget class="QLineEdit" name="lineEdit_email"/>
     </item>
    </layout>
   </widget>
@@ -104,7 +104,7 @@
    <property name="geometry">
     <rect>
      <x>440</x>
-     <y>150</y>
+     <y>140</y>
      <width>172</width>
      <height>22</height>
     </rect>
@@ -118,7 +118,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_6"/>
+     <widget class="QLineEdit" name="lineEdit_other"/>
     </item>
    </layout>
   </widget>
@@ -171,7 +171,7 @@
     <string>Education degree:</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="comboBox_degree">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -214,7 +214,7 @@
     <string>Subject:</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_2">
+  <widget class="QComboBox" name="comboBox_subject">
    <property name="geometry">
     <rect>
      <x>320</x>
@@ -279,7 +279,7 @@
     </property>
    </item>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButton_add">
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -292,7 +292,7 @@
     <string>Add</string>
    </property>
   </widget>
-  <widget class="QListWidget" name="listWidget">
+  <widget class="QListWidget" name="listWidget_ED_background">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -302,7 +302,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="pushButton_cancle_profile">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -315,7 +315,7 @@
     <string>Cancle</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="pushButton_confirm_profile">
    <property name="geometry">
     <rect>
      <x>310</x>
@@ -332,7 +332,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>110</y>
+     <y>100</y>
      <width>172</width>
      <height>22</height>
     </rect>
@@ -346,7 +346,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="lineEdit_name"/>
     </item>
    </layout>
   </widget>
@@ -354,7 +354,7 @@
    <property name="geometry">
     <rect>
      <x>31</x>
-     <y>151</y>
+     <y>141</y>
      <width>159</width>
      <height>22</height>
     </rect>
@@ -368,7 +368,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_4"/>
+     <widget class="QLineEdit" name="lineEdit_userTel"/>
     </item>
    </layout>
   </widget>
@@ -390,7 +390,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_8"/>
+     <widget class="QLineEdit" name="lineEdit_soi"/>
     </item>
    </layout>
   </widget>
@@ -412,7 +412,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_12">
+     <widget class="QLineEdit" name="lineEdit_state">
       <property name="text">
        <string/>
       </property>
@@ -438,7 +438,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_14">
+     <widget class="QLineEdit" name="lineEdit_homeTel">
       <property name="text">
        <string/>
       </property>
@@ -464,7 +464,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_7"/>
+     <widget class="QLineEdit" name="lineEdit_houseNo"/>
     </item>
    </layout>
   </widget>
@@ -486,7 +486,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_10"/>
+     <widget class="QLineEdit" name="lineEdit_district"/>
     </item>
    </layout>
   </widget>
@@ -508,14 +508,14 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_13"/>
+     <widget class="QLineEdit" name="lineEdit_zip"/>
     </item>
    </layout>
   </widget>
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>320</x>
+     <x>300</x>
      <y>250</y>
      <width>175</width>
      <height>22</height>
@@ -530,7 +530,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_9"/>
+     <widget class="QLineEdit" name="lineEdit_street"/>
     </item>
    </layout>
   </widget>
@@ -552,7 +552,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_11">
+     <widget class="QLineEdit" name="lineEdit_city">
       <property name="text">
        <string/>
       </property>
@@ -573,7 +573,7 @@
     <string>Major:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_15">
+  <widget class="QLineEdit" name="lineEdit_major">
    <property name="geometry">
     <rect>
      <x>490</x>
