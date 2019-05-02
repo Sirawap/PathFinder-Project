@@ -85,10 +85,10 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="login_b">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>50</x>
      <y>190</y>
      <width>93</width>
      <height>28</height>
@@ -96,6 +96,19 @@
    </property>
    <property name="text">
     <string>login</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="reg_b">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>190</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Register</string>
    </property>
   </widget>
  </widget>
