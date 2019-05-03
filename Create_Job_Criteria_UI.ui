@@ -1335,7 +1335,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Major        :</string>
+    <string>Major field :</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_experience2">
