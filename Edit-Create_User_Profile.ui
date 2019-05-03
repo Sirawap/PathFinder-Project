@@ -40,7 +40,7 @@
      <x>260</x>
      <y>100</y>
      <width>172</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -62,7 +62,7 @@
      <x>460</x>
      <y>100</y>
      <width>101</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -84,7 +84,7 @@
      <x>240</x>
      <y>140</y>
      <width>172</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -106,7 +106,7 @@
      <x>440</x>
      <y>140</y>
      <width>172</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -214,71 +214,6 @@
     <string>Subject:</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_subject">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>430</y>
-     <width>121</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <item>
-    <property name="text">
-     <string>Arts &amp; Liberal arts</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Business</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Computer Science &amp; It</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Criminal justice, Safety and Laws</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Education</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Engineer</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>HealthCare</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Mathematic &amp; Science</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Nursing</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Psychology &amp; Human Services</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Theology &amp; Ministry</string>
-    </property>
-   </item>
-  </widget>
   <widget class="QPushButton" name="pushButton_add">
    <property name="geometry">
     <rect>
@@ -328,13 +263,13 @@
     <string>Confirm</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
      <y>100</y>
      <width>172</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -350,13 +285,13 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>31</x>
      <y>141</y>
      <width>159</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -372,13 +307,13 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>117</x>
      <y>250</y>
      <width>159</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_8">
@@ -394,13 +329,13 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
      <y>340</y>
      <width>191</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_12">
@@ -420,13 +355,13 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>380</x>
      <y>340</y>
      <width>159</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_14">
@@ -446,13 +381,13 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>31</x>
      <y>251</y>
-     <width>61</width>
-     <height>22</height>
+     <width>91</width>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_7">
@@ -468,13 +403,13 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
      <y>290</y>
      <width>220</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_10">
@@ -490,13 +425,13 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>250</x>
      <y>340</y>
-     <width>101</width>
-     <height>22</height>
+     <width>131</width>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_13">
@@ -512,13 +447,13 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>300</x>
      <y>250</y>
      <width>175</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_9">
@@ -534,20 +469,20 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>260</x>
      <y>290</y>
      <width>202</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_11">
     <item>
      <widget class="QLabel" name="label_13">
       <property name="text">
-       <string>City/Ampur:</string>
+       <string>City/Ampur:</string>
       </property>
      </widget>
     </item>
@@ -582,6 +517,81 @@
      <height>20</height>
     </rect>
    </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_subject">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>430</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string> -- None --</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Accounting</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Computer Science</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Engineering</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Business Administration</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sociology/Social Work</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mathematics/Statistics</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Psychology</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>History/Political Science</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Healthcare</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Education</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Environmental Science</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Visual &amp; Performing Arts</string>
+    </property>
+   </item>
   </widget>
  </widget>
  <resources/>
