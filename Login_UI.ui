@@ -6,12 +6,41 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>308</width>
-    <height>251</height>
+    <width>291</width>
+    <height>243</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	
+	background-image: url(:/bg/grey.png);
+	font: url(:/bg/grey.png)&quot;Arial&quot;;
+}
+
+QLineEdit{
+	color: rgb(255, 255, 255);
+	background-color: white;
+	border-color: transparent;
+}
+
+QLabel{
+	color: rgb(255, 255, 255);
+}
+QLabel#label_3{
+	font: 16pt;
+}
+
+QRadioButton{
+	color: rgb(255, 255, 255);
+}
+
+QPushButton{
+	color:white;
+}
+</string>
   </property>
   <widget class="QRadioButton" name="radioButton">
    <property name="geometry">
@@ -21,6 +50,9 @@
      <width>95</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>Company</string>
@@ -35,6 +67,9 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
     <string>User</string>
    </property>
@@ -47,6 +82,9 @@
      <width>81</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>User name :</string>
@@ -61,6 +99,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
     <string>Password  :</string>
    </property>
@@ -74,11 +115,17 @@
      <height>22</height>
     </rect>
    </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 85, 255);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
-    <string/>
+    <string>asdf</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="password">
@@ -90,11 +137,17 @@
      <height>22</height>
     </rect>
    </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 85, 255);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
-    <string/>
+    <string>asdf</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::Password</enum>
@@ -108,6 +161,9 @@
      <width>93</width>
      <height>28</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>login</string>
@@ -137,14 +193,23 @@
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>Login</string>
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource_pic/source.qrc"/>
+ </resources>
  <connections/>
 </ui>
