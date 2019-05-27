@@ -21,6 +21,10 @@
 
 QComboBox{	
 	background-color: rgb(65, 65, 65);
+}
+
+QLabel#error_label{	
+	color: red;
 }</string>
   </property>
   <widget class="QPushButton" name="confirm_b">
