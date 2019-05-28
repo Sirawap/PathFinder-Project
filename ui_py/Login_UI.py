@@ -17,7 +17,7 @@ class Ui_Form(object):
         Form.setStyleSheet("QWidget{\n"
 "    \n"
 "    background-image: url(:/bg/grey.png);\n"
-"    background-color: black;\n"
+"    background-color: rgb(60, 60, 60);\n"
 "    font: url(:/bg/grey.png)\"Arial\";\n"
 "}\n"
 "\n"
