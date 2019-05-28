@@ -23,7 +23,6 @@ class Ui_Form(object):
 "\n"
 "QLineEdit{\n"
 "    color: rgb(255, 255, 255);\n"
-"    background-color: white;\n"
 "    border-color: transparent;\n"
 "}\n"
 "\n"
@@ -40,6 +39,7 @@ class Ui_Form(object):
 "\n"
 "QPushButton{\n"
 "    color:white;\n"
+"    border: 1px solid white;\n"
 "}\n"
 "")
         self.radioButton = QtWidgets.QRadioButton(Form)
