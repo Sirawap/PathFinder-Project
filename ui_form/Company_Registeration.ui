@@ -15,12 +15,16 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget{
-	background-image: url(:/bg/grey.png);
+	background-color: black;
 	color: white
 }
 
 QComboBox{	
 	background-color: rgb(65, 65, 65);
+}
+
+QPushButton{
+	border: 1px solid white;
 }
 
 QLabel#error_label{	
@@ -471,8 +475,6 @@ QLabel#error_label{
    </property>
   </widget>
  </widget>
- <resources>
-  <include location="resource_pic/source.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
