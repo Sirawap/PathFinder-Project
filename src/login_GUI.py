@@ -21,6 +21,8 @@ from ui_py.Login_UI import Ui_Form
 import ui_py.Login_UI
 import src.Company_Reg_GUI
 import src.User_Reg_GUI
+import src.Company_Main_UI
+import src.User_Main_GUI
 
 class Login_GUI(QWidget):
     def __init__(self):
@@ -31,21 +33,37 @@ class Login_GUI(QWidget):
         self.usr = ''
         self.psd = ''
 
-        self.ui.reg_b.clicked.connect(self.checkRadio)
+        self.ui.reg_b.clicked.connect(self.checkRadioR)
+        self.ui.login_b.clicked.connect(self.checkRadioM)
 
-    def checkRadio(self):
+    def checkRadioR(self):
         self.checkInput(self.ui.username.text(),self.ui.password.text())
         if(self.ui.radioButton_2.isChecked() == True):
             self.openUser_Reg_UI()
         elif(self.ui.radioButton.isChecked() == True):
             self.openCompany_Reg_UI()
-    def openCompany_Reg_UI(self):
-        self.__comp_ui = src.Company_Reg_GUI.Company_GUI() ##
-        self.__comp_ui.show()
+    def checkRadioM(self):
+        self.checkInput(self.ui.username.text(),self.ui.password.text())
+        if(self.ui.radioButton_2.isChecked() == True):
+            self.openUser_Main_UI()
+        elif(self.ui.radioButton.isChecked() == True):
+            self.openComp_Main_UI()
+
+    def openComp_Reg_UI(self):
+        self.__compR_ui = src.Company_Reg_GUI.Company_GUI() ##
+        self.__compR_ui.show()
 
     def openUser_Reg_UI(self):
-        self.__user_ui = src.User_Reg_GUI.User_GUI() ##
-        self.__user_ui.show()
+        self.__userR_ui = src.User_Reg_GUI.User_GUI() ##
+        self.__userR_ui.show()
+
+    def openComp_Main_UI(self):
+        self.__compM_ui = src.Company_Main_UI.Comp_Main_GUI() ##
+        self.__compM_ui.show()
+
+    def openUser_Main_UI(self):
+        self.__userM_ui = src.User_Main_GUI.User_Main_GUI() ##
+        self.__userM_ui.show()
 
     def checkInput(self,usr,psd):
         self.usr = usr
