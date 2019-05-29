@@ -92,7 +92,6 @@ class Ui_Form(object):
         self.login_b.clicked.connect(self.login)
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
-
     def login(self):
         x = self.username.text()
         y = self.password.text()
@@ -103,13 +102,11 @@ class Ui_Form(object):
         self.radioButton_2.setText(QtWidgets.QApplication.translate("Form", "User", None, -1))
         self.label.setText(QtWidgets.QApplication.translate("Form", "User name :", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("Form", "Password  :", None, -1))
-        self.username.setText(QtWidgets.QApplication.translate("Form", "asdf", None, -1))
-        self.password.setText(QtWidgets.QApplication.translate("Form", "asdf", None, -1))
+        self.username.setText(QtWidgets.QApplication.translate("Form", "", None, -1))
+        self.password.setText(QtWidgets.QApplication.translate("Form", "", None, -1))
         self.login_b.setText(QtWidgets.QApplication.translate("Form", "login", None, -1))
         self.reg_b.setText(QtWidgets.QApplication.translate("Form", "Register", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Login", None, -1))
-
-
 
 #import source_rc
 
