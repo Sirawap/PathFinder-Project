@@ -6,16 +6,17 @@ engine = create_engine("mysql+pymysql://root:pathfinder@127.0.0.1:3307/pathfinde
 class Account(base):
     __tablename__ = "userTest"
 
-    username = ""
-    password = ""
+    id = Column("userid", primary_key=True)
+    name = Column("name", String, unique=False)
+    age = Column("age", Integer, unique=False)
 
-class UserAcc(Account):
+class UserAcc(base):
     __tablename__ = "seekerLogin"
 
     username = Column("username",primary_key=True)
     password = Column("password",unique=False)
 
-class CompanyAcc(Account):
+class CompanyAcc(base):
     __tablename__ = "companyLogin"
     username = Column("username", primary_key=True)
     password = Column("password", unique=False)
