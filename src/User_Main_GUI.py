@@ -35,11 +35,11 @@ class User_Main_GUI(QMainWindow):
 
     def openView_Reply_Tray(self):
         pass
-    
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv);
-    w = User_Main_GUI()
-    w.show()
-
-    sys.exit(app.exec_())
+#
+# if __name__ == '__main__':
+#     app = QApplication(sys.argv);
+#     w = User_Main_GUI()
+#     w.show()
+#
+#     sys.exit(app.exec_())
