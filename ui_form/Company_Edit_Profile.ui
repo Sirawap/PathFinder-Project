@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>650</width>
-    <height>716</height>
+    <height>534</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -790,7 +790,7 @@ QComboBox{
   </widget>
  </widget>
  <resources>
-  <include location="resource_pic/source.qrc"/>
+  <include location="../resource_pic/source.qrc"/>
  </resources>
  <connections/>
 </ui>

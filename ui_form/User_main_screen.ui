@@ -146,7 +146,7 @@
      <string>** Dont need to fill all details **</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>21</x>
@@ -233,6 +233,12 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionLog_Out">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>Log Out</string>
    </property>
