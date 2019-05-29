@@ -15,7 +15,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(650, 534)
         Form.setStyleSheet("QWidget{\n"
-"    background-image: url(:/bg/grey.png);\n"
+"    background-color: rgb(60,60,60);\n"
 "    color: white\n"
 "}\n"
 "\n"
@@ -272,7 +272,7 @@ class Ui_Form(object):
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Tel :", None, -1))
         self.label_4.setText(QtWidgets.QApplication.translate("Form", "Website :", None, -1))
 
-import source_rc
+# import source_rc
 
 if __name__ == "__main__":
     import sys

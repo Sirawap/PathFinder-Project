@@ -19,7 +19,6 @@ class Comp_Main_GUI(QMainWindow):
 
 
     def logOut(self):
-        print("olo")
         self.login_ui = src.login_GUI.Login_GUI()
         self.login_ui.show()
         self.close()
@@ -37,7 +36,7 @@ class Comp_Main_GUI(QMainWindow):
 
     def openRecivedJobOffer(self):
         pass
-
+#
 # if __name__ == '__main__':
 #     app = QApplication(sys.argv);
 #     w = Comp_Main_GUI()
