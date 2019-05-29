@@ -35,9 +35,9 @@ class Login_GUI(QWidget):
 
     def checkRadio(self):
         self.checkInput(self.ui.username.text(),self.ui.password.text())
-        if(self.ui.radioButton.isChecked() == True):
+        if(self.ui.radioButton_2.isChecked() == True):
             self.openUser_Reg_UI()
-        elif(self.ui.radioButton_2.isChecked() == True):
+        elif(self.ui.radioButton.isChecked() == True):
             self.openCompany_Reg_UI()
     def openCompany_Reg_UI(self):
         self.__comp_ui = src.Company_Reg_GUI.Company_GUI() ##
