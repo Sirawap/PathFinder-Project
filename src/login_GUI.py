@@ -19,8 +19,8 @@ from ui_py.Login_UI import Ui_Form
 
 
 import ui_py.Login_UI
-import src.temp_company_GUI
-import src.temp_User_GUI
+import src.Company_Reg_GUI
+import src.User_Reg_GUI
 
 class Login_GUI(QWidget):
     def __init__(self):
@@ -40,11 +40,11 @@ class Login_GUI(QWidget):
         elif(self.ui.radioButton_2.isChecked() == True):
             self.openCompany_Reg_UI()
     def openCompany_Reg_UI(self):
-        self.__comp_ui = src.temp_company_GUI.Company_GUI() ##
+        self.__comp_ui = src.Company_Reg_GUI.Company_GUI() ##
         self.__comp_ui.show()
 
     def openUser_Reg_UI(self):
-        self.__user_ui = src.temp_User_GUI.User_GUI() ##
+        self.__user_ui = src.User_Reg_GUI.User_GUI() ##
         self.__user_ui.show()
 
     def checkInput(self,usr,psd):
