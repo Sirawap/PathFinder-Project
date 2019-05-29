@@ -855,7 +855,7 @@ QComboBox{
   </widget>
  </widget>
  <resources>
-  <include location="resource_pic/source.qrc"/>
+  <include location="../resource_pic/source.qrc"/>
  </resources>
  <connections/>
 </ui>

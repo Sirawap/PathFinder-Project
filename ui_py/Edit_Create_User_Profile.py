@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Edit-Create_User_Profile.ui',
-# licensing of 'Edit-Create_User_Profile.ui' applies.
+# Form implementation generated from reading ui file 'Edit_Create_User_Profile.ui',
+# licensing of 'Edit_Create_User_Profile.ui' applies.
 #
-# Created: Wed May 29 11:31:27 2019
+# Created: Wed May 29 17:45:39 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -317,7 +317,7 @@ class Ui_Form(object):
         self.register_language_3.setItemText(5, QtWidgets.QApplication.translate("Form", "Japanese", None, -1))
         self.register_language_3.setItemText(6, QtWidgets.QApplication.translate("Form", "Korea", None, -1))
 
-import source_rc
+# import source_rc
 
 if __name__ == "__main__":
     import sys
