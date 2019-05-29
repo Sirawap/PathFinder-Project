@@ -10,7 +10,7 @@ class LoginSystem():
         pass
 
     def createCompany(self,usr,pwd):
-        Session = sessionmaker(bind = self.engine)
+        Session = sessionmaker(bind = engine)
         session = Session()
         ca = CompanyAcc(username = usr, password = pwd)
         checkExist = session.query(CompanyAcc).filter(CompanyAcc.username == ca.username)
@@ -25,10 +25,10 @@ class LoginSystem():
         session.close()
 
     def createUser(self,usr,pwd):
-        Session = sessionmaker(bind = self.engine)
+        Session = sessionmaker(bind = engine)
         session = Session()
         ca = UserAcc(username = usr, password = pwd)
-        checkExist = session.query(CompanyAcc).filter(CompanyAcc.username == ca.username)
+        checkExist = session.query(UserAcc).filter(UserAcc.username == ca.username)
         boolExist = session.query(checkExist.exists()).scalar()
         if boolExist:
             session.commit()
