@@ -51,4 +51,19 @@ class LoginSystem():
             return "Done Register !"
 
 
+    def loginUser(self,user,pwd):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        valid = False
+        for row in session.query(UserAcc):
+            if row.username == user and pwd == row.password:
+                valid = True
+        if valid:
+            for row in session.query(Jobseeker).filter(Jobseeker.username == user):
+                return Jobseeker(username = row.username,fname = row.fname,surname = row.surname,email= row.email,major = row.major,lang = row.lang,age = row.age,tel = row.tel)
+        else:
+            return "Username/Password incorrect"
+
+
+
 
