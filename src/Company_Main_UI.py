@@ -17,7 +17,7 @@ class Comp_Main_GUI(QMainWindow):
         self.comp_ui.actionLog_Out.triggered.connect(self.logOut)
         self.comp_ui.actionEdit_Profile.triggered.connect(self.openEditProfile)
         self.comp_ui.actionView_Profile.triggered.connect(self.openViewProfile)
-        self.comp_ui.actionView.triggered.connect(self.openPostJob)
+        self.comp_ui.actionPost_Job.triggered.connect(self.openPostJob)
 
 
     def logOut(self):

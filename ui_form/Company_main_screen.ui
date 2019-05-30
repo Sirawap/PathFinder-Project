@@ -17,14 +17,14 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>100</y>
+      <x>170</x>
+      <y>80</y>
       <width>331</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>gu kid mai out</string>
+     <string>gu kid mai out  for the posted job history list</string>
     </property>
    </widget>
   </widget>
@@ -52,7 +52,7 @@
     <property name="title">
      <string>Job Negitiate</string>
     </property>
-    <addaction name="actionView"/>
+    <addaction name="actionPost_Job"/>
     <addaction name="actionView_Recived_Job_Offer"/>
    </widget>
    <addaction name="menuMain"/>
@@ -74,7 +74,7 @@
     <string>View Profile</string>
    </property>
   </action>
-  <action name="actionView">
+  <action name="actionPost_Job">
    <property name="text">
     <string>Post Job</string>
    </property>
