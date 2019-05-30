@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_main_screen.ui',
 # licensing of 'Company_main_screen.ui' applies.
 #
-# Created: Thu May 30 11:56:50 2019
+# Created: Thu May 30 18:58:56 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -16,8 +16,15 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        self.tableView = QtWidgets.QTableView(self.centralwidget)
+        self.tableView.setGeometry(QtCore.QRect(30, 110, 731, 431))
+        self.tableView.setIconSize(QtCore.QSize(0, 0))
+        self.tableView.setObjectName("tableView")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(170, 80, 331, 41))
+        self.label.setGeometry(QtCore.QRect(220, 20, 251, 71))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label.setFont(font)
         self.label.setObjectName("label")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -57,7 +64,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtWidgets.QApplication.translate("MainWindow", "MainWindow", None, -1))
-        self.label.setText(QtWidgets.QApplication.translate("MainWindow", "gu kid mai out  for the posted job history list", None, -1))
+        self.label.setText(QtWidgets.QApplication.translate("MainWindow", "All Posted Job Offer", None, -1))
         self.menuMain.setTitle(QtWidgets.QApplication.translate("MainWindow", "Main", None, -1))
         self.menuJob_Negitiate.setTitle(QtWidgets.QApplication.translate("MainWindow", "Job Negitiate", None, -1))
         self.actionLog_Out.setText(QtWidgets.QApplication.translate("MainWindow", "Log Out", None, -1))
