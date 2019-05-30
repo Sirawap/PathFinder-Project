@@ -14,6 +14,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
+        MainWindow.setStyleSheet('''QWidget{background-color:rgb(60,60,60);font:"Arial";color:white}''')
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.tableView = QtWidgets.QTableView(self.centralwidget)
@@ -21,7 +22,7 @@ class Ui_MainWindow(object):
         self.tableView.setIconSize(QtCore.QSize(0, 0))
         self.tableView.setObjectName("tableView")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(220, 20, 251, 71))
+        self.label.setGeometry(QtCore.QRect(260, 20, 300, 71))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.label.setFont(font)
