@@ -68,8 +68,13 @@ class Login_GUI(QWidget):
         self.close()
 
     def checkInput(self,usr,psd):
-        self.usr = usr
-        self.psd = psd
+        unvalidInput = ["!","'","/",".","=","!"]
+        if(type(usr) == str) and (type(psd) == str):
+            for x in unvalidInput:
+                if(x in usr) or (x in psd):
+                    raise Exception
+            self.usr = usr
+            self.psd = psd
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
@@ -77,4 +82,6 @@ if __name__ == "__main__":
     w.show()
 
     sys.exit(app.exec_())
+
+
 
