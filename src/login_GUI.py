@@ -2,15 +2,9 @@ import sys
 from PySide2.QtGui import *
 from PySide2.QtCore import *
 from PySide2.QtWidgets import *
-from src.loginSystem import LoginSystem
-from src.Company import Company
-from src.Jobseeker import Jobseeker
-from src.accountClasses import CompanyAcc
-from src.accountClasses import UserAcc
 # from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
 # from sqlalchemy.ext.declarative import declarative_base
-# from sqlalchemy.orm import sessionmaker,relationship
-# s
+# from sqlalchemy.orm import sessionmaker,relationships
 from ui_py.Login_UI import Ui_Form
 #from src.loginSystem import LoginSystem
 # class LoginArea(QWidget):
@@ -38,7 +32,7 @@ class Login_GUI(QWidget):
         self.ui.setupUi(self)
         self.usr = ''
         self.psd = ''
-        self.loginControl = LoginSystem()
+
         self.ui.reg_b.clicked.connect(self.checkRadioR)
         self.ui.login_b.clicked.connect(self.checkRadioM)
 
@@ -69,15 +63,9 @@ class Login_GUI(QWidget):
         self.close()
 
     def openUser_Main_UI(self):
-
-        response = self.loginControl.loginUser(self.ui.username.text(),self.ui.password.text())
-        if type(response) == str :
-            self.ui.label_3.setText(response)
-            return
-        else:
-            self.__userM_ui = src.User_Main_GUI.User_Main_GUI(response)  ##
-            self.__userM_ui.show()
-            self.close()
+        self.__userM_ui = src.User_Main_GUI.User_Main_GUI() ##
+        self.__userM_ui.show()
+        self.close()
 
     def checkInput(self,usr,psd):
         unvalidInput = ["!","'","/",".","=","!"]
@@ -87,10 +75,13 @@ class Login_GUI(QWidget):
                     raise Exception
             self.usr = usr
             self.psd = psd
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     w = Login_GUI()
     w.show()
 
     sys.exit(app.exec_())
+
+
 
