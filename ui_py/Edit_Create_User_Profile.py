@@ -15,9 +15,9 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(576, 673)
         Form.setStyleSheet("QWidget{\n"
-"    background-image: url(:/bg/grey.png);\n"
-"    color: white\n"
-"}\n"
+"    background-color: rgb(60, 60, 60);\n"
+"    font: \"Arial\";\n"
+"    color: white\n""}\n"
 "\n"
 "QComboBox{    \n"
 "    background-color: rgb(65, 65, 65);\n"

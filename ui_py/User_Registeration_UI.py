@@ -15,7 +15,8 @@ class Ui_register_user(object):
         register_user.setObjectName("register_user")
         register_user.resize(469, 545)
         register_user.setStyleSheet("QWidget{\n"
-"    background-color: rgb(60,60,60);\n"
+"    background-color: rgb(60, 60, 60);\n"
+"    font: \"Arial\";\n"
 "    color: white\n"
 "}\n"
 "\n"
@@ -202,6 +203,7 @@ class Ui_register_user(object):
         self.error_label.setGeometry(QtCore.QRect(60, 440, 351, 51))
         self.error_label.setText("")
         self.error_label.setObjectName("error_label")
+        self.confirm_b.clicked.connect(self.confirm)
 
         self.retranslateUi(register_user)
         QtCore.QMetaObject.connectSlotsByName(register_user)
@@ -287,6 +289,11 @@ class Ui_register_user(object):
         self.register_language3.setItemText(4, QtWidgets.QApplication.translate("register_user", "Spanish", None, -1))
         self.register_language3.setItemText(5, QtWidgets.QApplication.translate("register_user", "Japanese", None, -1))
         self.register_language3.setItemText(6, QtWidgets.QApplication.translate("register_user", "Korea", None, -1))
+
+    def confirm(self):
+        x = str(self.register_major.currentText())
+        print(x)
+        print('clicked')
 
 
 if __name__ == "__main__":
