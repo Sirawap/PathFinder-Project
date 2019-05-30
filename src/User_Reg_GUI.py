@@ -37,7 +37,7 @@ class User_GUI(QWidget):
             rettext = self.loginControl.createUser(usr,pwd,fname,surname,age,email,tel,major,lang)
             self.user_ui.error_label.setText(rettext)
 
-            self.close() ##for close after click confirm by bill
+            self.close() ##for close after click 'confirm' by bill
 
             return
 
