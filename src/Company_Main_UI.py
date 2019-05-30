@@ -9,12 +9,12 @@ import src.Post_New_Job
 import src.View_All_recived_job_offer_GUI
 
 class Comp_Main_GUI(QMainWindow):
-    def __init__(self):
+    def __init__(self,mainCompany):
         QMainWindow.__init__(self,None)
 
         self.comp_ui = ui_py.Company_main_screen.Ui_MainWindow()
         self.comp_ui.setupUi(self)
-
+        self.mainCompany = mainCompany
         self.comp_ui.actionLog_Out.triggered.connect(self.logOut)
         self.comp_ui.actionEdit_Profile.triggered.connect(self.openEditProfile)
         self.comp_ui.actionView_Profile.triggered.connect(self.openViewProfile)

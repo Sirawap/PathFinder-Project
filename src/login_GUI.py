@@ -64,9 +64,15 @@ class Login_GUI(QWidget):
         self.__userR_ui.show()
 
     def openComp_Main_UI(self):
-        self.__compM_ui = src.Company_Main_UI.Comp_Main_GUI() ##
-        self.__compM_ui.show()
-        self.close()
+
+        response = self.loginControl.loginCompany(self.ui.username.text(),self.ui.password.text())
+        if type(response) == str :
+            self.ui.label_3.setText(response)
+            return
+        else:
+            self.__compM_ui = src.Company_Main_UI.Comp_Main_GUI(response) ##
+            self.__compM_ui.show()
+            self.close()
 
     def openUser_Main_UI(self):
 

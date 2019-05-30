@@ -64,6 +64,18 @@ class LoginSystem():
         else:
             return "Username/Password incorrect"
 
+    def loginCompany(self,user,pwd):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        valid = False
+        for row in session.query(CompanyAcc):
+            if row.username == user and pwd == row.password:
+                valid = True
+        if valid:
+            for row in session.query(Company).filter(Company.username == user):
+                return Company(username= user,companyName = row.companyName,email = row.email, tel = row.tel)
+        else:
+            return "Username/Password incorrect"
 
 
 
