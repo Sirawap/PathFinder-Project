@@ -76,7 +76,7 @@
   </action>
   <action name="actionView">
    <property name="text">
-    <string>View Posted Jobs</string>
+    <string>Post Job</string>
    </property>
   </action>
   <action name="actionView_Recived_Job_Offer">

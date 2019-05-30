@@ -1,6 +1,4 @@
-import sys
 from PySide2.QtWidgets import *
-from PySide2.QtCore import *
 import ui_py.Company_Edit_Profile
 
 class Edit_Company_Profile_GUI(QWidget):

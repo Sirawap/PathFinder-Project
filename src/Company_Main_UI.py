@@ -5,6 +5,7 @@ import ui_py.Company_main_screen
 import src.login_GUI
 import src.Company_Profile_GUI
 import src.EditComp_Profile_GUI
+import src.Post_New_Job
 
 class Comp_Main_GUI(QMainWindow):
     def __init__(self):
@@ -16,6 +17,7 @@ class Comp_Main_GUI(QMainWindow):
         self.comp_ui.actionLog_Out.triggered.connect(self.logOut)
         self.comp_ui.actionEdit_Profile.triggered.connect(self.openEditProfile)
         self.comp_ui.actionView_Profile.triggered.connect(self.openViewProfile)
+        self.comp_ui.actionView.triggered.connect(self.openPostJob)
 
 
     def logOut(self):
@@ -31,15 +33,16 @@ class Comp_Main_GUI(QMainWindow):
         self.compV_P_ui = src.Company_Profile_GUI.Edit_Company_Profile_GUI()
         self.compV_P_ui.show()
 
-    def openPostedJob(self):
-        pass
+    def openPostJob(self):
+        self.post_job_ui = src.Post_New_Job.Post_New_Job()
+        self.post_job_ui.show()
 
     def openRecivedJobOffer(self):
         pass
-#
-# if __name__ == '__main__':
-#     app = QApplication(sys.argv);
-#     w = Comp_Main_GUI()
-#     w.show()
-#
-#     sys.exit(app.exec_())
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv);
+    w = Comp_Main_GUI()
+    w.show()
+
+    sys.exit(app.exec_())

@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Edit_Create_User_Profile.ui',
 # licensing of 'Edit_Create_User_Profile.ui' applies.
 #
-# Created: Wed May 29 17:45:39 2019
+# Created: Thu May 30 11:45:39 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
