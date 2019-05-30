@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Create_Job_Criteria_UI.ui',
 # licensing of 'Create_Job_Criteria_UI.ui' applies.
 #
-# Created: Wed May 29 11:30:58 2019
+# Created: Thu May 30 15:23:54 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -15,9 +15,10 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(463, 650)
         Form.setStyleSheet("QWidget{\n"
-"    background-color: rgb(60, 60, 60);\n"
+"    background-color: rgb(60,60,60);\n"
+"    color: white;\n"
 "    font: \"Arial\";\n"
-"    color: white\n"
+"    \n"
 "}\n"
 "\n"
 "QComboBox{\n"
@@ -73,9 +74,9 @@ class Ui_Form(object):
         self.warning_label.setGeometry(QtCore.QRect(50, 540, 371, 41))
         self.warning_label.setText("")
         self.warning_label.setObjectName("warning_label")
-        self.lineEdit_company = QtWidgets.QLineEdit(Form)
-        self.lineEdit_company.setGeometry(QtCore.QRect(150, 100, 113, 22))
-        self.lineEdit_company.setObjectName("lineEdit_company")
+        self.lineEdit_job_name = QtWidgets.QLineEdit(Form)
+        self.lineEdit_job_name.setGeometry(QtCore.QRect(150, 100, 141, 22))
+        self.lineEdit_job_name.setObjectName("lineEdit_job_name")
         self.lineEdit_address = QtWidgets.QLineEdit(Form)
         self.lineEdit_address.setGeometry(QtCore.QRect(150, 130, 291, 22))
         self.lineEdit_address.setObjectName("lineEdit_address")
@@ -324,7 +325,7 @@ class Ui_Form(object):
         self.lineEdit_experience2.setGeometry(QtCore.QRect(120, 500, 311, 22))
         self.lineEdit_experience2.setObjectName("lineEdit_experience2")
         self.label_25 = QtWidgets.QLabel(Form)
-        self.label_25.setGeometry(QtCore.QRect(270, 100, 16, 16))
+        self.label_25.setGeometry(QtCore.QRect(300, 100, 16, 16))
         self.label_25.setObjectName("label_25")
         self.label_26 = QtWidgets.QLabel(Form)
         self.label_26.setGeometry(QtCore.QRect(190, 160, 16, 16))
@@ -351,7 +352,7 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         Form.setWindowTitle(QtWidgets.QApplication.translate("Form", "Form", None, -1))
         self.label.setText(QtWidgets.QApplication.translate("Form", "Create Requiremnet", None, -1))
-        self.label_2.setText(QtWidgets.QApplication.translate("Form", "Company name :", None, -1))
+        self.label_2.setText(QtWidgets.QApplication.translate("Form", "Job name         :", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Tel :", None, -1))
         self.label_4.setText(QtWidgets.QApplication.translate("Form", "Website :", None, -1))
         self.label_5.setText(QtWidgets.QApplication.translate("Form", "Salary   :", None, -1))
@@ -560,7 +561,6 @@ class Ui_Form(object):
         self.label_30.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
         self.label_31.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
 
-# import source_rc
 
 if __name__ == "__main__":
     import sys
