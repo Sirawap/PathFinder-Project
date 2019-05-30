@@ -33,6 +33,8 @@ class Company_GUI(QWidget):
         else:
             rettext = self.loginControl.createCompany(usr,pwd,cname,email,tel)
             self.user_ui.error_label.setText(rettext)
+
+            self.close()  ##for close after click confirm by bill
             return
 
 
