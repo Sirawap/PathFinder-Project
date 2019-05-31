@@ -213,7 +213,7 @@ QComboBox{
   <widget class="QLabel" name="warning_label">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>40</x>
      <y>540</y>
      <width>371</width>
      <height>41</height>
@@ -1457,7 +1457,7 @@ QComboBox{
   </widget>
  </widget>
  <resources>
-  <include location="resource_pic/source.qrc"/>
+  <include location="../resource_pic/source.qrc"/>
  </resources>
  <connections/>
 </ui>
