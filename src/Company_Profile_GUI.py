@@ -1,5 +1,6 @@
 from PySide2.QtWidgets import *
 import ui_py.Company_view_profile
+import src.Company
 
 class View_Company_Profile_GUI(QWidget):
     def __init__(self):
