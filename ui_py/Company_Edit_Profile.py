@@ -15,7 +15,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(783, 546)
         Form.setStyleSheet("QWidget{\n"
-"    background-image: url(:/bg/grey.png);\n"
+"    background-color: rgb(60,60,60);\n"
 "    color: white\n"
 "}\n"
 "\n"
@@ -339,7 +339,6 @@ class Ui_Form(object):
         self.pushButton_OK.setText(QtWidgets.QApplication.translate("Form", "OK", None, -1))
         self.pushButton_Cancle.setText(QtWidgets.QApplication.translate("Form", "Cancle", None, -1))
 
-import source_rc
 
 if __name__ == "__main__":
     import sys
