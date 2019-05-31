@@ -22,14 +22,24 @@ class Edit_Company_Profile_GUI(QWidget):
         province = self.ui.lineEdit_state.text()
         zip = self.ui.lineEdit_zip.text()
         business = self.ui.comboBox_Business.currentText()
+        str = ''
         if name == '':
-            print("Please enter your company name")
+            str += "Please enter your company name\n"
+        else:
+            pass
         if tel == '' or mail == '':
-            print("Please enter your company contact")
+            str += "Please enter your company contact\n"
+        else:
+            pass
         if no == '' or street== '' or city == '' or province == '' or zip == '':
-            print("Please filled your company address")
+            str += "Please filled your company address\n"
+        else:
+            pass
         if business == "  -- None --":
-            print("Please select business")
+            str += "Please select business\n"
+        else:
+            pass
+        self.ui.error_label.setText(str)
         print("F for reespect")
 
 if __name__ == "__main__":

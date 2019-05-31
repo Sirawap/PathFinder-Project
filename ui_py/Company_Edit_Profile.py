@@ -15,14 +15,18 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(783, 599)
         Form.setStyleSheet("QWidget{\n"
-"    background-image: url(:/bg/grey.png);\n"
+"    background-color: rgb(60,60,60);\n"
 "    color: white\n"
 "}\n"
 "\n"
 "QComboBox{\n"
 "    \n"
 "    background-color: rgb(65, 65, 65);\n"
-"}")
+"}"
+'''QLabel#error_label{
+    color = red;
+}
+''')
         self.gridLayout_4 = QtWidgets.QGridLayout(Form)
         self.gridLayout_4.setObjectName("gridLayout_4")
         self.scrollArea = QtWidgets.QScrollArea(Form)
@@ -227,7 +231,6 @@ class Ui_Form(object):
         self.comboBox_Business.setItemText(10, QtWidgets.QApplication.translate("Form", "Service", None, -1))
         self.comboBox_Business.setItemText(11, QtWidgets.QApplication.translate("Form", "Transportation", None, -1))
 
-import source_rc
 
 if __name__ == "__main__":
     import sys
