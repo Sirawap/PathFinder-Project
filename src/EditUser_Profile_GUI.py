@@ -22,9 +22,10 @@ class Edit_User_Profile_GUI(QWidget):
         self.clickedRow = 0
         self.clickedColumn = 0
         self.addTable() ######edited by bill
-
+        self.ui.pushButton.clicked.connect(self.addEdu)
+        self.ui.pushButton_confirm_profile.clicked.connect(self.connect)
         self.ui.tableWidget.cellClicked.connect(self.itemClicked)######edited by bill
-        self.ui.pushButton_4.clicked.connect(self.deleteEducation)
+        self.ui.del_button.clicked.connect(self.deleteEducation)
 
     def confirm(self): ######edited method name by bill
         name = self.ui.lineEdit_name.text()
@@ -33,29 +34,31 @@ class Edit_User_Profile_GUI(QWidget):
         tel = self.ui.lineEdit_userTel.text()
         email = self.ui.lineEdit_name_3.text()
 
+
+
+        self.mainControl.editUserProfile(self.mainUser,name,surname,age,tel,email)
+
+        print("F for reespect")
+
+
+        self.close() ##close after confirm
+    def addEdu(self):
         degree = self.ui.comboBox_degree.currentText()
         field = self.ui.comboBox_subject.currentText()
         major = self.ui.lineEdit_major.text()
         uni = self.ui.lineEdit_university.text()
 
-        self.mainControl.editUserProfile(self.mainUser,name,surname,age,tel,email)
-        self.mainControl.addUserEducation(self.mainUser,field,degree,major,uni)
-        print("F for reespect")
-
-
-        self.close() ##close after confirm
-
-
+        self.mainControl.addUserEducation(self.mainUser, field, degree, major, uni)
     def cancle(self):
         self.close()
 
     ######edited by bill
-    def addTable(self,column_size = 4,row_size = 2,header = ['Field','Degree','Major','Uni']):
+    def addTable(self,column_size = 4,header = ['Field','Degree','Major','Uni']):
         self.ui.tableWidget.setColumnCount(column_size)
-        self.ui.tableWidget.setRowCount(row_size)
+        self.ui.tableWidget.setRowCount(len(self.allEdu))
         self.ui.tableWidget.setHorizontalHeaderLabels(header)
 
-        for i in range(row_size):
+        for i in range(len(self.allEdu)):
             for j in range(column_size):
                 self.ui.tableWidget.setItem(i,j,QTableWidgetItem(self.allEdu[i][j]))
 
@@ -64,7 +67,10 @@ class Edit_User_Profile_GUI(QWidget):
         self.clickedRow = row
 
     def deleteEducation(self):######edited by bill
-        self.mainControl.deleteEdu(self.mainUser,self.ui.tableWidget.itemAt(self.clickedRow,1),self.ui.tableWidget.itemAt(self.clickedRow,2))
+
+        field = self.ui.tableWidget.item(self.ui.tableWidget.currentRow(),0).text()
+        degree =self.ui.tableWidget.item(self.ui.tableWidget.currentRow(),1).text()
+        self.mainControl.deleteEdu(self.mainUser,field,degree)
         self.ui.tableWidget.removeRow(self.clickedRow)
 
 if __name__ == "__main__":

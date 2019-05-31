@@ -58,9 +58,10 @@ class MainSystem():
         return eduLs
 
     def deleteEdu(self,user,field,degree):
+
         Session = sessionmaker(bind=engine)
         session = Session()
-        deltarget =session.query(Education).filter(user.username == Education.username, field == Education.field,degree == Education.degree).first()
+        deltarget = session.query(Education).filter(user.username == Education.username,field == Education.field,degree == Education.degree).first()
 
         session.delete(deltarget)
         session.commit()
