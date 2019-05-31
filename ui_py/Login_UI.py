@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Login_UI.ui',
 # licensing of 'Login_UI.ui' applies.
 #
-# Created: Fri May 31 16:08:31 2019
+# Created: Fri May 31 16:24:44 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -15,14 +15,13 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(291, 243)
         Form.setStyleSheet("QWidget{\n"
-"    \n"
 "    background-color: rgb(60,60,60);\n"
-"    font: url(:/bg/grey.png)\"Arial\";\n"
+"    font: \"Arial\";\n"
+"    color: white;\n"
 "}\n"
 "\n"
 "QLineEdit{\n"
 "    color: rgb(255, 255, 255);\n"
-"    background-color: white;\n"
 "    border-color: transparent;\n"
 "}\n"
 "\n"
@@ -61,12 +60,14 @@ class Ui_Form(object):
         self.username.setGeometry(QtCore.QRect(140, 80, 131, 22))
         self.username.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.username.setStyleSheet("")
+        self.username.setText("")
         self.username.setFrame(True)
         self.username.setObjectName("username")
         self.password = QtWidgets.QLineEdit(Form)
         self.password.setGeometry(QtCore.QRect(140, 110, 131, 22))
         self.password.setAutoFillBackground(False)
         self.password.setStyleSheet("")
+        self.password.setText("")
         self.password.setFrame(True)
         self.password.setEchoMode(QtWidgets.QLineEdit.Password)
         self.password.setObjectName("password")
@@ -98,8 +99,6 @@ class Ui_Form(object):
         self.radioButton_2.setText(QtWidgets.QApplication.translate("Form", "User", None, -1))
         self.label.setText(QtWidgets.QApplication.translate("Form", "User name :", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("Form", "Password  :", None, -1))
-        self.username.setText(QtWidgets.QApplication.translate("Form", "asdf", None, -1))
-        self.password.setText(QtWidgets.QApplication.translate("Form", "asdf", None, -1))
         self.login_b.setText(QtWidgets.QApplication.translate("Form", "login", None, -1))
         self.reg_b.setText(QtWidgets.QApplication.translate("Form", "Register", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Login", None, -1))
