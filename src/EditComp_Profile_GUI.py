@@ -21,7 +21,7 @@ class Edit_Company_Profile_GUI(QWidget):
         city = self.ui.lineEdit_city.text()
         province = self.ui.lineEdit_state.text()
         zip = self.ui.lineEdit_zip.text()
-        
+        business = self.ui.comboBox_Business.currentText()
         '''business = ''
         if self.ui.checkBox_14.isChecked() :
             business += ","+self.ui.checkBox_14.text()

@@ -54,7 +54,7 @@ QComboBox{
          </item>
         </layout>
        </item>
-       <item row="8" column="3">
+       <item row="13" column="3">
         <layout class="QHBoxLayout" name="horizontalLayout_13">
          <item>
           <widget class="QPushButton" name="pushButton_OK">
@@ -221,7 +221,7 @@ QComboBox{
          </property>
         </widget>
        </item>
-       <item row="8" column="6">
+       <item row="13" column="6">
         <spacer name="horizontalSpacer_2">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -298,76 +298,87 @@ QComboBox{
          </item>
         </layout>
        </item>
-       <item row="7" column="0">
-        <widget class="QLabel" name="label_5">
+       <item row="11" column="3">
+        <widget class="QLabel" name="error_label">
          <property name="text">
-          <string>Company business type</string>
+          <string/>
          </property>
         </widget>
        </item>
-       <item row="7" column="3">
-        <widget class="QComboBox" name="comboBox_Business">
+       <item row="10" column="3">
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
          <item>
-          <property name="text">
-           <string>  -- None --</string>
-          </property>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Company business type</string>
+           </property>
+          </widget>
          </item>
          <item>
-          <property name="text">
-           <string>New Item</string>
-          </property>
+          <widget class="QComboBox" name="comboBox_Business">
+           <item>
+            <property name="text">
+             <string>  -- None --</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>New Item</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Alocohol</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Construction</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Domestic</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Financial instructor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Health Service</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Manufacturer</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Mining</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Retail sales</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Service</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Transportation</string>
+            </property>
+           </item>
+          </widget>
          </item>
-         <item>
-          <property name="text">
-           <string>Alocohol</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Construction</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Domestic</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Financial instructor</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Health Service</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Manufacturer</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Mining</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Retail sales</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Service</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Transportation</string>
-          </property>
-         </item>
-        </widget>
+        </layout>
        </item>
       </layout>
      </widget>
