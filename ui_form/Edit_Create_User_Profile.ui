@@ -313,7 +313,7 @@ QComboBox{
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_22" stretch="5,1">
            <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_20" stretch=""/>
+            <layout class="QHBoxLayout" name="horizontalLayout_20"/>
            </item>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_21">
@@ -376,7 +376,7 @@ QComboBox{
              <item row="3" column="0">
               <layout class="QHBoxLayout" name="horizontalLayout_4">
                <item>
-                <widget class="QListView" name="listView"/>
+                <widget class="QTableView" name="tableView"/>
                </item>
                <item>
                 <layout class="QVBoxLayout" name="verticalLayout">
