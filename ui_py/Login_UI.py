@@ -16,7 +16,7 @@ class Ui_Form(object):
         Form.resize(291, 243)
         Form.setStyleSheet("QWidget{\n"
 "    \n"
-"    background-image: url(:/bg/grey.png);\n"
+"    background-color: rgb(60,60,60);\n"
 "    font: url(:/bg/grey.png)\"Arial\";\n"
 "}\n"
 "\n"
@@ -104,7 +104,6 @@ class Ui_Form(object):
         self.reg_b.setText(QtWidgets.QApplication.translate("Form", "Register", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Login", None, -1))
 
-import source_rc
 
 if __name__ == "__main__":
     import sys
