@@ -34,10 +34,10 @@ class temp(QWidget):
 
 
     def itemclick(self,row,column):
-        print("dood",row,column)
-
-        self.ui.tableWidget.removeRow(row)
-
+        #print(row,column)
+        #self.ui.tableWidget.removeRow(row)
+        select = self.ui.tableWidget.selectionModel()
+        print(select.selectedRows())
 
 
 
