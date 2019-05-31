@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>469</width>
-    <height>362</height>
+    <height>435</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -35,8 +35,8 @@ QLabel#error_label{
   <widget class="QPushButton" name="confirm_b">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>310</y>
+     <x>180</x>
+     <y>300</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -312,6 +312,19 @@ QLabel#error_label{
      <y>160</y>
      <width>91</width>
      <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="error_label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>350</y>
+     <width>351</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">

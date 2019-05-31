@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'User_Registeration_UI.ui',
 # licensing of 'User_Registeration_UI.ui' applies.
 #
-# Created: Fri May 31 13:57:29 2019
+# Created: Fri May 31 14:02:14 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -14,6 +14,7 @@ class Ui_register_user(object):
     def setupUi(self, register_user):
         register_user.setObjectName("register_user")
         register_user.resize(469, 362)
+        register_user.resize(469, 435)
         register_user.setStyleSheet("QWidget{\n"
 "    background-color: black;\n"
 "    color: white\n"
@@ -32,7 +33,7 @@ class Ui_register_user(object):
 "    color: red;\n"
 "}")
         self.confirm_b = QtWidgets.QPushButton(register_user)
-        self.confirm_b.setGeometry(QtCore.QRect(170, 310, 93, 28))
+        self.confirm_b.setGeometry(QtCore.QRect(180, 300, 93, 28))
         self.confirm_b.setObjectName("confirm_b")
         self.label = QtWidgets.QLabel(register_user)
         self.label.setGeometry(QtCore.QRect(30, 100, 81, 16))
@@ -105,6 +106,10 @@ class Ui_register_user(object):
         self.register_tel.setGeometry(QtCore.QRect(330, 160, 91, 22))
         self.register_tel.setText("")
         self.register_tel.setObjectName("register_tel")
+        self.error_label = QtWidgets.QLabel(register_user)
+        self.error_label.setGeometry(QtCore.QRect(50, 350, 351, 51))
+        self.error_label.setText("")
+        self.error_label.setObjectName("error_label")
 
         self.retranslateUi(register_user)
         QtCore.QMetaObject.connectSlotsByName(register_user)
