@@ -24,7 +24,7 @@ class Edit_User_Profile_GUI(QWidget):
 
         self.ui.tableWidget.cellClicked.connect(self.itemClicked)######edited by bill
 
-    def user_edit(self):
+    def confirm(self): ######edited method name by bill
         name = self.ui.lineEdit_name.text()
         surname = self.ui.lineEdit_name_2.text()
         age = self.ui.lineEdit_name_4.text()
@@ -40,6 +40,13 @@ class Edit_User_Profile_GUI(QWidget):
         self.mainControl.addUserEducation(self.mainUser,field,degree,major,uni)
         print("F for reespect")
 
+
+        self.close() ##close after confirm
+
+
+    def cancle(self):
+        self.close()
+
     ######edited by bill
     def addTable(self,column_size = 5,row_size = 2,header = ['No','Name','Surname','age','tel'],data = [["1.","Bill",'n','20','069696969'],["2.","Jia",'S','20','09696969696']]):
         self.ui.tableWidget.setColumnCount(column_size)
@@ -53,6 +60,7 @@ class Edit_User_Profile_GUI(QWidget):
     def itemClicked(self,row,column):######edited by bill
         self.clickedColumn = column
         self.clickedRow = row
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
