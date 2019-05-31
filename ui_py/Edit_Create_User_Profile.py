@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Edit_Create_User_Profile.ui',
 # licensing of 'Edit_Create_User_Profile.ui' applies.
 #
-# Created: Fri May 31 16:04:22 2019
+# Created: Fri May 31 17:56:25 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -15,7 +15,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(599, 631)
         Form.setStyleSheet("QWidget{\n"
-"    background-color: rgb(60,60,60);\n"
+"    background-image: url(:/bg/grey.png);\n"
 "    color: white\n"
 "}\n"
 "\n"
@@ -195,11 +195,9 @@ class Ui_Form(object):
         self.gridLayout.addLayout(self.horizontalLayout_2, 2, 0, 1, 1)
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        self.tableWidget_2 = QtWidgets.QTableWidget(self.scrollAreaWidgetContents)
-        self.tableWidget_2.setObjectName("tableWidget_2")
-        self.tableWidget_2.setColumnCount(0)
-        self.tableWidget_2.setRowCount(0)
-        self.horizontalLayout_4.addWidget(self.tableWidget_2)
+        self.listView = QtWidgets.QListView(self.scrollAreaWidgetContents)
+        self.listView.setObjectName("listView")
+        self.horizontalLayout_4.addWidget(self.listView)
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
         spacerItem2 = QtWidgets.QSpacerItem(20, 28, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -269,6 +267,7 @@ class Ui_Form(object):
         self.pushButton_cancle_profile.setText(QtWidgets.QApplication.translate("Form", "Cancle", None, -1))
         self.pushButton_confirm_profile.setText(QtWidgets.QApplication.translate("Form", "Confirm", None, -1))
 
+import source_rc
 
 if __name__ == "__main__":
     import sys
