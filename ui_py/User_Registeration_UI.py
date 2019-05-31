@@ -13,7 +13,6 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_register_user(object):
     def setupUi(self, register_user):
         register_user.setObjectName("register_user")
-        register_user.resize(469, 362)
         register_user.resize(469, 435)
         register_user.setStyleSheet("QWidget{\n"
 "    background-color: black;\n"
