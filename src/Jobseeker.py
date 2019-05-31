@@ -17,4 +17,5 @@ class Jobseeker(base):
     tel = Column("tel",unique=False)
     tel_home = None
     gender = None
+    experience = None
     education = []

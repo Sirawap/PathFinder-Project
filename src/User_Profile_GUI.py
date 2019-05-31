@@ -14,4 +14,9 @@ class View_User_Profile_GUI(QWidget):
         self.usr = usr
         self.ui.label_Firstname.setText(self.usr.fname)
         self.ui.label_Surname.setText(self.usr.surname)
-        self.ui.label_Surname.setText(self.usr.surname)
+        # self.ui.frame_experience
+        self.ui.label_home.setText(self.usr.surname)
+        self.ui.label_mail.setText(self.usr.surname)
+        self.ui.label_tel.setText(self.usr.surname)
+        self.ui.label_12.setText(self.usr.surname)
+        self.ui.label_13.setText(self.usr.surname)
