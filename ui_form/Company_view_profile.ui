@@ -114,7 +114,7 @@
     <string>Null</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -252,7 +252,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -335,6 +335,24 @@
      </layout>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="label_logo">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>20</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#lebal_logo{
+	border-color: rgb(101, 255, 66);
+}</string>
+   </property>
+   <property name="text">
+    <string>tong nee na logo</string>
+   </property>
   </widget>
  </widget>
  <resources/>
