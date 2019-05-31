@@ -12,4 +12,12 @@ class View_Company_Profile_GUI(QWidget):
         self.ui.setupUi(self)
 
         self.ui.label_5.setText(self.mainCompany.getCompanyName())
-        self.ui.label_5.setText(self.mainCompany.getCompanyName())
+        self.ui.label_7.setText(self.mainCompany.getTel())
+        self.ui.label_9.setText(self.mainCompany.getEmail())
+        self.ui.label_10.setText(self.mainCompany.getAddNo())
+        self.ui.label_18.setText(self.mainCompany.getAddSoi())
+        self.ui.label_19.setText(self.mainCompany.getAddSt())
+        self.ui.label_20.setText(self.mainCompany.getAddDistrict())
+        self.ui.label_21.setText(self.mainCompany.getAddCity())
+        self.ui.label_22.setText(self.mainCompany.getAddProvince())
+        self.ui.label_23.setText(self.mainCompany.getAddZip())
