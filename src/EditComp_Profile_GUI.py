@@ -7,3 +7,4 @@ class Edit_Company_Profile_GUI(QWidget):
 
         self.ui = ui_py.Company_Edit_Profile.Ui_Form()
         self.ui.setupUi(self)
+        self.ui.buttonBox.
