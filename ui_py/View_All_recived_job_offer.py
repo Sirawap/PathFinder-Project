@@ -14,6 +14,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(614, 486)
+        Form.setStyleSheet('''QWidget{background-color:rgb(60,60,60);color:white}''')
         self.tableView = QtWidgets.QTableView(Form)
         self.tableView.setGeometry(QtCore.QRect(10, 110, 581, 321))
         self.tableView.setObjectName("tableView")

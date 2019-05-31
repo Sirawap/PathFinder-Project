@@ -14,6 +14,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(610, 482)
+        Form.setStyleSheet('''QWidget{background-color:rgb(60,60,60);color:white}''')
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(150, 10, 231, 71))
         font = QtGui.QFont()

@@ -15,7 +15,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(515, 532)
         Form.setStyleSheet("QWidget{\n"
-"    background-color: black;\n"
+"    background-color: rgb(60,60,60);\n"
 "    color: white\n"
 "}\n"
 "\n"

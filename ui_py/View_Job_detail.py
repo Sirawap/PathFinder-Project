@@ -14,6 +14,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(580, 532)
+        Form.setStyleSheet('''QWidget{background-color:rgb(60,60,60);color:white}''')
         self.pushButton_request_Job = QtWidgets.QPushButton(Form)
         self.pushButton_request_Job.setGeometry(QtCore.QRect(320, 470, 121, 28))
         self.pushButton_request_Job.setObjectName("pushButton_request_Job")

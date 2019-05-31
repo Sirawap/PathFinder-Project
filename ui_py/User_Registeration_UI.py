@@ -15,7 +15,7 @@ class Ui_register_user(object):
         register_user.setObjectName("register_user")
         register_user.resize(469, 435)
         register_user.setStyleSheet("QWidget{\n"
-"    background-color: black;\n"
+"    background-color: rgb(60,60,60);\n"
 "    color: white\n"
 "}\n"
 "\n"
