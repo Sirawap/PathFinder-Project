@@ -40,7 +40,7 @@ class Edit_Company_Profile_GUI(QWidget):
         else:
             pass
         self.ui.error_label.setText(str)
-        print("F for reespect")
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

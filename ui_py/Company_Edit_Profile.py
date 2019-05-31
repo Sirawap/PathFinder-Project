@@ -23,8 +23,8 @@ class Ui_Form(object):
 "    \n"
 "    background-color: rgb(65, 65, 65);\n"
 "}"
-'''QLabel#error_label{
-    color = red;
+'''QLabel#error_label{\n
+    color: rgb(190,30,30);
 }
 ''')
         self.gridLayout_4 = QtWidgets.QGridLayout(Form)
