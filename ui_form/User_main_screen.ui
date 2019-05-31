@@ -50,7 +50,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Job List</string>
+       <string>Pathfinder</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -114,7 +114,7 @@
         <x>21</x>
         <y>111</y>
         <width>641</width>
-        <height>24</height>
+        <height>28</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -214,7 +214,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMain">
