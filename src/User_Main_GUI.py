@@ -24,7 +24,7 @@ class User_Main_GUI(QMainWindow):
         self.close()
 
     def openEditProfile(self):
-        self.userE_P_ui = src.EditUser_Profile_GUI.View_User_Profile_GUI()
+        self.userE_P_ui = src.EditUser_Profile_GUI.Edit_User_Profile_GUI()
         self.userE_P_ui.show()
 
     def openViewProfile(self):
