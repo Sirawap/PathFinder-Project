@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>783</width>
-    <height>546</height>
+    <height>599</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,7 +36,7 @@ QComboBox{
         <x>0</x>
         <y>0</y>
         <width>759</width>
-        <height>522</height>
+        <height>575</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_3">
@@ -54,7 +54,7 @@ QComboBox{
          </item>
         </layout>
        </item>
-       <item row="9" column="3">
+       <item row="13" column="3">
         <layout class="QHBoxLayout" name="horizontalLayout_13">
          <item>
           <widget class="QPushButton" name="pushButton_OK">
@@ -85,18 +85,6 @@ QComboBox{
           <widget class="QLineEdit" name="lineEdit_district"/>
          </item>
         </layout>
-       </item>
-       <item row="7" column="0" colspan="7">
-        <widget class="QLabel" name="label_21">
-         <property name="font">
-          <font>
-           <pointsize>11</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>PLEASE CHECK ALL THAT APPLY TO YOUR BUSINESS</string>
-         </property>
-        </widget>
        </item>
        <item row="5" column="4" colspan="3">
         <layout class="QHBoxLayout" name="horizontalLayout_9">
@@ -233,7 +221,7 @@ QComboBox{
          </property>
         </widget>
        </item>
-       <item row="9" column="6">
+       <item row="13" column="6">
         <spacer name="horizontalSpacer_2">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -278,129 +266,6 @@ QComboBox{
          </item>
         </layout>
        </item>
-       <item row="8" column="0" colspan="7">
-        <layout class="QGridLayout" name="gridLayout_2">
-         <item row="1" column="2">
-          <widget class="QCheckBox" name="checkBox_24">
-           <property name="text">
-            <string>Hazardous Material</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="3" colspan="2">
-          <widget class="QCheckBox" name="checkBox_31">
-           <property name="text">
-            <string>Retail Sales—New</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QCheckBox" name="checkBox_23">
-           <property name="text">
-            <string>Service</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QCheckBox" name="checkBox_21">
-           <property name="text">
-            <string>Alcohol</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QCheckBox" name="checkBox_17">
-           <property name="text">
-            <string>Water Appropriation</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QCheckBox" name="checkBox_39">
-           <property name="text">
-            <string>Transportation</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="3">
-          <widget class="QCheckBox" name="checkBox_40">
-           <property name="text">
-            <string>Banker</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QCheckBox" name="checkBox_29">
-           <property name="text">
-            <string>Manufacturing</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="2">
-          <widget class="QCheckBox" name="checkBox_33">
-           <property name="text">
-            <string>Construction/Erection</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="2">
-          <widget class="QCheckBox" name="checkBox_41">
-           <property name="text">
-            <string>Tire Sales</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="3" colspan="2">
-          <widget class="QCheckBox" name="checkBox_37">
-           <property name="text">
-            <string>Health Services</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QCheckBox" name="checkBox_14">
-           <property name="text">
-            <string>Mining</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="3" colspan="2">
-          <widget class="QCheckBox" name="checkBox_26">
-           <property name="text">
-            <string>Financial Institutions</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QCheckBox" name="checkBox_15">
-           <property name="text">
-            <string>Domestics</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QCheckBox" name="checkBox_22">
-           <property name="text">
-            <string>Agriculture</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QCheckBox" name="checkBox_36">
-           <property name="text">
-            <string>Delivery</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="4">
-          <widget class="QCheckBox" name="checkBox_47">
-           <property name="text">
-            <string>Other</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
        <item row="1" column="6">
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
@@ -430,6 +295,88 @@ QComboBox{
          </item>
          <item>
           <widget class="QLineEdit" name="lineEdit_zip"/>
+         </item>
+        </layout>
+       </item>
+       <item row="11" column="3">
+        <widget class="QLabel" name="error_label">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="3">
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Company business type</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_Business">
+           <item>
+            <property name="text">
+             <string>  -- None --</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>New Item</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Alocohol</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Construction</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Domestic</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Financial instructor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Health Service</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Manufacturer</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Mining</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Retail sales</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Service</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Transportation</string>
+            </property>
+           </item>
+          </widget>
          </item>
         </layout>
        </item>

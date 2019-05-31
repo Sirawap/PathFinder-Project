@@ -21,26 +21,44 @@ class Edit_Company_Profile_GUI(QWidget):
         city = self.ui.lineEdit_city.text()
         province = self.ui.lineEdit_state.text()
         zip = self.ui.lineEdit_zip.text()
-        self.ui.checkBox_14.isChecked()
-        self.ui.checkBox_15.isChecked()
-        self.ui.checkBox_17.isChecked()
-        self.ui.checkBox_21.isChecked()
-        self.ui.checkBox_22.isChecked()
-        self.ui.checkBox_23.isChecked()
-        self.ui.checkBox_24.isChecked()
-        self.ui.checkBox_26.isChecked()
-        self.ui.checkBox_29.isChecked()
-        self.ui.checkBox_31.isChecked()
-        self.ui.checkBox_33.isChecked()
-        self.ui.checkBox_36.isChecked()
-        self.ui.checkBox_37.isChecked()
-        self.ui.checkBox_39.isChecked()
-        self.ui.checkBox_40.isChecked()
-        self.ui.checkBox_41.isChecked()
-        self.ui.checkBox_47.isChecked()
-        # legal_entity_type =
-        # LLC =
-        # business =
+        business = self.ui.comboBox_Business.currentText()
+        '''business = ''
+        if self.ui.checkBox_14.isChecked() :
+            business += ","+self.ui.checkBox_14.text()
+        if self.ui.checkBox_15.isChecked():
+            business += ","+self.ui.checkBox_15.text()
+        if self.ui.checkBox_17.isChecked():
+            business += ","+self.ui.checkBox_17.text()
+        if self.ui.checkBox_21.isChecked():
+            business += ","+self.ui.checkBox_21.text()
+        if self.ui.checkBox_22.isChecked():
+            business += ","+self.ui.checkBox_22.text()
+        if self.ui.checkBox_23.isChecked():
+            business += ","+self.ui.checkBox_23.text()
+        if self.ui.checkBox_24.isChecked():
+            business += ","+self.ui.checkBox_24.text()
+        if self.ui.checkBox_26.isChecked():
+            business += ","+self.ui.checkBox_26.text()
+        if self.ui.checkBox_29.isChecked():
+            business += ","+self.ui.checkBox_29.text()
+        if self.ui.checkBox_31.isChecked():
+            business += ","+self.ui.checkBox_31.text()
+        if self.ui.checkBox_33.isChecked():
+            business += ","+self.ui.checkBox_33.text()
+        if self.ui.checkBox_36.isChecked():
+            business += ","+self.ui.checkBox_36.text()
+        if self.ui.checkBox_37.isChecked():
+            business += ","+self.ui.checkBox_37.text()
+        if self.ui.checkBox_39.isChecked():
+            business += ","+self.ui.checkBox_39.text()
+        if self.ui.checkBox_40.isChecked():
+            business += ","+self.ui.checkBox_40.text()
+        if self.ui.checkBox_41.isChecked():
+            business += ","+self.ui.checkBox_41.text()
+        if self.ui.checkBox_47.isChecked():
+            business += ","+self.ui.checkBox_47.text()
+        business = business[1:]
+        print(business)'''
         print("F for reespect")
 
 if __name__ == "__main__":
