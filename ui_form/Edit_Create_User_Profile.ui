@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>646</width>
-    <height>835</height>
+    <width>639</width>
+    <height>567</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -83,7 +83,7 @@ QComboBox{
   <widget class="QLabel" name="label_18">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>20</x>
      <y>350</y>
      <width>101</width>
      <height>20</height>
@@ -96,7 +96,7 @@ QComboBox{
   <widget class="QComboBox" name="comboBox_degree">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>10</x>
      <y>380</y>
      <width>121</width>
      <height>22</height>
@@ -126,7 +126,7 @@ QComboBox{
   <widget class="QLabel" name="label_19">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>140</x>
      <y>350</y>
      <width>101</width>
      <height>20</height>
@@ -165,9 +165,9 @@ QComboBox{
   <widget class="QComboBox" name="comboBox_subject">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>130</x>
      <y>380</y>
-     <width>161</width>
+     <width>131</width>
      <height>22</height>
     </rect>
    </property>
@@ -626,7 +626,7 @@ QComboBox{
   <widget class="QLabel" name="label_21">
    <property name="geometry">
     <rect>
-     <x>370</x>
+     <x>270</x>
      <y>350</y>
      <width>101</width>
      <height>20</height>
@@ -639,7 +639,7 @@ QComboBox{
   <widget class="QLineEdit" name="lineEdit_major">
    <property name="geometry">
     <rect>
-     <x>370</x>
+     <x>260</x>
      <y>380</y>
      <width>161</width>
      <height>22</height>
@@ -652,7 +652,7 @@ QComboBox{
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>390</x>
+     <x>370</x>
      <y>440</y>
      <width>141</width>
      <height>23</height>
@@ -665,7 +665,7 @@ QComboBox{
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>260</x>
      <y>440</y>
      <width>75</width>
      <height>23</height>
@@ -835,6 +835,32 @@ QComboBox{
      </item>
     </layout>
    </widget>
+  </widget>
+  <widget class="QLabel" name="label_24">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>350</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>University:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_university">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>380</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
  </widget>
  <resources>
