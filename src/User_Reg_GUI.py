@@ -22,8 +22,7 @@ class User_GUI(QWidget):
         age = self.user_ui.register_age.text() if self.user_ui.register_age.text() != "" else None
         email = self.user_ui.register_email.text() if self.user_ui.register_email.text() != "" else None
         tel = self.user_ui.register_age.text() if self.user_ui.register_tel.text() != "" else None
-        major = self.user_ui.register_major.currentText()
-        lang = self.user_ui.register_language.currentText()
+
 
         if fname == "" or surname == "" or usr =="" or pwd=="" or rpwd =="":
             self.user_ui.error_label.setText("Please fill (*) info")
@@ -34,7 +33,7 @@ class User_GUI(QWidget):
             self.user_ui.error_label.setText("Passwords dont match!")
             return
         else:
-            rettext = self.loginControl.createUser(usr,pwd,fname,surname,age,email,tel,major,lang)
+            rettext = self.loginControl.createUser(usr,pwd,fname,surname,age,email,tel)
             self.user_ui.error_label.setText(rettext)
 
             self.close() ##for close after click 'confirm' by bill

@@ -6,6 +6,7 @@ import src.User_Profile_GUI
 import src.EditUser_Profile_GUI
 import src.login_GUI
 
+
 class User_Main_GUI(QMainWindow):
     def __init__(self,user):
         QMainWindow.__init__(self,None)
@@ -16,7 +17,6 @@ class User_Main_GUI(QMainWindow):
         self.user_ui.actionLog_Out.triggered.connect(self.logOut)
         self.user_ui.actionEdit_Profile.triggered.connect(self.openEditProfile)
         self.user_ui.actionView_Profile.triggered.connect(self.openViewProfile)
-        self.user_ui.label.setText(self.mainUser.fname)
 
     def logOut(self):
         self.login_ui = src.login_GUI.Login_GUI()
@@ -24,7 +24,7 @@ class User_Main_GUI(QMainWindow):
         self.close()
 
     def openEditProfile(self):
-        self.userE_P_ui = src.EditUser_Profile_GUI.Edit_User_Profile_GUI()
+        self.userE_P_ui = src.EditUser_Profile_GUI.Edit_User_Profile_GUI(self.mainUser)
         self.userE_P_ui.show()
 
     def openViewProfile(self):

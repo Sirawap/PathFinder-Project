@@ -123,7 +123,7 @@ class Ui_Form(object):
         self.label_27.setText(QtWidgets.QApplication.translate("Form", "Working expereince/Projects", None, -1))
         self.label_28.setText(QtWidgets.QApplication.translate("Form", "Education Background", None, -1))
 
-import source_rc
+#import source_rc
 
 if __name__ == "__main__":
     import sys

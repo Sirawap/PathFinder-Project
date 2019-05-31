@@ -13,7 +13,5 @@ class Jobseeker(base):
     fname = Column("fname",unique=False)
     surname = Column("surname",unique=False)
     email = Column("email",unique=False)
-    major = Column("major",unique=False)
-    lang = Column("lang",unique=False)
     age = Column("age",unique=False)
     tel = Column("tel",unique=False)

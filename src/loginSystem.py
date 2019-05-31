@@ -14,7 +14,7 @@ class LoginSystem():
         Session = sessionmaker(bind = engine)
         session = Session()
         ca = CompanyAcc(username = usr, password = pwd)
-        c = Company(username = usr, companyName = cname,email=email,tel=tel)
+        c = Company(username = usr, companyName = cname,email=email,tel=tel,type = None)
         checkExist = session.query(CompanyAcc).filter(CompanyAcc.username == ca.username)
         boolExist = session.query(checkExist.exists()).scalar()
         checkCExist = session.query(Company).filter(Company.companyName == c.companyName)
@@ -32,7 +32,7 @@ class LoginSystem():
 
 
 
-    def createUser(self,usr,pwd,fname,surname,age,email,tel,major,lang):
+    def createUser(self,usr,pwd,fname,surname,age,email,tel,lang):
         Session = sessionmaker(bind = engine)
         session = Session()
         ca = UserAcc(username = usr, password = pwd)
@@ -43,7 +43,7 @@ class LoginSystem():
             session.close()
             return "Username for User already exists"
         else:
-            user = Jobseeker(username = usr,fname= fname,surname = surname,email = email,major=major,lang=lang,age=age,tel=tel)
+            user = Jobseeker(username = usr,fname= fname,surname = surname,email = email,lang=lang,age=age,tel=tel)
             session.add(user)
             session.add(ca)
             session.commit()
@@ -60,7 +60,7 @@ class LoginSystem():
                 valid = True
         if valid:
             for row in session.query(Jobseeker).filter(Jobseeker.username == user):
-                return Jobseeker(username = row.username,fname = row.fname,surname = row.surname,email= row.email,major = row.major,lang = row.lang,age = row.age,tel = row.tel)
+                return Jobseeker(username = row.username,fname = row.fname,surname = row.surname,email= row.email,age = row.age,tel = row.tel)
         else:
             return "Username/Password incorrect"
 

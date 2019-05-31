@@ -2,13 +2,21 @@ import sys
 from PySide2.QtWidgets import *
 from PySide2.QtCore import *
 import ui_py.Edit_Create_User_Profile
+from src.mainSystem import MainSystem
 
 class Edit_User_Profile_GUI(QWidget):
-    def __init__(self):
+    def __init__(self,mainUser):
         QWidget.__init__(self,None)
         self.ui = ui_py.Edit_Create_User_Profile.Ui_Form()
         self.ui.setupUi(self)
+        self.mainUser = mainUser
+        self.mainControl = MainSystem()
         self.ui.pushButton_confirm_profile.clicked.connect(self.user_edit)
+        self.ui.lineEdit_name.setText(self.mainUser.fname)
+        self.ui.lineEdit_name_2.setText(self.mainUser.surname)
+        self.ui.lineEdit_name_3.setText(self.mainUser.email)
+        self.ui.lineEdit_name_4.setText(self.mainUser.age)
+        self.ui.lineEdit_userTel.setText(self.mainUser.tel)
 
     def user_edit(self):
         name = self.ui.lineEdit_name.text()
@@ -16,17 +24,11 @@ class Edit_User_Profile_GUI(QWidget):
         age = self.ui.lineEdit_name_4.text()
         tel = self.ui.lineEdit_userTel.text()
         email = self.ui.lineEdit_name_3.text()
-        no = self.ui.lineEdit_houseNo.text()
-        soi = self.ui.lineEdit_soi.text()
-        street = self.ui.lineEdit_street.text()
-        district = self.ui.lineEdit_district.text()
-        city = self.ui.lineEdit_city.text()
-        province = self.ui.lineEdit_state.text()
-        zip = self.ui.lineEdit_zip.text()
-        home_tel = self.ui.lineEdit_homeTel.text()
+
         degree = self.ui.comboBox_degree.currentText()
         subject = self.ui.comboBox_subject.currentText()
         langugage = self.ui.register_language.currentText()
+        self.mainControl.editUserProfile(self.mainUser,name,surname,age,tel,email)
         print("F for reespect")
 
 if __name__ == "__main__":

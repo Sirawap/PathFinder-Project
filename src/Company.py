@@ -11,3 +11,4 @@ class Company(base):
     companyName= Column("companyName",unique=True)
     email = Column("email",unique=True)
     tel = Column("tel",unique=True)
+    type = Column("type",unique=False)
