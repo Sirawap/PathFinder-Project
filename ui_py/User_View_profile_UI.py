@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'User_View_profile_UI.ui',
 # licensing of 'User_View_profile_UI.ui' applies.
 #
-# Created: Wed May 29 11:32:33 2019
+# Created: Fri May 31 12:34:17 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,10 +13,9 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(558, 538)
+        Form.resize(558, 491)
         Form.setStyleSheet("QWidget{\n"
-"    background-color: rgb(60, 60, 60);\n"
-"    font: \"Arial\";\n"
+"    background-image: url(:/bg/grey.png);\n"
 "    color: white\n"
 "}\n"
 "\n"
@@ -76,43 +75,6 @@ class Ui_Form(object):
         self.label_17 = QtWidgets.QLabel(Form)
         self.label_17.setGeometry(QtCore.QRect(140, 140, 51, 24))
         self.label_17.setObjectName("label_17")
-        self.frame_education = QtWidgets.QFrame(Form)
-        self.frame_education.setGeometry(QtCore.QRect(40, 240, 471, 91))
-        font = QtGui.QFont()
-        font.setUnderline(False)
-        font.setStrikeOut(False)
-        self.frame_education.setFont(font)
-        self.frame_education.setAutoFillBackground(False)
-        self.frame_education.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_education.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_education.setObjectName("frame_education")
-        self.label_23 = QtWidgets.QLabel(self.frame_education)
-        self.label_23.setGeometry(QtCore.QRect(70, 20, 151, 24))
-        self.label_23.setObjectName("label_23")
-        self.label_21 = QtWidgets.QLabel(self.frame_education)
-        self.label_21.setGeometry(QtCore.QRect(0, 0, 50, 24))
-        self.label_21.setObjectName("label_21")
-        self.label_18 = QtWidgets.QLabel(self.frame_education)
-        self.label_18.setGeometry(QtCore.QRect(280, 0, 57, 24))
-        self.label_18.setObjectName("label_18")
-        self.label_22 = QtWidgets.QLabel(self.frame_education)
-        self.label_22.setGeometry(QtCore.QRect(330, 0, 111, 24))
-        self.label_22.setObjectName("label_22")
-        self.label_20 = QtWidgets.QLabel(self.frame_education)
-        self.label_20.setGeometry(QtCore.QRect(0, 20, 61, 21))
-        self.label_20.setObjectName("label_20")
-        self.label_19 = QtWidgets.QLabel(self.frame_education)
-        self.label_19.setGeometry(QtCore.QRect(50, 0, 211, 24))
-        self.label_19.setObjectName("label_19")
-        self.label_24 = QtWidgets.QLabel(self.frame_education)
-        self.label_24.setGeometry(QtCore.QRect(0, 40, 50, 24))
-        self.label_24.setObjectName("label_24")
-        self.label_25 = QtWidgets.QLabel(self.frame_education)
-        self.label_25.setGeometry(QtCore.QRect(0, 60, 61, 21))
-        self.label_25.setObjectName("label_25")
-        self.label_26 = QtWidgets.QLabel(self.frame_education)
-        self.label_26.setGeometry(QtCore.QRect(280, 40, 57, 24))
-        self.label_26.setObjectName("label_26")
         self.label_27 = QtWidgets.QLabel(Form)
         self.label_27.setGeometry(QtCore.QRect(40, 350, 271, 24))
         font = QtGui.QFont()
@@ -126,10 +88,15 @@ class Ui_Form(object):
         self.label_28.setFont(font)
         self.label_28.setObjectName("label_28")
         self.frame_experience = QtWidgets.QFrame(Form)
-        self.frame_experience.setGeometry(QtCore.QRect(40, 380, 471, 71))
+        self.frame_experience.setGeometry(QtCore.QRect(40, 380, 460, 71))
         self.frame_experience.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_experience.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_experience.setObjectName("frame_experience")
+        self.tableWidget_educatio_background = QtWidgets.QTableWidget(Form)
+        self.tableWidget_educatio_background.setGeometry(QtCore.QRect(40, 250, 460, 90))
+        self.tableWidget_educatio_background.setObjectName("tableWidget_educatio_background")
+        self.tableWidget_educatio_background.setColumnCount(0)
+        self.tableWidget_educatio_background.setRowCount(0)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -153,19 +120,10 @@ class Ui_Form(object):
         self.label_home.setText(QtWidgets.QApplication.translate("Form", "02 -3291790", None, -1))
         self.label_13.setText(QtWidgets.QApplication.translate("Form", "Male", None, -1))
         self.label_17.setText(QtWidgets.QApplication.translate("Form", "Gender :", None, -1))
-        self.label_23.setText(QtWidgets.QApplication.translate("Form", "KMITL", None, -1))
-        self.label_21.setText(QtWidgets.QApplication.translate("Form", "Major:", None, -1))
-        self.label_18.setText(QtWidgets.QApplication.translate("Form", "Degree:", None, -1))
-        self.label_22.setText(QtWidgets.QApplication.translate("Form", "Bachelor Degree", None, -1))
-        self.label_20.setText(QtWidgets.QApplication.translate("Form", "University:", None, -1))
-        self.label_19.setText(QtWidgets.QApplication.translate("Form", "Software Engineering", None, -1))
-        self.label_24.setText(QtWidgets.QApplication.translate("Form", "Major:", None, -1))
-        self.label_25.setText(QtWidgets.QApplication.translate("Form", "University:", None, -1))
-        self.label_26.setText(QtWidgets.QApplication.translate("Form", "Degree:", None, -1))
         self.label_27.setText(QtWidgets.QApplication.translate("Form", "Working expereince/Projects", None, -1))
         self.label_28.setText(QtWidgets.QApplication.translate("Form", "Education Background", None, -1))
 
-# import source_rc
+import source_rc
 
 if __name__ == "__main__":
     import sys
