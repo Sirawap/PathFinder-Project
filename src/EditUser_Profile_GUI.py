@@ -18,6 +18,12 @@ class Edit_User_Profile_GUI(QWidget):
         self.ui.lineEdit_name_4.setText(self.mainUser.age)
         self.ui.lineEdit_userTel.setText(self.mainUser.tel)
 
+        self.clickedRow = 0
+        self.clickedColumn = 0
+        self.addTable() ######edited by bill
+
+        self.ui.tableWidget.cellClicked.connect(self.itemClicked)######edited by bill
+
     def user_edit(self):
         name = self.ui.lineEdit_name.text()
         surname = self.ui.lineEdit_name_2.text()
@@ -34,8 +40,19 @@ class Edit_User_Profile_GUI(QWidget):
         self.mainControl.addUserEducation(self.mainUser,field,degree,major,uni)
         print("F for reespect")
 
-    def addTable(self,column_size = 0,row_size = 0,data = []):
-        self.ui.ta
+    ######edited by bill
+    def addTable(self,column_size = 5,row_size = 2,header = ['No','Name','Surname','age','tel'],data = [["1.","Bill",'n','20','069696969'],["2.","Jia",'S','20','09696969696']]):
+        self.ui.tableWidget.setColumnCount(column_size)
+        self.ui.tableWidget.setRowCount(row_size)
+        self.ui.tableWidget.setHorizontalHeaderLabels(header)
+
+        for i in range(row_size):
+            for j in range(column_size):
+                self.ui.tableWidget.setItem(i,j,QTableWidgetItem(data[i][j]))
+
+    def itemClicked(self,row,column):######edited by bill
+        self.clickedColumn = column
+        self.clickedRow = row
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

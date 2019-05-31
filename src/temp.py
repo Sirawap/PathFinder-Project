@@ -16,12 +16,13 @@ class temp(QWidget):
         # model.setHorizontalHeaderLabels(['No','Name','Surname','age','tel'])
 
         self.ui.tableWidget.setColumnCount(5)
+        self.ui.tableWidget.setRowCount(2)
         self.ui.tableWidget.setHorizontalHeaderLabels(['No','Name','Surname','age','tel'])
 
 
-        rowPosition = self.ui.tableWidget.rowCount()
-        self.ui.tableWidget.insertRow(0)
-        self.ui.tableWidget.insertRow(1)
+        # rowPosition = self.ui.tableWidget.rowCount()
+        # self.ui.tableWidget.insertRow(0)
+        # self.ui.tableWidget.insertRow(1)
 
         for i in range(len(self.data)):
             for j in range(len(self.data[0])):
