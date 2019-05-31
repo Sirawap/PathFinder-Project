@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'View_All_recived_job_offer.ui',
 # licensing of 'View_All_recived_job_offer.ui' applies.
 #
-# Created: Thu May 30 18:04:32 2019
+# Created: Fri May 31 16:09:23 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -14,12 +14,11 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(614, 486)
-        Form.setStyleSheet('''QWidget{background-color:rgb(60,60,60);font:"Arial";color:white}''')
         self.tableView = QtWidgets.QTableView(Form)
         self.tableView.setGeometry(QtCore.QRect(10, 110, 581, 321))
         self.tableView.setObjectName("tableView")
         self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(160, 20, 300, 71))
+        self.label.setGeometry(QtCore.QRect(160, 20, 251, 71))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.label.setFont(font)

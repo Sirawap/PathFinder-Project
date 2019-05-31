@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'User_View_profile_UI.ui',
 # licensing of 'User_View_profile_UI.ui' applies.
 #
-# Created: Fri May 31 12:34:17 2019
+# Created: Fri May 31 16:04:30 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -123,7 +123,7 @@ class Ui_Form(object):
         self.label_27.setText(QtWidgets.QApplication.translate("Form", "Working expereince/Projects", None, -1))
         self.label_28.setText(QtWidgets.QApplication.translate("Form", "Education Background", None, -1))
 
-#import source_rc
+import source_rc
 
 if __name__ == "__main__":
     import sys

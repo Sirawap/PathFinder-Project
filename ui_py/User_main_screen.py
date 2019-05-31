@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'User_main_screen.ui',
 # licensing of 'User_main_screen.ui' applies.
 #
-# Created: Thu May 30 19:01:11 2019
+# Created: Fri May 31 16:08:45 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -14,7 +14,6 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 649)
-        MainWindow.setStyleSheet('''QWidget{background-color:rgb(60,60,60);font:"Arial";color:white}''')
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
@@ -44,7 +43,7 @@ class Ui_MainWindow(object):
         self.radioButton_2.setGeometry(QtCore.QRect(260, 170, 121, 17))
         self.radioButton_2.setObjectName("radioButton_2")
         self.layoutWidget = QtWidgets.QWidget(self.scrollAreaWidgetContents)
-        self.layoutWidget.setGeometry(QtCore.QRect(21, 111, 641, 24))
+        self.layoutWidget.setGeometry(QtCore.QRect(21, 111, 641, 28))
         self.layoutWidget.setObjectName("layoutWidget")
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.layoutWidget)
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
@@ -93,7 +92,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
         self.menubar.setObjectName("menubar")
         self.menuMain = QtWidgets.QMenu(self.menubar)
         self.menuMain.setObjectName("menuMain")
@@ -131,7 +130,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtWidgets.QApplication.translate("MainWindow", "MainWindow", None, -1))
-        self.label.setText(QtWidgets.QApplication.translate("MainWindow", "Job List", None, -1))
+        self.label.setText(QtWidgets.QApplication.translate("MainWindow", "Pathfinder", None, -1))
         self.radioButton.setText(QtWidgets.QApplication.translate("MainWindow", "Display All Job", None, -1))
         self.pushButton.setText(QtWidgets.QApplication.translate("MainWindow", "Commit", None, -1))
         self.radioButton_3.setText(QtWidgets.QApplication.translate("MainWindow", "Search by User Qualification", None, -1))

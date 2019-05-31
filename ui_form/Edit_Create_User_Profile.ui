@@ -34,8 +34,8 @@ QComboBox{
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>575</width>
-        <height>607</height>
+        <width>579</width>
+        <height>611</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -311,86 +311,12 @@ QComboBox{
           </layout>
          </item>
          <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_22">
+          <layout class="QHBoxLayout" name="horizontalLayout_22" stretch="5,1">
            <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_20" stretch="1,2">
-             <item>
-              <widget class="QLabel" name="label_20">
-               <property name="text">
-                <string>Language :</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="register_language">
-               <item>
-                <property name="text">
-                 <string> -- None -- </string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Arab</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Chinese</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>English</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>French</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Indian</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Japanese</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Korean</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Russian</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Spanish</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Thai</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
+            <layout class="QHBoxLayout" name="horizontalLayout_20" stretch=""/>
            </item>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_21">
-             <item>
-              <widget class="QPushButton" name="pushButton_2">
-               <property name="text">
-                <string>Add Language</string>
-               </property>
-              </widget>
-             </item>
              <item>
               <widget class="QPushButton" name="pushButton">
                <property name="text">
@@ -412,8 +338,8 @@ QComboBox{
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>549</width>
-              <height>298</height>
+              <width>557</width>
+              <height>256</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout">

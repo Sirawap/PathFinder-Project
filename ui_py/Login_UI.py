@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Login_UI.ui',
 # licensing of 'Login_UI.ui' applies.
 #
-# Created: Tue May 28 15:42:00 2019
+# Created: Fri May 31 16:08:31 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -16,12 +16,13 @@ class Ui_Form(object):
         Form.resize(291, 243)
         Form.setStyleSheet("QWidget{\n"
 "    \n"
-"    background-color: rgb(60, 60, 60);\n"
+"    background-image: url(:/bg/grey.png);\n"
 "    font: url(:/bg/grey.png)\"Arial\";\n"
 "}\n"
 "\n"
 "QLineEdit{\n"
 "    color: rgb(255, 255, 255);\n"
+"    background-color: white;\n"
 "    border-color: transparent;\n"
 "}\n"
 "\n"
@@ -38,7 +39,6 @@ class Ui_Form(object):
 "\n"
 "QPushButton{\n"
 "    color:white;\n"
-"    border: 1px solid white;\n"
 "}\n"
 "")
         self.radioButton = QtWidgets.QRadioButton(Form)
@@ -88,26 +88,23 @@ class Ui_Form(object):
         self.label_3.setFont(font)
         self.label_3.setStyleSheet("")
         self.label_3.setObjectName("label_3")
-        self.login_b.clicked.connect(self.login)
+
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
-    def login(self):
-        x = self.username.text()
-        y = self.password.text()
-        print(x,y)
+
     def retranslateUi(self, Form):
         Form.setWindowTitle(QtWidgets.QApplication.translate("Form", "Form", None, -1))
         self.radioButton.setText(QtWidgets.QApplication.translate("Form", "Company", None, -1))
         self.radioButton_2.setText(QtWidgets.QApplication.translate("Form", "User", None, -1))
         self.label.setText(QtWidgets.QApplication.translate("Form", "User name :", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("Form", "Password  :", None, -1))
-        self.username.setText(QtWidgets.QApplication.translate("Form", "", None, -1))
-        self.password.setText(QtWidgets.QApplication.translate("Form", "", None, -1))
+        self.username.setText(QtWidgets.QApplication.translate("Form", "asdf", None, -1))
+        self.password.setText(QtWidgets.QApplication.translate("Form", "asdf", None, -1))
         self.login_b.setText(QtWidgets.QApplication.translate("Form", "login", None, -1))
         self.reg_b.setText(QtWidgets.QApplication.translate("Form", "Register", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Login", None, -1))
 
-#import source_rc
+import source_rc
 
 if __name__ == "__main__":
     import sys

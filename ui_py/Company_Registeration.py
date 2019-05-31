@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_Registeration.ui',
 # licensing of 'Company_Registeration.ui' applies.
 #
-# Created: Tue May 28 21:10:35 2019
+# Created: Fri May 31 16:07:13 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -15,7 +15,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(515, 532)
         Form.setStyleSheet("QWidget{\n"
-"    background-color: rgb(60,60,60);\n"
+"    background-color: black;\n"
 "    color: white\n"
 "}\n"
 "\n"

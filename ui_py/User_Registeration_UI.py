@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'User_Registeration_UI.ui',
 # licensing of 'User_Registeration_UI.ui' applies.
 #
-# Created: Fri May 31 14:02:14 2019
+# Created: Fri May 31 16:04:25 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
