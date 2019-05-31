@@ -43,4 +43,27 @@ class MainSystem():
             session.commit()
             session.close()
             return
+    def getAllEdu(self,user):
+
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        eduStr = ""
+        eduLs = []
+        for row in session.query(Education).filter(user.username == Education.username):
+            eduStr = [str(row.field),str(row.degree),str(row.major),str(row.university)]
+            eduLs.append(eduStr)
+
+        session.commit()
+        session.close()
+        return eduLs
+
+    def deleteEdu(self,user,field,degree):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        deltarget =session.query(Education).filter(user.username == Education.username, field == Education.field,degree == Education.degree).first()
+
+        session.delete(deltarget)
+        session.commit()
+        session.close()
+        return
 

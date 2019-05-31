@@ -34,8 +34,8 @@ QComboBox{
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>579</width>
-        <height>611</height>
+        <width>575</width>
+        <height>607</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -138,6 +138,13 @@ QComboBox{
                 </size>
                </property>
               </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_confirm_profile">
+               <property name="text">
+                <string>Confirm</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -338,8 +345,8 @@ QComboBox{
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>557</width>
-              <height>256</height>
+              <width>549</width>
+              <height>263</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout">
@@ -439,14 +446,7 @@ QComboBox{
            <item>
             <widget class="QPushButton" name="pushButton_cancle_profile">
              <property name="text">
-              <string>Cancle</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_confirm_profile">
-             <property name="text">
-              <string>Confirm</string>
+              <string>Back</string>
              </property>
             </widget>
            </item>

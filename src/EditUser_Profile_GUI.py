@@ -11,18 +11,20 @@ class Edit_User_Profile_GUI(QWidget):
         self.ui.setupUi(self)
         self.mainUser = mainUser
         self.mainControl = MainSystem()
-        self.ui.pushButton_confirm_profile.clicked.connect(self.user_edit)
+        #self.ui.pushButton_confirm_profile.clicked.connect(self.user_edit)
         self.ui.lineEdit_name.setText(self.mainUser.fname)
         self.ui.lineEdit_name_2.setText(self.mainUser.surname)
         self.ui.lineEdit_name_3.setText(self.mainUser.email)
         self.ui.lineEdit_name_4.setText(self.mainUser.age)
         self.ui.lineEdit_userTel.setText(self.mainUser.tel)
-
+        self.allEdu = self.mainControl.getAllEdu(self.mainUser)
+        print(self.allEdu)
         self.clickedRow = 0
         self.clickedColumn = 0
         self.addTable() ######edited by bill
 
         self.ui.tableWidget.cellClicked.connect(self.itemClicked)######edited by bill
+        self.ui.pushButton_4.clicked.connect(self.deleteEducation)
 
     def confirm(self): ######edited method name by bill
         name = self.ui.lineEdit_name.text()
@@ -48,20 +50,21 @@ class Edit_User_Profile_GUI(QWidget):
         self.close()
 
     ######edited by bill
-    def addTable(self,column_size = 5,row_size = 2,header = ['No','Name','Surname','age','tel'],data = [["1.","Bill",'n','20','069696969'],["2.","Jia",'S','20','09696969696']]):
+    def addTable(self,column_size = 4,row_size = 2,header = ['Field','Degree','Major','Uni']):
         self.ui.tableWidget.setColumnCount(column_size)
         self.ui.tableWidget.setRowCount(row_size)
         self.ui.tableWidget.setHorizontalHeaderLabels(header)
 
         for i in range(row_size):
             for j in range(column_size):
-                self.ui.tableWidget.setItem(i,j,QTableWidgetItem(data[i][j]))
+                self.ui.tableWidget.setItem(i,j,QTableWidgetItem(self.allEdu[i][j]))
 
     def itemClicked(self,row,column):######edited by bill
         self.clickedColumn = column
         self.clickedRow = row
 
     def deleteEducation(self):######edited by bill
+        self.mainControl.deleteEdu(self.mainUser,self.ui.tableWidget.itemAt(self.clickedRow,1),self.ui.tableWidget.itemAt(self.clickedRow,2))
         self.ui.tableWidget.removeRow(self.clickedRow)
 
 if __name__ == "__main__":
