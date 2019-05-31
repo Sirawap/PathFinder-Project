@@ -13,6 +13,25 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: rgb(60,60,60);
+	font: &quot;Arial&quot;;
+	color: white;
+}
+QScrollArea{
+	background-color: rgb(60,60,60);
+	font: &quot;Arial&quot;;
+	color: white;
+}
+QWidget{
+	background-color: rgb(60,60,60);
+	font: &quot;Arial&quot;;
+	color: white;
+}
+
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QScrollArea" name="scrollArea">
     <property name="geometry">
@@ -22,6 +41,13 @@
       <width>751</width>
       <height>581</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(60,60,60);
+	font: &quot;Arial&quot;;
+	color: white;
+}</string>
     </property>
     <property name="widgetResizable">
      <bool>true</bool>
@@ -186,9 +212,9 @@
       </property>
       <property name="font">
        <font>
-        <pointsize>11</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="text">
@@ -214,7 +240,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMain">

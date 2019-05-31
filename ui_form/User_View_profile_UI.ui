@@ -15,11 +15,10 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget{
-	background-image: url(:/bg/grey.png);
-	color: white
-}
-
-url(:/bg/grey.png)</string>
+	background-color: rgb(60,60,60);
+	font: &quot;Arial&quot;;
+	color: white;
+}</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
