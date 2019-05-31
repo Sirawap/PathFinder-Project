@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Create_Job_Criteria_UI.ui',
 # licensing of 'Create_Job_Criteria_UI.ui' applies.
 #
-# Created: Fri May 31 16:08:17 2019
+# Created: Fri May 31 21:45:00 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -24,7 +24,10 @@ class Ui_Form(object):
 "QComboBox{\n"
 "    \n"
 "    background-color: rgb(65, 65, 65);\n"
-"}")
+"}"
+'''QLabel#error_label{
+    color: rgb(190,30,30);
+}''')
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(90, 20, 301, 71))
         font = QtGui.QFont()
@@ -102,6 +105,7 @@ class Ui_Form(object):
         self.comboBox_major.addItem("")
         self.comboBox_major.addItem("")
         self.comboBox_major.addItem("")
+        self.comboBox_major.addItem("")
         self.label_14 = QtWidgets.QLabel(Form)
         self.label_14.setGeometry(QtCore.QRect(40, 370, 81, 16))
         self.label_14.setObjectName("label_14")
@@ -141,18 +145,19 @@ class Ui_Form(object):
         self.comboBox_Degree.setItemText(3, QtWidgets.QApplication.translate("Form", "PHD", None, -1))
         self.lineEdit_experience1.setText(QtWidgets.QApplication.translate("Form", "eg. pilot must have at least 1000 of flight hours", None, -1))
         self.label_13.setText(QtWidgets.QApplication.translate("Form", "Required Skill", None, -1))
-        self.comboBox_major.setItemText(0, QtWidgets.QApplication.translate("Form", "Accounting", None, -1))
-        self.comboBox_major.setItemText(1, QtWidgets.QApplication.translate("Form", "Computer Science", None, -1))
-        self.comboBox_major.setItemText(2, QtWidgets.QApplication.translate("Form", "Engineering", None, -1))
-        self.comboBox_major.setItemText(3, QtWidgets.QApplication.translate("Form", "Business Administration", None, -1))
-        self.comboBox_major.setItemText(4, QtWidgets.QApplication.translate("Form", "Sociology/Social Work", None, -1))
-        self.comboBox_major.setItemText(5, QtWidgets.QApplication.translate("Form", "Mathematics/Statistics", None, -1))
-        self.comboBox_major.setItemText(6, QtWidgets.QApplication.translate("Form", "Psychology", None, -1))
-        self.comboBox_major.setItemText(7, QtWidgets.QApplication.translate("Form", "History/Political Science", None, -1))
-        self.comboBox_major.setItemText(8, QtWidgets.QApplication.translate("Form", "Healthcare", None, -1))
-        self.comboBox_major.setItemText(9, QtWidgets.QApplication.translate("Form", "Education", None, -1))
-        self.comboBox_major.setItemText(10, QtWidgets.QApplication.translate("Form", "Environmental Science", None, -1))
-        self.comboBox_major.setItemText(11, QtWidgets.QApplication.translate("Form", "Visual & Performing Arts", None, -1))
+        self.comboBox_major.setItemText(0, QtWidgets.QApplication.translate("Form", "  --None--", None, -1))
+        self.comboBox_major.setItemText(1, QtWidgets.QApplication.translate("Form", "Accounting", None, -1))
+        self.comboBox_major.setItemText(2, QtWidgets.QApplication.translate("Form", "Computer Science", None, -1))
+        self.comboBox_major.setItemText(3, QtWidgets.QApplication.translate("Form", "Engineering", None, -1))
+        self.comboBox_major.setItemText(4, QtWidgets.QApplication.translate("Form", "Business Administration", None, -1))
+        self.comboBox_major.setItemText(5, QtWidgets.QApplication.translate("Form", "Sociology/Social Work", None, -1))
+        self.comboBox_major.setItemText(6, QtWidgets.QApplication.translate("Form", "Mathematics/Statistics", None, -1))
+        self.comboBox_major.setItemText(7, QtWidgets.QApplication.translate("Form", "Psychology", None, -1))
+        self.comboBox_major.setItemText(8, QtWidgets.QApplication.translate("Form", "History/Political Science", None, -1))
+        self.comboBox_major.setItemText(9, QtWidgets.QApplication.translate("Form", "Healthcare", None, -1))
+        self.comboBox_major.setItemText(10, QtWidgets.QApplication.translate("Form", "Education", None, -1))
+        self.comboBox_major.setItemText(11, QtWidgets.QApplication.translate("Form", "Environmental Science", None, -1))
+        self.comboBox_major.setItemText(12, QtWidgets.QApplication.translate("Form", "Visual & Performing Arts", None, -1))
         self.label_14.setText(QtWidgets.QApplication.translate("Form", "Major field :", None, -1))
         self.label_25.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
         self.label_27.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
