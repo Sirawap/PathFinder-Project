@@ -401,7 +401,7 @@ QComboBox{
                   </spacer>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_4">
+                  <widget class="QPushButton" name="del_button">
                    <property name="text">
                     <string>Delete</string>
                    </property>
@@ -444,7 +444,7 @@ QComboBox{
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_cancle_profile">
+            <widget class="QPushButton" name="backButton">
              <property name="text">
               <string>Back</string>
              </property>
