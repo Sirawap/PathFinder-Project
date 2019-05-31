@@ -26,9 +26,12 @@ class Edit_User_Profile_GUI(QWidget):
         email = self.ui.lineEdit_name_3.text()
 
         degree = self.ui.comboBox_degree.currentText()
-        subject = self.ui.comboBox_subject.currentText()
-        langugage = self.ui.register_language.currentText()
+        field = self.ui.comboBox_subject.currentText()
+        major = self.ui.lineEdit_major.text()
+        uni = self.ui.lineEdit_university.text()
+
         self.mainControl.editUserProfile(self.mainUser,name,surname,age,tel,email)
+        self.mainControl.addUserEducation(self.mainUser,field,degree,major,uni)
         print("F for reespect")
 
 if __name__ == "__main__":

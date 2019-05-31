@@ -26,3 +26,21 @@ class MainSystem():
 
         session.commit()
         session.close()
+
+    def addUserEducation(self,user,field,degree,major,university):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+
+        checkExist = session.query(Education).filter(user.username == Education.username,field == Education.field,degree == Education.degree)
+        boolExist = session.query(checkExist.exists()).scalar()
+        if boolExist:
+            session.commit()
+            session.close()
+            return "This Education already exists!"
+        else:
+            edu = Education(username = user.username,field = field,degree = degree,major = major,university=university)
+            session.add(edu)
+            session.commit()
+            session.close()
+            return
+
