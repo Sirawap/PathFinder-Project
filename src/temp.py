@@ -31,8 +31,12 @@ class temp(QWidget):
 
         self.ui.tableWidget.cellClicked.connect(self.itemclick)
 
+
+
     def itemclick(self,row,column):
         print("dood",row,column)
+
+        self.ui.tableWidget.removeRow(row)
 
 
 

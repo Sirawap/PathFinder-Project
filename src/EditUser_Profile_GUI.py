@@ -61,6 +61,8 @@ class Edit_User_Profile_GUI(QWidget):
         self.clickedColumn = column
         self.clickedRow = row
 
+    def deleteEducation(self):######edited by bill
+        self.ui.tableWidget.removeRow(self.clickedRow)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
