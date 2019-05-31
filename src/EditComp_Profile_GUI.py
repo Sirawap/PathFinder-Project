@@ -21,6 +21,10 @@ class Edit_Company_Profile_GUI(QWidget):
         city = self.ui.lineEdit_city.text()
         province = self.ui.lineEdit_state.text()
         zip = self.ui.lineEdit_zip.text()
+        temp = self.ui.checkBox.isChecked()
+        # legal_entity_type =
+        # LLC =
+        # business =
         print("F for reespect")
 
 if __name__ == "__main__":
