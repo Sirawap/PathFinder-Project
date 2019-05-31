@@ -15,3 +15,6 @@ class Jobseeker(base):
     email = Column("email",unique=False)
     age = Column("age",unique=False)
     tel = Column("tel",unique=False)
+    tel_home = None
+    gender = None
+    education = []
