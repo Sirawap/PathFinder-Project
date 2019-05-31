@@ -34,6 +34,9 @@ class Edit_User_Profile_GUI(QWidget):
         self.mainControl.addUserEducation(self.mainUser,field,degree,major,uni)
         print("F for reespect")
 
+    def addTable(self,column_size = 0,row_size = 0,data = []):
+        self.ui.ta
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     w = Edit_User_Profile_GUI()
