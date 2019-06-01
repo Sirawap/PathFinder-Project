@@ -67,7 +67,7 @@ class Login_GUI(QWidget):
 
         response = self.loginControl.loginCompany(self.ui.username.text(),self.ui.password.text())
         if type(response) == str :
-            self.ui.label_3.setText(response)
+            self.ui.error_label.setText(response)
             return
         else:
             self.__compM_ui = src.Company_Main_UI.Comp_Main_GUI(response) ##
@@ -78,7 +78,7 @@ class Login_GUI(QWidget):
 
         response = self.loginControl.loginUser(self.ui.username.text(),self.ui.password.text())
         if type(response) == str :
-            self.ui.label_3.setText(response)
+            self.ui.error_label.setText(response)
             return
         else:
             self.__userM_ui = src.User_Main_GUI.User_Main_GUI(response)  ##
