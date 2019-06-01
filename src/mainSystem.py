@@ -77,8 +77,12 @@ class MainSystem():
         boolExist = session.query(checkExist.exists()).scalar()
         if boolExist:
             addrTarget = session.query(Address).filter(com.companyName == Address.companyName).first()
+            session.commit()
+            session.close()
             return Address(companyName = addrTarget.companyName, no = addrTarget.no,soi = addrTarget.soi,street = addrTarget.street,district = addrTarget.district,city = addrTarget.city,province = addrTarget.province,zipcode = addrTarget.zipcode)
         else:
+            session.commit()
+            session.close()
             return None
 
     def editCompanyProfile(self,com,name,tel,mail,type):
@@ -88,6 +92,8 @@ class MainSystem():
         checkExist = session.query(Company).filter(name == Company.companyName)
         boolExist = session.query(checkExist.exists()).scalar()
         if boolExist and com.companyName != name:
+            session.commit()
+            session.close()
             return "Company name already Exists!"
         if type == "-- None --":
             type = None
@@ -101,7 +107,28 @@ class MainSystem():
         session.close()
         return "Update Successfully"
 
-    def editCompanyAddress(self):
-        pass
+    def editCompanyAddress(self,com,no,soi,street,district,city,province,zip):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        edit = session.query(Address).filter_by(companyName = com.companyName).count()
+        if edit == 0:
+            adr = Address(companyName = com.companyName,no =no,soi =soi,street = street,district = district,city= city,province= province,zipcode = zip)
+            session.add(adr)
+            session.commit()
+            session.close()
+            return "Update Successfully"
+        else:
+            edit = session.query(Address).filter(Address.companyName == com.companyName).first()
+            edit.no = no
+            edit.soi = soi
+            edit.street = street
+            edit.district = district
+            edit.city = city
+            edit.province = province
+            edit.zipcode = zip
+
+            session.commit()
+            session.close()
+            return "Update Successfully"
 
 

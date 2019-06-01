@@ -62,6 +62,8 @@ class LoginSystem():
             for row in session.query(Jobseeker).filter(Jobseeker.username == user):
                 return Jobseeker(username = row.username,fname = row.fname,surname = row.surname,email= row.email,age = row.age,tel = row.tel)
         else:
+            session.commit()
+            session.close()
             return "Username/Password incorrect"
 
     def loginCompany(self,user,pwd):
@@ -75,6 +77,8 @@ class LoginSystem():
             for row in session.query(Company).filter(Company.username == user):
                 return Company(username= user,companyName = row.companyName,email = row.email, tel = row.tel)
         else:
+            session.commit()
+            session.close()
             return "Username/Password incorrect"
 
 

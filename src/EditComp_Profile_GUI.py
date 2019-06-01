@@ -16,6 +16,7 @@ class Edit_Company_Profile_GUI(QWidget):
         self.ui.lineEdit_comp_name.setText(self.mainCompany.companyName)
         self.ui.lineEdit_tel.setText(self.mainCompany.tel)
         self.ui.lineEdit_web.setText(self.mainCompany.email)
+        self.ui.pushButton_CancelCompAdd.clicked.connect(self.closed)
 
     def comp_edit(self):
         name = self.ui.lineEdit_comp_name.text()
@@ -44,6 +45,12 @@ class Edit_Company_Profile_GUI(QWidget):
         province = self.ui.lineEdit_state.text()
         zipcode = self.ui.lineEdit_zip.text()
 
+        text = self.mainControl.editCompanyAddress(self.mainCompany,no,soi,street,district,city,province,zipcode)
+
+        self.ui.error_label_add.setText(text)
+        return
+    def closed(self):
+        self.close()
 
 
 if __name__ == "__main__":

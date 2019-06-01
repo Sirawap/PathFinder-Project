@@ -12,12 +12,8 @@ class Company(base):
     email = Column("email",unique=True)
     tel = Column("tel",unique=True)
     type = Column("type",unique=False)
-    AddNo = None
-    AddSoi = None
-    AddSt = None
-    AddDistrict = None
-    AddCity = None
-    AddProvince = None
-    AddZip = None
+
+
+
 
 

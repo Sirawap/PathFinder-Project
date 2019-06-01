@@ -1,13 +1,16 @@
 import sys
 from PySide2.QtWidgets import *
 import ui_py.Create_Job_Criteria_UI
+from src.mainSystem import MainSystem
 
 class Post_New_Job(QWidget):
-    def __init__(self):
+    def __init__(self,company):
         QWidget.__init__(self,None)
 
         self.ui = ui_py.Create_Job_Criteria_UI.Ui_Form()
         self.ui.setupUi(self)
+        self.mainControl = MainSystem()
+        self.mainCompany = company
         self.ui.pushButton.clicked.connect(self.post_job)
 
     def post_job(self):

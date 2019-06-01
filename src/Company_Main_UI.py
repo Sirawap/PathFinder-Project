@@ -36,7 +36,7 @@ class Comp_Main_GUI(QMainWindow):
         self.compV_P_ui.show()
 
     def openPostJob(self):
-        self.post_job_ui = src.Post_New_Job.Post_New_Job()
+        self.post_job_ui = src.Post_New_Job.Post_New_Job(self.mainCompany)
         self.post_job_ui.show()
 
     def openRecivedJobOffer(self):

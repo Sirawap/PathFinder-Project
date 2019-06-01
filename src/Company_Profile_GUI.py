@@ -13,10 +13,11 @@ class View_Company_Profile_GUI(QWidget):
         self.mainControl = MainSystem()
         self.mainCompany = company
         self.comadr = self.mainControl.getCompanyAddress(self.mainCompany)
+        self.ui.label_5.setText(self.mainCompany.companyName)
+        self.ui.label_7.setText(self.mainCompany.tel)
+        self.ui.label_9.setText(self.mainCompany.email)
         if self.comadr != None:
-            self.ui.label_5.setText(self.comadr.companyName)
-            self.ui.label_7.setText(self.mainCompany.tel)
-            self.ui.label_9.setText(self.mainCompany.email)
+
             self.ui.label_10.setText(self.comadr.no)
             self.ui.label_18.setText(self.comadr.soi)
             self.ui.label_19.setText(self.comadr.street)
