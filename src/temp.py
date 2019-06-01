@@ -20,6 +20,8 @@ class temp(QWidget):
         self.ui.tableWidget.setRowCount(2)
         self.ui.tableWidget.setHorizontalHeaderLabels(['No','Name','Surname','age','tel'])
 
+        self.ui.combobox.set
+
 
         # rowPosition = self.ui.tableWidget.rowCount()
         # self.ui.tableWidget.insertRow(0)

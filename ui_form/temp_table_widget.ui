@@ -26,7 +26,7 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>30</x>
      <y>190</y>
      <width>221</width>
      <height>16</height>
@@ -48,6 +48,71 @@
    <property name="text">
     <string>PushButton</string>
    </property>
+  </widget>
+  <widget class="QComboBox" name="combobox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>260</y>
+     <width>205</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>  -- None --</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Alocohol</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Construction</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Domestic</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Financial instructor</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Health Service</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Manufacturer</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mining</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Retail sales</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Service</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Transportation</string>
+    </property>
+   </item>
   </widget>
  </widget>
  <resources/>
