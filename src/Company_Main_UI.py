@@ -57,6 +57,7 @@ class Comp_Main_GUI(QMainWindow):
         self.comp_ui.tableWidget.removeRow(self.comp_ui.tableWidget.currentRow())
 
     def addTable(self, column_size=4, header=['Job Name', 'Position', 'Salary', 'description']):
+        self.comp_ui.tableWidget.setColumnWidth(3,200) ### ADDED BY BILL FOR DESCRIPTION COLUMN SIZE
         self.comp_ui.tableWidget.setColumnCount(column_size)
         self.comp_ui.tableWidget.setRowCount(len(self.allJob))
         self.comp_ui.tableWidget.setHorizontalHeaderLabels(header)

@@ -3,6 +3,7 @@ from PySide2.QtWidgets import *
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 import ui_py.temp_table_widget
+import src.temp2UI
 
 class temp(QWidget):
     def __init__(self):
@@ -10,6 +11,8 @@ class temp(QWidget):
 
         self.ui = ui_py.temp_table_widget.Ui_Form()
         self.ui.setupUi(self)
+
+
 
         self.data = [["1.","Bill",'n','20','069696969'],["2.","Jia",'S','20','09696969696']]
         # model = QStandardItemModel()
@@ -20,7 +23,7 @@ class temp(QWidget):
         self.ui.tableWidget.setRowCount(2)
         self.ui.tableWidget.setHorizontalHeaderLabels(['No','Name','Surname','age','tel'])
 
-        self.ui.combobox.set
+        # self.ui.combobox.setCurrentIndex(2)
 
 
         # rowPosition = self.ui.tableWidget.rowCount()
@@ -34,6 +37,8 @@ class temp(QWidget):
 
         self.ui.tableWidget.cellClicked.connect(self.itemclick)
 
+        self.ui.pushButton.clicked.connect(self.openNewWidget) ###look at here
+
 
 
     def itemclick(self,row,column):
@@ -45,6 +50,17 @@ class temp(QWidget):
         print('Age :', x[3])
         print('Tel :', x[4])
         #change print to  write in database
+
+    def openNewWidget(self):###look at here
+        self.temp2 = src.temp2UI.temp2()
+        self.temp2.show()
+
+        self.temp2.ui.pushButton.clicked.connect(self.refresh)###look at here
+
+    def refresh(self):###look at here
+        print("fuck")
+        self.temp2.close()
+
 
 
 
