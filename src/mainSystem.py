@@ -168,3 +168,18 @@ class MainSystem():
         session.commit()
         session.close()
         return
+
+    def getAllJobUser(self):
+
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        jobStr = ''
+        jobLs = []
+
+        for row in session.query(Job):
+            jobStr = [str(row.companyName),str(row.field),str(row.jobName),str(row.position),str(row.salary),str(row.degree)]
+            jobLs.append(jobStr)
+        session.commit()
+        session.close()
+
+        return jobLs
