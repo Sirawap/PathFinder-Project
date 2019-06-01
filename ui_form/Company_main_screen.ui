@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>744</width>
+    <height>540</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,65 +21,77 @@
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>20</y>
-      <width>291</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>All Posted Job Offer</string>
-    </property>
-   </widget>
-   <widget class="QTableWidget" name="tableWidget">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>120</y>
-      <width>691</width>
-      <height>401</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: black;</string>
-    </property>
-    <column>
-     <property name="text">
-      <string>Job name</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Position</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Salary</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>description</string>
-     </property>
-    </column>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>724</width>
+         <height>479</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>All Posted Job Offer</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="styleSheet">
+           <string notr="true">color: black;</string>
+          </property>
+          <column>
+           <property name="text">
+            <string>Job name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Position</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Salary</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>description</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>26</height>
+     <width>744</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMain">

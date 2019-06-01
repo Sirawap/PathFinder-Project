@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_main_screen.ui',
 # licensing of 'Company_main_screen.ui' applies.
 #
-# Created: Sat Jun  1 12:58:04 2019
+# Created: Sat Jun  1 16:45:11 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,7 +13,7 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(800, 600)
+        MainWindow.resize(744, 540)
         MainWindow.setStyleSheet("QWidget{\n"
 "    background-color: rgb(60,60,60);\n"
 "    font: \"Arial\";\n"
@@ -21,14 +21,24 @@ class Ui_MainWindow(object):
 "}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(260, 20, 291, 71))
+        self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName("gridLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 724, 479))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.label = QtWidgets.QLabel(self.scrollAreaWidgetContents)
         font = QtGui.QFont()
         font.setPointSize(20)
         self.label.setFont(font)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
-        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
-        self.tableWidget.setGeometry(QtCore.QRect(60, 120, 691, 401))
+        self.verticalLayout.addWidget(self.label)
+        self.tableWidget = QtWidgets.QTableWidget(self.scrollAreaWidgetContents)
         self.tableWidget.setStyleSheet("color: black;")
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(4)
@@ -41,10 +51,12 @@ class Ui_MainWindow(object):
         self.tableWidget.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(3, item)
-        self.tableWidget.setColumnWidth(3,400)
+        self.verticalLayout.addWidget(self.tableWidget)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.gridLayout.addWidget(self.scrollArea, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 744, 21))
         self.menubar.setObjectName("menubar")
         self.menuMain = QtWidgets.QMenu(self.menubar)
         self.menuMain.setObjectName("menuMain")
