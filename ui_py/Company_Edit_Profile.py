@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_Edit_Profile.ui',
 # licensing of 'Company_Edit_Profile.ui' applies.
 #
-# Created: Sat Jun  1 15:44:27 2019
+# Created: Sat Jun  1 16:09:55 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -17,12 +17,6 @@ class Ui_Form(object):
         Form.setStyleSheet("QWidget{\n"
 "    background-color: rgb(60,60,60);\n"
 "    color: white\n"
-"}\n"
-"QLabel#error_label_add{\n"
-"    color: red;\n"
-"}\n"
-"QLabel#error_label_prof{\n"
-"    color: red;\n"
 "}\n"
 "\n"
 "QComboBox{\n"
@@ -39,7 +33,14 @@ class Ui_Form(object):
 "}\n"
 "QComboBox{\n"
 "    background-color: rgb(65, 65, 65);\n"
-"}")
+"}\n"
+"QLabel#error_label_add{\n"
+"    color: red;\n"
+"}\n"
+"QLabel#error_label_prof{\n"
+"    color: red;\n"
+"}\n"
+"")
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
@@ -66,7 +67,7 @@ class Ui_Form(object):
         self.error_label_add.setText("")
         self.error_label_add.setObjectName("error_label_add")
         self.error_label_prof = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        self.error_label_prof.setGeometry(QtCore.QRect(200, 80, 371, 16))
+        self.error_label_prof.setGeometry(QtCore.QRect(210, 80, 361, 20))
         self.error_label_prof.setText("")
         self.error_label_prof.setObjectName("error_label_prof")
         self.layoutWidget = QtWidgets.QWidget(self.scrollAreaWidgetContents)
@@ -275,7 +276,6 @@ class Ui_Form(object):
         self.label_9.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
         self.label_10.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
         self.label_12.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
-
 
 
 if __name__ == "__main__":
