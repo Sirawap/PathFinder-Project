@@ -34,11 +34,14 @@ class temp(QWidget):
 
 
     def itemclick(self,row,column):
-        #print(row,column)
-        #self.ui.tableWidget.removeRow(row)
-        select = self.ui.tableWidget.selectionModel()
-        print(select.selectedRows())
-
+        x = self.data[column]
+        self.ui.tableWidget.removeRow(row)
+        print('No :', x[0])
+        print('Name :', x[1])
+        print('Surname :', x[2])
+        print('Age :', x[3])
+        print('Tel :', x[4])
+        #change print to  write in database
 
 
 
