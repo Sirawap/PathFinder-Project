@@ -33,7 +33,7 @@ class Address(base):
     __tablename__ = "companyAddr"
 
     companyName = Column("companyName",primary_key=True)
-    no = Column("no",unique=False)
+    number = Column("number",unique=False)
     soi = Column("soi", unique=False)
     street = Column("street", unique=False)
     district = Column("district", unique=False)

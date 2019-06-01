@@ -21,8 +21,10 @@ class Comp_Main_GUI(QMainWindow):
         self.comp_ui.actionEdit_Profile.triggered.connect(self.openEditProfile)
         self.comp_ui.actionView_Profile.triggered.connect(self.openViewProfile)
         self.comp_ui.actionPost_Job.triggered.connect(self.openPostJob)
+        self.comp_ui.pushButton_delete_job.clicked.connect(self.deleteJob)
         self.comp_ui.actionView_Recived_Job_Offer.triggered.connect(self.openRecivedJobOffer)
         self.allJob =  self.mainControl.getAllJob(self.mainCompany)
+        #self.allRequest = self.mainControl.getAllRequest(self.mainCompany)
 
         self.addTable()
 
@@ -43,9 +45,16 @@ class Comp_Main_GUI(QMainWindow):
         self.post_job_ui = src.Post_New_Job.Post_New_Job(self.mainCompany)
         self.post_job_ui.show()
 
+
     def openRecivedJobOffer(self):
         self.viewReply_ui = src.View_All_recived_job_offer_GUI.View_All_Reply()
         self.viewReply_ui.show()
+    def deleteJob(self):
+
+        jobname = self.comp_ui.tableWidget.item(self.comp_ui.tableWidget.currentRow(),0).text()
+        print(jobname)
+        self.mainControl.deleteJob(self.mainCompany,jobname)
+        self.comp_ui.tableWidget.removeRow(self.comp_ui.tableWidget.currentRow())
 
     def addTable(self, column_size=4, header=['Job Name', 'Position', 'Salary', 'description']):
         self.comp_ui.tableWidget.setColumnCount(column_size)
