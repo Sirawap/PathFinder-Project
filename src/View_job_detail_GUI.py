@@ -10,7 +10,19 @@ class View_Job_detail_GUI(QWidget):
         self.ui = ui_py.View_Job_detail.Ui_Form()
         self.ui.setupUi(self)
         self.ui.pushButton_view_company_profile.clicked.connect(self.viewCompanyProfile)
-        self.ui.pushButton_request_Job(self.requestJob)
+        self.ui.pushButton_request_Job.clicked.connect(self.requestJob)
+
+        ##Edit duao
+        self.ui.label_company.setText("PornHub")
+        self.ui.label_jobName.setText("Project Manhattan")
+        self.ui.label_Position.setText("Pornstar(M)")
+        self.ui.label_salary.setText("7000THB per film")
+        self.ui.textEdit_description.setText("Require highly physical and numerous of cemen aaaaaaaaaaaaaaaaaaaaaaaaaaaoooooooooooooooooo")
+        self.ui.label_education.setText("Associate diploma or higher")
+        self.ui.label_field.setText("Arts Program Classical Dance and Drama will get more concern")
+        self.ui.textEdit_experience.setText("48Hr with 10 women")
+
+
 
     def viewCompanyProfile(self):
         pass

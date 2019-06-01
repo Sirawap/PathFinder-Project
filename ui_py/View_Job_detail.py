@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'View_Job_detail.ui',
 # licensing of 'View_Job_detail.ui' applies.
 #
-# Created: Fri May 31 16:00:14 2019
+# Created: Sat Jun  1 12:22:45 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -14,7 +14,10 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(580, 532)
-        Form.setStyleSheet('''QWidget{background-color:rgb(60,60,60);color:white}''')
+        Form.setStyleSheet("QWidget{\n"
+"    background-color: rgb(60,60,60);\n"
+"    color: white;\n"
+"}")
         self.pushButton_request_Job = QtWidgets.QPushButton(Form)
         self.pushButton_request_Job.setGeometry(QtCore.QRect(320, 470, 121, 28))
         self.pushButton_request_Job.setObjectName("pushButton_request_Job")
@@ -40,7 +43,7 @@ class Ui_Form(object):
         self.error_label.setText("")
         self.error_label.setObjectName("error_label")
         self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(90, 80, 111, 16))
+        self.label_2.setGeometry(QtCore.QRect(320, 80, 111, 16))
         self.label_2.setObjectName("label_2")
         self.label_11 = QtWidgets.QLabel(Form)
         self.label_11.setGeometry(QtCore.QRect(100, 330, 81, 16))
@@ -49,7 +52,7 @@ class Ui_Form(object):
         self.label_7.setGeometry(QtCore.QRect(80, 100, 431, 16))
         self.label_7.setObjectName("label_7")
         self.label_13 = QtWidgets.QLabel(Form)
-        self.label_13.setGeometry(QtCore.QRect(100, 200, 91, 16))
+        self.label_13.setGeometry(QtCore.QRect(100, 200, 141, 16))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setWeight(75)
@@ -66,7 +69,7 @@ class Ui_Form(object):
         self.label_12.setGeometry(QtCore.QRect(100, 390, 81, 16))
         self.label_12.setObjectName("label_12")
         self.label_jobName = QtWidgets.QLabel(Form)
-        self.label_jobName.setGeometry(QtCore.QRect(190, 80, 121, 16))
+        self.label_jobName.setGeometry(QtCore.QRect(420, 80, 121, 16))
         self.label_jobName.setObjectName("label_jobName")
         self.label_Position = QtWidgets.QLabel(Form)
         self.label_Position.setGeometry(QtCore.QRect(170, 140, 151, 16))
@@ -89,6 +92,12 @@ class Ui_Form(object):
         self.pushButton_view_company_profile = QtWidgets.QPushButton(Form)
         self.pushButton_view_company_profile.setGeometry(QtCore.QRect(140, 470, 121, 28))
         self.pushButton_view_company_profile.setObjectName("pushButton_view_company_profile")
+        self.label_company = QtWidgets.QLabel(Form)
+        self.label_company.setGeometry(QtCore.QRect(170, 80, 121, 16))
+        self.label_company.setObjectName("label_company")
+        self.label_3 = QtWidgets.QLabel(Form)
+        self.label_3.setGeometry(QtCore.QRect(100, 80, 61, 16))
+        self.label_3.setObjectName("label_3")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -122,6 +131,8 @@ class Ui_Form(object):
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None, -1))
         self.pushButton_view_company_profile.setText(QtWidgets.QApplication.translate("Form", "View company profile", None, -1))
+        self.label_company.setText(QtWidgets.QApplication.translate("Form", "txt", None, -1))
+        self.label_3.setText(QtWidgets.QApplication.translate("Form", "Company:", None, -1))
 
 
 if __name__ == "__main__":
