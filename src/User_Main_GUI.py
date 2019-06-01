@@ -48,6 +48,7 @@ class User_Main_GUI(QMainWindow):
          self.user_ui.tableWidget.setColumnWidth(3, 200)  ### ADDED BY BILL FOR DESCRIPTION COLUMN SIZE
          style = "::section {""background-color: gray;" \
                 "color: red; }"
+         self.user_ui.tableWidget.horizontalHeader().setStyleSheet(style)
          self.user_ui.tableWidget.setColumnCount(column_size)
          self.user_ui.tableWidget.setRowCount(len(self.allJob))
          self.user_ui.tableWidget.setHorizontalHeaderLabels(header)
