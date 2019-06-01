@@ -13,6 +13,7 @@ class View_Company_Profile_GUI(QWidget):
         self.mainControl = MainSystem()
         self.mainCompany = company
         self.comadr = self.mainControl.getCompanyAddress(self.mainCompany)
+        
         self.ui.label_5.setText(self.mainCompany.companyName)
         self.ui.label_7.setText(self.mainCompany.tel)
         self.ui.label_9.setText(self.mainCompany.email)
