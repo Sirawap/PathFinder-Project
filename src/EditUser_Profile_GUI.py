@@ -50,7 +50,7 @@ class Edit_User_Profile_GUI(QWidget):
 
         self.mainControl.addUserEducation(self.mainUser, field, degree, major, uni)
 
-        
+
     def cancel(self):
         self.close()
 
