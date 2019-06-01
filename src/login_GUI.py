@@ -93,6 +93,8 @@ class Login_GUI(QWidget):
                     raise Exception
             self.usr = usr
             self.psd = psd
+
+            
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     w = Login_GUI()

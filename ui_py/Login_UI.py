@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Login_UI.ui',
 # licensing of 'Login_UI.ui' applies.
 #
-# Created: Fri May 31 16:24:44 2019
+# Created: Sat Jun  1 14:28:06 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,7 +13,7 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(291, 243)
+        Form.resize(323, 288)
         Form.setStyleSheet("QWidget{\n"
 "    background-color: rgb(60,60,60);\n"
 "    font: \"Arial\";\n"
@@ -31,7 +31,9 @@ class Ui_Form(object):
 "QLabel#label_3{\n"
 "    font: 16pt;\n"
 "}\n"
-"\n"
+"QLabel#error_label{\n"
+"    color: red;\n"
+"}\n"
 "QRadioButton{\n"
 "    color: rgb(255, 255, 255);\n"
 "}\n"
@@ -89,6 +91,16 @@ class Ui_Form(object):
         self.label_3.setFont(font)
         self.label_3.setStyleSheet("")
         self.label_3.setObjectName("label_3")
+        self.error_label = QtWidgets.QLabel(Form)
+        self.error_label.setGeometry(QtCore.QRect(40, 230, 231, 31))
+        font = QtGui.QFont()
+        font.setWeight(50)
+        font.setItalic(False)
+        font.setBold(False)
+        self.error_label.setFont(font)
+        self.error_label.setFocusPolicy(QtCore.Qt.StrongFocus)
+        self.error_label.setText("")
+        self.error_label.setObjectName("error_label")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -103,6 +115,7 @@ class Ui_Form(object):
         self.reg_b.setText(QtWidgets.QApplication.translate("Form", "Register", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Login", None, -1))
 
+import source_rc
 
 if __name__ == "__main__":
     import sys

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>291</width>
-    <height>243</height>
+    <width>323</width>
+    <height>288</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,7 +31,9 @@ QLabel{
 QLabel#label_3{
 	font: 16pt;
 }
-
+QLabel#error_label{
+	color: red;
+}
 QRadioButton{
 	color: rgb(255, 255, 255);
 }
@@ -204,6 +206,29 @@ QPushButton{
    </property>
    <property name="text">
     <string>Login</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="error_label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>230</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
