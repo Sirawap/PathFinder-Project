@@ -84,8 +84,7 @@ class Ui_Form(object):
         self.tableWidget_educatio_background.setGeometry(QtCore.QRect(40, 210, 460, 121))
         self.tableWidget_educatio_background.setStyleSheet("color: black;\n"
 "")
-        self.tableWidget_educatio_background.setStyleSheet("background-color: rgb(65,65,65);\n"
-"color: rgb(0,0,0);")
+        self.tableWidget_educatio_background.setStyleSheet("background-color: rgb(255,255,255);\ncolor:black;")
         self.tableWidget_educatio_background.setObjectName("tableWidget_educatio_background")
         self.tableWidget_educatio_background.setColumnCount(0)
         self.tableWidget_educatio_background.setRowCount(0)
