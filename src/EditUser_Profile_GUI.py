@@ -11,7 +11,7 @@ class Edit_User_Profile_GUI(QWidget):
         self.ui.setupUi(self)
         self.mainUser = mainUser
         self.mainControl = MainSystem()
-        #self.ui.pushButton_confirm_profile.clicked.connect(self.user_edit)
+        #self.ui.pushButton_confirm_profile.clicked.connect(self.confirm)
         self.ui.lineEdit_name.setText(self.mainUser.fname)
         self.ui.lineEdit_name_2.setText(self.mainUser.surname)
         self.ui.lineEdit_name_3.setText(self.mainUser.email)
