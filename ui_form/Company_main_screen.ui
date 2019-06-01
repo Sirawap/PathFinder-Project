@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>705</width>
-    <height>538</height>
+    <width>618</width>
+    <height>682</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,11 +32,11 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>685</width>
-         <height>477</height>
+         <width>598</width>
+         <height>621</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
          <widget class="QLabel" name="label">
           <property name="font">
@@ -53,30 +53,29 @@
          </widget>
         </item>
         <item>
-         <widget class="QTableWidget" name="tableWidget">
-          <property name="styleSheet">
-           <string notr="true">color: black;</string>
+         <widget class="QScrollArea" name="scrollArea_2">
+          <property name="widgetResizable">
+           <bool>true</bool>
           </property>
-          <column>
-           <property name="text">
-            <string>Job name</string>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>578</width>
+             <height>226</height>
+            </rect>
            </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Position</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Salary</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>description</string>
-           </property>
-          </column>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QTableWidget" name="tableWidget">
+              <property name="styleSheet">
+               <string notr="true">color: black;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
          </widget>
         </item>
         <item>
@@ -132,7 +131,26 @@
          </widget>
         </item>
         <item>
-         <widget class="QTableWidget" name="tableWidget_request_from_jobseeker"/>
+         <widget class="QScrollArea" name="scrollArea_3">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>578</width>
+             <height>225</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QTableWidget" name="tableWidget_request_from_jobseeker"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -193,7 +211,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>705</width>
+     <width>618</width>
      <height>21</height>
     </rect>
    </property>
