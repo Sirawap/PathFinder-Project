@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Create_Job_Criteria_UI.ui',
 # licensing of 'Create_Job_Criteria_UI.ui' applies.
 #
-# Created: Fri May 31 21:45:00 2019
+# Created: Sat Jun  1 17:35:06 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -22,12 +22,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "QComboBox{\n"
-"    \n"
 "    background-color: rgb(65, 65, 65);\n"
-"}"
-'''QLabel#error_label{
-    color: rgb(190,30,30);
-}''')
+"}")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(90, 20, 301, 71))
         font = QtGui.QFont()
@@ -61,9 +57,6 @@ class Ui_Form(object):
         self.label_12 = QtWidgets.QLabel(Form)
         self.label_12.setGeometry(QtCore.QRect(40, 400, 81, 16))
         self.label_12.setObjectName("label_12")
-        self.pushButton = QtWidgets.QPushButton(Form)
-        self.pushButton.setGeometry(QtCore.QRect(180, 490, 93, 28))
-        self.pushButton.setObjectName("pushButton")
         self.error_label = QtWidgets.QLabel(Form)
         self.error_label.setGeometry(QtCore.QRect(40, 440, 371, 41))
         self.error_label.setText("")
@@ -124,6 +117,18 @@ class Ui_Form(object):
         self.label_31 = QtWidgets.QLabel(Form)
         self.label_31.setGeometry(QtCore.QRect(310, 370, 16, 16))
         self.label_31.setObjectName("label_31")
+        self.widget = QtWidgets.QWidget(Form)
+        self.widget.setGeometry(QtCore.QRect(120, 480, 201, 25))
+        self.widget.setObjectName("widget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.pushButton = QtWidgets.QPushButton(self.widget)
+        self.pushButton.setObjectName("pushButton")
+        self.horizontalLayout.addWidget(self.pushButton)
+        self.pushButton_2 = QtWidgets.QPushButton(self.widget)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.horizontalLayout.addWidget(self.pushButton_2)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -138,7 +143,6 @@ class Ui_Form(object):
         self.label_10.setText(QtWidgets.QApplication.translate("Form", "Short description (100 characters)", None, -1))
         self.label_11.setText(QtWidgets.QApplication.translate("Form", "Education   :", None, -1))
         self.label_12.setText(QtWidgets.QApplication.translate("Form", "Experience :", None, -1))
-        self.pushButton.setText(QtWidgets.QApplication.translate("Form", "confirm", None, -1))
         self.comboBox_Degree.setItemText(0, QtWidgets.QApplication.translate("Form", "no minimum requried", None, -1))
         self.comboBox_Degree.setItemText(1, QtWidgets.QApplication.translate("Form", "minimum bachelor degree", None, -1))
         self.comboBox_Degree.setItemText(2, QtWidgets.QApplication.translate("Form", "minimum master degree", None, -1))
@@ -164,6 +168,8 @@ class Ui_Form(object):
         self.label_28.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
         self.label_30.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
         self.label_31.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
+        self.pushButton.setText(QtWidgets.QApplication.translate("Form", "Confirm", None, -1))
+        self.pushButton_2.setText(QtWidgets.QApplication.translate("Form", "Back", None, -1))
 
 
 if __name__ == "__main__":
