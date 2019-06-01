@@ -28,7 +28,7 @@ class Comp_Main_GUI(QMainWindow):
         self.close()
 
     def openEditProfile(self):
-        self.compE_P_ui = src.EditComp_Profile_GUI.Edit_Company_Profile_GUI()
+        self.compE_P_ui = src.EditComp_Profile_GUI.Edit_Company_Profile_GUI(self.mainCompany)
         self.compE_P_ui.show()
 
     def openViewProfile(self):

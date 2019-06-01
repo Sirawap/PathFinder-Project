@@ -80,3 +80,25 @@ class MainSystem():
             return Address(companyName = addrTarget.companyName, no = addrTarget.no,soi = addrTarget.soi,street = addrTarget.street,district = addrTarget.district,city = addrTarget.city,province = addrTarget.province,zipcode = addrTarget.zipcode)
         else:
             return None
+
+    def editCompanyProfile(self,com,name,tel,mail,type):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+
+        checkExist = session.query(Company).filter(name == Company.companyName)
+        boolExist = session.query(checkExist.exists()).scalar()
+        if boolExist:
+            return "Company name already Exists!"
+        if type == "-- None --":
+            type = None
+        edit = session.query(Company).filter(Company.username == com.username,Company.companyName == com.companyName).first()
+
+        edit.companyName = name
+        edit.tel = tel
+        edit.email = mail
+        edit.type = type
+        session.commit()
+        session.close()
+        return "Update Successfully"
+
+
