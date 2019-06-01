@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_main_screen.ui',
 # licensing of 'Company_main_screen.ui' applies.
 #
-# Created: Sat Jun  1 17:19:45 2019
+# Created: Sat Jun  1 17:21:27 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -80,12 +80,12 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.addItem(spacerItem2)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.pushButton = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout.addWidget(self.pushButton)
-        self.pushButton_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.horizontalLayout.addWidget(self.pushButton_2)
+        self.pushButton_interest = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_interest.setObjectName("pushButton_interest")
+        self.horizontalLayout.addWidget(self.pushButton_interest)
+        self.pushButton_not_interest = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_not_interest.setObjectName("pushButton_not_interest")
+        self.horizontalLayout.addWidget(self.pushButton_not_interest)
         self.horizontalLayout_3.addLayout(self.horizontalLayout)
         spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_3.addItem(spacerItem3)
@@ -136,8 +136,8 @@ class Ui_MainWindow(object):
         self.tableWidget.horizontalHeaderItem(3).setText(QtWidgets.QApplication.translate("MainWindow", "description", None, -1))
         self.pushButton_delete_job.setText(QtWidgets.QApplication.translate("MainWindow", "Delete Job", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("MainWindow", "All Requested Job from Job Seeker", None, -1))
-        self.pushButton.setText(QtWidgets.QApplication.translate("MainWindow", "Interest", None, -1))
-        self.pushButton_2.setText(QtWidgets.QApplication.translate("MainWindow", "Not interest", None, -1))
+        self.pushButton_interest.setText(QtWidgets.QApplication.translate("MainWindow", "Interest", None, -1))
+        self.pushButton_not_interest.setText(QtWidgets.QApplication.translate("MainWindow", "Not interest", None, -1))
         self.menuMain.setTitle(QtWidgets.QApplication.translate("MainWindow", "Main", None, -1))
         self.menuJob_Negitiate.setTitle(QtWidgets.QApplication.translate("MainWindow", "Job Negitiate", None, -1))
         self.actionLog_Out.setText(QtWidgets.QApplication.translate("MainWindow", "Log Out", None, -1))
