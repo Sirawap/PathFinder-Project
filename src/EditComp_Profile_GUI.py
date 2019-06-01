@@ -10,6 +10,7 @@ class Edit_Company_Profile_GUI(QWidget):
         self.ui = ui_py.Company_Edit_Profile.Ui_Form()
         self.ui.setupUi(self)
         self.ui.pushButton_updateCompany.clicked.connect(self.comp_edit)
+        self.ui.pushButton_UpdateCompAdd.clicked.connect(self.addr_edit)
         self.mainCompany = company
         self.mainControl = MainSystem()
         self.ui.lineEdit_comp_name.setText(self.mainCompany.companyName)
@@ -33,6 +34,15 @@ class Edit_Company_Profile_GUI(QWidget):
         str = self.mainControl.editCompanyProfile(self.mainCompany,name,tel,mail,business)
         self.ui.error_label_prof.setText(str)
         return
+
+    def addr_edit(self):
+        no = self.ui.lineEdit_houseNo.text()
+        soi = self.ui.lineEdit_soi.text()
+        street = self.ui.lineEdit_street.text()
+        district =self.ui.lineEdit_district.text()
+        city = self.ui.lineEdit_city.text()
+        province = self.ui.lineEdit_state.text()
+        zipcode = self.ui.lineEdit_zip.text()
 
 
 

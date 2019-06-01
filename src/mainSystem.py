@@ -87,7 +87,7 @@ class MainSystem():
 
         checkExist = session.query(Company).filter(name == Company.companyName)
         boolExist = session.query(checkExist.exists()).scalar()
-        if boolExist:
+        if boolExist and com.companyName != name:
             return "Company name already Exists!"
         if type == "-- None --":
             type = None
@@ -100,5 +100,8 @@ class MainSystem():
         session.commit()
         session.close()
         return "Update Successfully"
+
+    def editCompanyAddress(self):
+        pass
 
 
