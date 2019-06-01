@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_main_screen.ui',
 # licensing of 'Company_main_screen.ui' applies.
 #
-# Created: Sat Jun  1 23:12:27 2019
+# Created: Sun Jun  2 00:29:58 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,7 +13,7 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(618, 682)
+        MainWindow.resize(715, 472)
         MainWindow.setStyleSheet("QWidget{\n"
 "    background-color: rgb(60,60,60);\n"
 "    font: \"Arial\";\n"
@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 598, 621))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 695, 411))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
@@ -42,7 +42,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 578, 226))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 675, 106))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout.setObjectName("verticalLayout")
@@ -75,7 +75,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_5 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 578, 225))
+        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 675, 106))
         self.scrollAreaWidgetContents_5.setObjectName("scrollAreaWidgetContents_5")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_5)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
@@ -102,11 +102,14 @@ class Ui_MainWindow(object):
         spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_3.addItem(spacerItem3)
         self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+        self.pushButton_refuresh = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_refuresh.setObjectName("pushButton_refuresh")
+        self.verticalLayout_3.addWidget(self.pushButton_refuresh)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.gridLayout.addWidget(self.scrollArea, 0, 1, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 618, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 715, 21))
         self.menubar.setObjectName("menubar")
         self.menuMain = QtWidgets.QMenu(self.menubar)
         self.menuMain.setObjectName("menuMain")
@@ -146,6 +149,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(QtWidgets.QApplication.translate("MainWindow", "All Requested Job from Job Seeker", None, -1))
         self.pushButton_interest.setText(QtWidgets.QApplication.translate("MainWindow", "Interest", None, -1))
         self.pushButton_not_interest.setText(QtWidgets.QApplication.translate("MainWindow", "Not interest", None, -1))
+        self.pushButton_refuresh.setText(QtWidgets.QApplication.translate("MainWindow", "Refresh", None, -1))
         self.menuMain.setTitle(QtWidgets.QApplication.translate("MainWindow", "Main", None, -1))
         self.menuJob_Negitiate.setTitle(QtWidgets.QApplication.translate("MainWindow", "Job Negitiate", None, -1))
         self.actionLog_Out.setText(QtWidgets.QApplication.translate("MainWindow", "Log Out", None, -1))
