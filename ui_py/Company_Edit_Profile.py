@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_Edit_Profile.ui',
 # licensing of 'Company_Edit_Profile.ui' applies.
 #
-# Created: Sat Jun  1 15:25:59 2019
+# Created: Sat Jun  1 15:37:36 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -46,7 +46,7 @@ class Ui_Form(object):
         self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 568, 398))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.label = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        self.label.setGeometry(QtCore.QRect(202, 9, 128, 33))
+        self.label.setGeometry(QtCore.QRect(132, 9, 281, 33))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.label.setFont(font)

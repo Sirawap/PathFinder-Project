@@ -58,9 +58,9 @@ QComboBox{
       <widget class="QLabel" name="label">
        <property name="geometry">
         <rect>
-         <x>202</x>
+         <x>132</x>
          <y>9</y>
-         <width>128</width>
+         <width>281</width>
          <height>33</height>
         </rect>
        </property>
