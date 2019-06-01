@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>668</width>
-    <height>578</height>
+    <height>743</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -57,10 +57,10 @@ QTableWidget{
          <x>0</x>
          <y>0</y>
          <width>648</width>
-         <height>517</height>
+         <height>682</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_5">
           <item>
@@ -229,64 +229,19 @@ QTableWidget{
              <x>0</x>
              <y>0</y>
              <width>628</width>
-             <height>69</height>
+             <height>184</height>
             </rect>
            </property>
-           <widget class="QTableWidget" name="tableWidget">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>611</width>
-              <height>331</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(65,65,65);
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QTableWidget" name="tableWidget">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(65,65,65);
 color: rgb(0,0,0);</string>
-            </property>
-            <column>
-             <property name="text">
-              <string>Company</string>
-             </property>
-             <property name="background">
-              <color>
-               <red>250</red>
-               <green>250</green>
-               <blue>250</blue>
-              </color>
-             </property>
-             <property name="foreground">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Job name</string>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Position</string>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Salary</string>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Education background</string>
-             </property>
-            </column>
-           </widget>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </widget>
         </item>
@@ -330,7 +285,26 @@ color: rgb(0,0,0);</string>
          </widget>
         </item>
         <item>
-         <widget class="QTableWidget" name="tableWidget_requested_job"/>
+         <widget class="QScrollArea" name="scrollArea_3">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>628</width>
+             <height>184</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QTableWidget" name="tableWidget_requested_job"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
         </item>
        </layout>
       </widget>
