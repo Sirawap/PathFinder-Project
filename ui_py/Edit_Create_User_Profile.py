@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Edit_Create_User_Profile.ui',
 # licensing of 'Edit_Create_User_Profile.ui' applies.
 #
-# Created: Sat Jun  1 00:18:00 2019
+# Created: Sat Jun  1 15:24:08 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -15,13 +15,17 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(599, 631)
         Form.setStyleSheet("QWidget{\n"
-"    background-color: rgb(60,60,60);\n"
+"    background-image: url(:/bg/grey.png);\n"
 "    color: white\n"
 "}\n"
 "\n"
 "QComboBox{    \n"
 "    background-color: rgb(65, 65, 65);\n"
-"}url(:/bg/grey.png)")
+"}\n"
+"\n"
+"QLabel#error_label_education,#error_label_personal_info{\n"
+"    color: red;\n"
+"}")
         self.gridLayout_2 = QtWidgets.QGridLayout(Form)
         self.gridLayout_2.setObjectName("gridLayout_2")
         self.scrollArea_2 = QtWidgets.QScrollArea(Form)
@@ -53,12 +57,18 @@ class Ui_Form(object):
         self.lineEdit_name = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
         self.lineEdit_name.setObjectName("lineEdit_name")
         self.horizontalLayout_5.addWidget(self.lineEdit_name)
+        self.label_7 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_7.setObjectName("label_7")
+        self.horizontalLayout_5.addWidget(self.label_7)
         self.label_3 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_5.addWidget(self.label_3)
         self.lineEdit_name_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
         self.lineEdit_name_2.setObjectName("lineEdit_name_2")
         self.horizontalLayout_5.addWidget(self.lineEdit_name_2)
+        self.label_8 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_8.setObjectName("label_8")
+        self.horizontalLayout_5.addWidget(self.label_8)
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
         self.label_4 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
@@ -90,6 +100,10 @@ class Ui_Form(object):
         self.horizontalLayout_23.addLayout(self.verticalLayout_4)
         self.horizontalLayout_23.setStretch(0, 5)
         self.verticalLayout_9.addLayout(self.horizontalLayout_23)
+        self.error_label_personal_info = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.error_label_personal_info.setText("")
+        self.error_label_personal_info.setObjectName("error_label_personal_info")
+        self.verticalLayout_9.addWidget(self.error_label_personal_info)
         self.label_17 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
         font = QtGui.QFont()
         font.setPointSize(12)
@@ -158,6 +172,10 @@ class Ui_Form(object):
         self.horizontalLayout_22.setObjectName("horizontalLayout_22")
         self.horizontalLayout_20 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_20.setObjectName("horizontalLayout_20")
+        self.error_label_education = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.error_label_education.setText("")
+        self.error_label_education.setObjectName("error_label_education")
+        self.horizontalLayout_20.addWidget(self.error_label_education)
         self.horizontalLayout_22.addLayout(self.horizontalLayout_20)
         self.horizontalLayout_21 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_21.setObjectName("horizontalLayout_21")
@@ -172,7 +190,7 @@ class Ui_Form(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 549, 308))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 549, 268))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout.setObjectName("gridLayout")
@@ -196,7 +214,6 @@ class Ui_Form(object):
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(0)
         self.tableWidget.setRowCount(0)
-        self.tableWidget.setStyleSheet("background-color: rgb(255,255,255);\ncolor:black;")
         self.horizontalLayout_4.addWidget(self.tableWidget)
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
@@ -232,18 +249,20 @@ class Ui_Form(object):
         Form.setWindowTitle(QtWidgets.QApplication.translate("Form", "Form", None, -1))
         self.label.setText(QtWidgets.QApplication.translate("Form", "Edit Profile", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("Form", "Name:", None, -1))
+        self.label_7.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Surname:", None, -1))
+        self.label_8.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
         self.label_4.setText(QtWidgets.QApplication.translate("Form", "Age:", None, -1))
         self.label_5.setText(QtWidgets.QApplication.translate("Form", "Tel:", None, -1))
         self.label_6.setText(QtWidgets.QApplication.translate("Form", "E-mail:", None, -1))
         self.pushButton_confirm_profile.setText(QtWidgets.QApplication.translate("Form", "Confirm", None, -1))
         self.label_17.setText(QtWidgets.QApplication.translate("Form", "Education Background", None, -1))
-        self.label_18.setText(QtWidgets.QApplication.translate("Form", "Education degree:", None, -1))
+        self.label_18.setText(QtWidgets.QApplication.translate("Form", "Education degree:*", None, -1))
         self.comboBox_degree.setItemText(0, QtWidgets.QApplication.translate("Form", "Associate degree ", None, -1))
         self.comboBox_degree.setItemText(1, QtWidgets.QApplication.translate("Form", "Bachelor\'s degree ", None, -1))
         self.comboBox_degree.setItemText(2, QtWidgets.QApplication.translate("Form", "Master\'s degree", None, -1))
         self.comboBox_degree.setItemText(3, QtWidgets.QApplication.translate("Form", "Doctoral degree", None, -1))
-        self.label_19.setText(QtWidgets.QApplication.translate("Form", "Subject:", None, -1))
+        self.label_19.setText(QtWidgets.QApplication.translate("Form", "Subject:*", None, -1))
         self.comboBox_subject.setItemText(0, QtWidgets.QApplication.translate("Form", " -- None --", None, -1))
         self.comboBox_subject.setItemText(1, QtWidgets.QApplication.translate("Form", "Accounting", None, -1))
         self.comboBox_subject.setItemText(2, QtWidgets.QApplication.translate("Form", "Computer Science", None, -1))
@@ -264,7 +283,7 @@ class Ui_Form(object):
         self.del_button.setText(QtWidgets.QApplication.translate("Form", "Delete", None, -1))
         self.backButton.setText(QtWidgets.QApplication.translate("Form", "Back", None, -1))
 
-
+import source_rc
 
 if __name__ == "__main__":
     import sys
