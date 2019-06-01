@@ -13,6 +13,12 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: rgb(60,60,60);
+	color: white;
+}</string>
+  </property>
   <widget class="QPushButton" name="pushButton_request_Job">
    <property name="geometry">
     <rect>
@@ -136,7 +142,7 @@
     <rect>
      <x>100</x>
      <y>200</y>
-     <width>91</width>
+     <width>141</width>
      <height>16</height>
     </rect>
    </property>
