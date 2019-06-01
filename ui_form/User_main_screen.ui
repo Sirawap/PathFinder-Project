@@ -39,7 +39,7 @@ QWidget{
       <x>10</x>
       <y>10</y>
       <width>681</width>
-      <height>561</height>
+      <height>601</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -63,7 +63,7 @@ QTableWidget{
        <x>0</x>
        <y>0</y>
        <width>679</width>
-       <height>559</height>
+       <height>599</height>
       </rect>
      </property>
      <widget class="QLabel" name="label">
@@ -87,7 +87,7 @@ QTableWidget{
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton">
+     <widget class="QRadioButton" name="radioButton_Show_all">
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -100,7 +100,7 @@ QTableWidget{
        <string>Display All Job</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="pushButton_commit_sen_method">
       <property name="geometry">
        <rect>
         <x>560</x>
@@ -113,7 +113,7 @@ QTableWidget{
        <string>Commit</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton_3">
+     <widget class="QRadioButton" name="radioButton_search_user_profile">
       <property name="geometry">
        <rect>
         <x>380</x>
@@ -126,7 +126,7 @@ QTableWidget{
        <string>Search by User Qualification</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton_2">
+     <widget class="QRadioButton" name="radioButton_search__keyword">
       <property name="geometry">
        <rect>
         <x>220</x>
@@ -159,7 +159,7 @@ QTableWidget{
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit"/>
+          <widget class="QLineEdit" name="lineEdit_comapnyName"/>
          </item>
         </layout>
        </item>
@@ -173,7 +173,7 @@ QTableWidget{
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_2"/>
+          <widget class="QLineEdit" name="lineEdit_position"/>
          </item>
         </layout>
        </item>
@@ -187,7 +187,7 @@ QTableWidget{
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_3"/>
+          <widget class="QLineEdit" name="lineEdit_salary"/>
          </item>
         </layout>
        </item>
@@ -304,6 +304,19 @@ color: rgb(0,0,0);</string>
        </widget>
       </widget>
      </widget>
+     <widget class="QPushButton" name="pushButton_sendRequest">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>550</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Send Request</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -313,7 +326,7 @@ color: rgb(0,0,0);</string>
      <x>0</x>
      <y>0</y>
      <width>748</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMain">

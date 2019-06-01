@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'User_View_profile_UI.ui',
 # licensing of 'User_View_profile_UI.ui' applies.
 #
-# Created: Sat Jun  1 13:10:09 2019
+# Created: Sat Jun  1 13:23:46 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -81,6 +81,8 @@ class Ui_Form(object):
         self.frame_experience.setObjectName("frame_experience")
         self.tableWidget_educatio_background = QtWidgets.QTableWidget(Form)
         self.tableWidget_educatio_background.setGeometry(QtCore.QRect(40, 210, 460, 121))
+        self.tableWidget_educatio_background.setStyleSheet("color: black;\n"
+"")
         self.tableWidget_educatio_background.setObjectName("tableWidget_educatio_background")
         self.tableWidget_educatio_background.setColumnCount(0)
         self.tableWidget_educatio_background.setRowCount(0)
