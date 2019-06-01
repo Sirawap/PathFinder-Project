@@ -49,6 +49,8 @@ class Edit_User_Profile_GUI(QWidget):
         uni = self.ui.lineEdit_university.text()
 
         self.mainControl.addUserEducation(self.mainUser, field, degree, major, uni)
+
+        
     def cancel(self):
         self.close()
 

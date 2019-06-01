@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>783</width>
-    <height>599</height>
+    <width>588</width>
+    <height>418</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -45,8 +45,8 @@ QComboBox{
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>759</width>
-        <height>575</height>
+        <width>568</width>
+        <height>398</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_3">
