@@ -31,6 +31,12 @@ class User_Main_GUI(QMainWindow):
         self.userV_P_ui = src.User_Profile_GUI.View_User_Profile_GUI(self.mainUser)
         self.userV_P_ui.show()
 
+    def openView_Sended_Job_Request(self):
+        pass
+
+    def openView_Reply_Tray(self):
+        pass
+
 #
 # if __name__ == '__main__':
 #     app = QApplication(sys.argv);
