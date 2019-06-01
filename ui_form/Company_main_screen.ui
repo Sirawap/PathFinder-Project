@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>618</width>
-    <height>682</height>
+    <width>715</width>
+    <height>472</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,8 +32,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>598</width>
-         <height>621</height>
+         <width>695</width>
+         <height>411</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -62,8 +62,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>578</width>
-             <height>226</height>
+             <width>675</width>
+             <height>106</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout">
@@ -140,8 +140,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>578</width>
-             <height>225</height>
+             <width>675</width>
+             <height>106</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -200,6 +200,13 @@
           </item>
          </layout>
         </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_refuresh">
+          <property name="text">
+           <string>Refresh</string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </widget>
      </widget>
@@ -211,7 +218,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>618</width>
+     <width>715</width>
      <height>21</height>
     </rect>
    </property>

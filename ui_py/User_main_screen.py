@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'User_main_screen.ui',
 # licensing of 'User_main_screen.ui' applies.
 #
-# Created: Sat Jun  1 23:26:52 2019
+# Created: Sun Jun  2 00:29:56 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -170,6 +170,9 @@ class Ui_MainWindow(object):
         self.tableWidget_requested_job.setColumnCount(0)
         self.tableWidget_requested_job.setRowCount(0)
         self.verticalLayout.addWidget(self.tableWidget_requested_job)
+        self.pushButton_refresh = QtWidgets.QPushButton(self.scrollAreaWidgetContents_3)
+        self.pushButton_refresh.setObjectName("pushButton_refresh")
+        self.verticalLayout.addWidget(self.pushButton_refresh)
         self.scrollArea_3.setWidget(self.scrollAreaWidgetContents_3)
         self.verticalLayout_3.addWidget(self.scrollArea_3)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
@@ -221,6 +224,7 @@ class Ui_MainWindow(object):
         self.radioButton_Show_all.setText(QtWidgets.QApplication.translate("MainWindow", "Display All Job", None, -1))
         self.pushButton_sendRequest.setText(QtWidgets.QApplication.translate("MainWindow", "Send Request", None, -1))
         self.label_6.setText(QtWidgets.QApplication.translate("MainWindow", "All Requested Job", None, -1))
+        self.pushButton_refresh.setText(QtWidgets.QApplication.translate("MainWindow", "Refresh", None, -1))
         self.menuMain.setTitle(QtWidgets.QApplication.translate("MainWindow", "Main", None, -1))
         self.actionLog_Out.setText(QtWidgets.QApplication.translate("MainWindow", "Log Out", None, -1))
         self.actionEdit_Profile.setText(QtWidgets.QApplication.translate("MainWindow", "Edit Profile", None, -1))
