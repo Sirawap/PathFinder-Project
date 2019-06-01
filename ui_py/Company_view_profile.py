@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_view_profile.ui',
 # licensing of 'Company_view_profile.ui' applies.
 #
-# Created: Fri May 31 16:52:15 2019
+# Created: Sat Jun  1 14:44:42 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,10 +13,14 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(610, 482)
-        Form.setStyleSheet('''QWidget{background-color:rgb(60,60,60);color:white}''')
+        Form.resize(517, 391)
+        Form.setStyleSheet("QWidget{\n"
+"    background-color: rgb(60,60,60);\n"
+"    font: \"Arial\";\n"
+"    color: white;\n"
+"}")
         self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(150, 10, 231, 71))
+        self.label.setGeometry(QtCore.QRect(90, 20, 341, 71))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.label.setFont(font)
@@ -97,48 +101,42 @@ class Ui_Form(object):
         self.label_23.setObjectName("label_23")
         self.horizontalLayout_7.addWidget(self.label_23)
         self.gridLayout.addLayout(self.horizontalLayout_7, 2, 2, 1, 1)
-        self.label_logo = QtWidgets.QLabel(Form)
-        self.label_logo.setGeometry(QtCore.QRect(410, 20, 121, 71))
-        self.label_logo.setStyleSheet("QLabel#lebal_logo{\n"
-"    border-color: rgb(101, 255, 66);\n"
-"}")
-        self.label_logo.setObjectName("label_logo")
-        self.widget = QtWidgets.QWidget(Form)
-        self.widget.setGeometry(QtCore.QRect(41, 111, 431, 40))
-        self.widget.setObjectName("widget")
-        self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
-        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout.setObjectName("verticalLayout")
+        self.layoutWidget1 = QtWidgets.QWidget(Form)
+        self.layoutWidget1.setGeometry(QtCore.QRect(40, 110, 441, 47))
+        self.layoutWidget1.setObjectName("layoutWidget1")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.layoutWidget1)
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_2.setObjectName("gridLayout_2")
         self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_8.setObjectName("horizontalLayout_8")
-        self.label_2 = QtWidgets.QLabel(self.widget)
+        self.label_2 = QtWidgets.QLabel(self.layoutWidget1)
         self.label_2.setObjectName("label_2")
         self.horizontalLayout_8.addWidget(self.label_2)
-        self.label_5 = QtWidgets.QLabel(self.widget)
+        self.label_5 = QtWidgets.QLabel(self.layoutWidget1)
         self.label_5.setObjectName("label_5")
         self.horizontalLayout_8.addWidget(self.label_5)
-        self.verticalLayout.addLayout(self.horizontalLayout_8)
+        self.gridLayout_2.addLayout(self.horizontalLayout_8, 0, 0, 1, 1)
         self.horizontalLayout_9 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_9.setObjectName("horizontalLayout_9")
+        self.gridLayout_2.addLayout(self.horizontalLayout_9, 0, 1, 1, 1)
         self.horizontalLayout_10 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_10.setObjectName("horizontalLayout_10")
-        self.label_3 = QtWidgets.QLabel(self.widget)
+        self.label_3 = QtWidgets.QLabel(self.layoutWidget1)
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_10.addWidget(self.label_3)
-        self.label_7 = QtWidgets.QLabel(self.widget)
+        self.label_7 = QtWidgets.QLabel(self.layoutWidget1)
         self.label_7.setObjectName("label_7")
         self.horizontalLayout_10.addWidget(self.label_7)
-        self.horizontalLayout_9.addLayout(self.horizontalLayout_10)
+        self.gridLayout_2.addLayout(self.horizontalLayout_10, 1, 0, 1, 1)
         self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_11.setObjectName("horizontalLayout_11")
-        self.label_4 = QtWidgets.QLabel(self.widget)
+        self.label_4 = QtWidgets.QLabel(self.layoutWidget1)
         self.label_4.setObjectName("label_4")
         self.horizontalLayout_11.addWidget(self.label_4)
-        self.label_9 = QtWidgets.QLabel(self.widget)
+        self.label_9 = QtWidgets.QLabel(self.layoutWidget1)
         self.label_9.setObjectName("label_9")
         self.horizontalLayout_11.addWidget(self.label_9)
-        self.horizontalLayout_9.addLayout(self.horizontalLayout_11)
-        self.verticalLayout.addLayout(self.horizontalLayout_9)
+        self.gridLayout_2.addLayout(self.horizontalLayout_11, 1, 1, 1, 1)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -161,7 +159,6 @@ class Ui_Form(object):
         self.label_22.setText(QtWidgets.QApplication.translate("Form", "Null", None, -1))
         self.label_16.setText(QtWidgets.QApplication.translate("Form", " Zip Code:", None, -1))
         self.label_23.setText(QtWidgets.QApplication.translate("Form", "Null", None, -1))
-        self.label_logo.setText(QtWidgets.QApplication.translate("Form", "tong nee na logo", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("Form", "Company name:", None, -1))
         self.label_5.setText(QtWidgets.QApplication.translate("Form", "Null", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Tel :", None, -1))
