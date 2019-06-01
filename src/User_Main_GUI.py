@@ -28,7 +28,7 @@ class User_Main_GUI(QMainWindow):
         self.userE_P_ui.show()
 
     def openViewProfile(self):
-        self.userV_P_ui = src.User_Profile_GUI.View_User_Profile_GUI()
+        self.userV_P_ui = src.User_Profile_GUI.View_User_Profile_GUI(self.mainUser)
         self.userV_P_ui.show()
 
     def openView_Sended_Job_Request(self):

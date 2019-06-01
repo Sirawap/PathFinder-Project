@@ -18,6 +18,7 @@ class Ui_Form(object):
         self.tableView = QtWidgets.QTableView(Form)
         self.tableView.setGeometry(QtCore.QRect(10, 110, 581, 321))
         self.tableView.setObjectName("tableView")
+        self.tableView.setStyleSheet('''color: black;background-color:white;''')
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(160, 20, 251, 71))
         font = QtGui.QFont()

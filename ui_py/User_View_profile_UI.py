@@ -18,7 +18,8 @@ class Ui_Form(object):
 "    background-color: rgb(60,60,60);\n"
 "    font: \"Arial\";\n"
 "    color: white;\n"
-"}")
+"}"
+'''QTableWidget{color:white;}''')
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(160, 10, 221, 71))
         font = QtGui.QFont()
@@ -83,6 +84,8 @@ class Ui_Form(object):
         self.tableWidget_educatio_background.setGeometry(QtCore.QRect(40, 210, 460, 121))
         self.tableWidget_educatio_background.setStyleSheet("color: black;\n"
 "")
+        self.tableWidget_educatio_background.setStyleSheet("background-color: rgb(65,65,65);\n"
+"color: rgb(0,0,0);")
         self.tableWidget_educatio_background.setObjectName("tableWidget_educatio_background")
         self.tableWidget_educatio_background.setColumnCount(0)
         self.tableWidget_educatio_background.setRowCount(0)
@@ -108,7 +111,7 @@ class Ui_Form(object):
         self.label_27.setText(QtWidgets.QApplication.translate("Form", "Working expereince/Projects", None, -1))
         self.label_28.setText(QtWidgets.QApplication.translate("Form", "Education Background", None, -1))
 
-import source_rc
+#import source_rc
 
 if __name__ == "__main__":
     import sys
