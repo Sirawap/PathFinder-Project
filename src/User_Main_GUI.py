@@ -39,6 +39,17 @@ class User_Main_GUI(QMainWindow):
 
         if self.user_ui.radioButton_Show_all.isChecked():
             self.allJob = self.mainControl.getAllJobUser()
+        elif self.user_ui.radioButton_search__keyword.isChecked():
+            compname = self.user_ui.lineEdit_comapnyName.text()
+            position = self.user_ui.lineEdit_position.text()
+            minSalary = float(self.user_ui.lineEdit_salary.text()) if self.user_ui.lineEdit_salary.text() != "" else ""
+            if compname == "" and position == "" and minSalary == "":
+                return
+            self.allJob = self.mainControl.getKeywordJobUser(compname,position,minSalary)
+        elif self.user_ui.radioButton_search_user_profile.isChecked():
+            self.allJob = self.mainControl.getRecommendJobUser(self.mainUser)
+        else:
+            return
 
         self.addTable()
         return
@@ -51,6 +62,7 @@ class User_Main_GUI(QMainWindow):
          self.user_ui.tableWidget.setColumnCount(column_size)
          self.user_ui.tableWidget.setRowCount(len(self.allJob))
          self.user_ui.tableWidget.setHorizontalHeaderLabels(header)
+         print(self.allJob)
 
          for i in range(len(self.allJob)):
              for j in range(column_size):

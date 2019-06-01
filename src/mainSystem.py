@@ -183,3 +183,95 @@ class MainSystem():
         session.close()
 
         return jobLs
+
+    def getKeywordJobUser(self,compname,position,minSalary):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        jobStr = ''
+        jobLs = []
+        if compname == "":
+            if position == "":
+                for row in session.query(Job).filter(Job.salary >= minSalary):
+                    jobStr = [str(row.companyName), str(row.field), str(row.jobName), str(row.position),
+                              str(row.salary), str(row.degree)]
+                    jobLs.append(jobStr)
+                return jobLs
+            elif minSalary=="":
+                for row in session.query(Job).filter(Job.position == position):
+                    jobStr = [str(row.companyName), str(row.field), str(row.jobName), str(row.position),
+                              str(row.salary), str(row.degree)]
+                    jobLs.append(jobStr)
+                return jobLs
+            else:
+                for row in session.query(Job).filter(Job.position == position,Job.salary >= minSalary):
+                    jobStr = [str(row.companyName), str(row.field), str(row.jobName), str(row.position),
+                              str(row.salary), str(row.degree)]
+                    jobLs.append(jobStr)
+                return jobLs
+        elif position == "":
+            if compname == "":
+                for row in session.query(Job).filter(Job.salary >= minSalary):
+                    jobStr = [str(row.companyName), str(row.field), str(row.jobName), str(row.position),
+                              str(row.salary), str(row.degree)]
+                    jobLs.append(jobStr)
+                return jobLs
+            elif minSalary=="":
+                for row in session.query(Job).filter(Job.companyName == compname):
+                    jobStr = [str(row.companyName), str(row.field), str(row.jobName), str(row.position),
+                              str(row.salary), str(row.degree)]
+                    jobLs.append(jobStr)
+                return jobLs
+            else:
+                for row in session.query(Job).filter(Job.companyName == compname,Job.salary >= minSalary):
+                    jobStr = [str(row.companyName), str(row.field), str(row.jobName), str(row.position),
+                              str(row.salary), str(row.degree)]
+                    jobLs.append(jobStr)
+                return jobLs
+        elif minSalary == "":
+            if compname == "":
+                for row in session.query(Job).filter(Job.position == position):
+                    jobStr = [str(row.companyName), str(row.field), str(row.jobName), str(row.position),
+                              str(row.salary), str(row.degree)]
+                    jobLs.append(jobStr)
+                return jobLs
+            elif position=="":
+                for row in session.query(Job).filter(Job.companyName == compname):
+                    jobStr = [str(row.companyName), str(row.field), str(row.jobName), str(row.position),
+                              str(row.salary), str(row.degree)]
+                    jobLs.append(jobStr)
+                return jobLs
+            else:
+                for row in session.query(Job).filter(Job.companyName == compname,Job.position == position):
+                    jobStr = [str(row.companyName), str(row.field), str(row.jobName), str(row.position),
+                              str(row.salary), str(row.degree)]
+                    jobLs.append(jobStr)
+                return jobLs
+        else:
+            for row in session.query(Job).filter(Job.companyName == compname, Job.position == position,Job.salary >= minSalary):
+                jobStr = [str(row.companyName), str(row.field), str(row.jobName), str(row.position),
+                          str(row.salary), str(row.degree)]
+                jobLs.append(jobStr)
+            return jobLs
+
+    def getRecommendJobUser(self,user):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        eduStr = ""
+        eduLs = []
+        jobStr = ''
+        jobLs = []
+        for row in session.query(Education).filter(user.username == Education.username):
+            if str(row.field) in eduLs:
+                continue
+            eduStr = str(row.field)
+            eduLs.append(eduStr)
+        print(eduLs)
+        for edu in eduLs:
+            for row in session.query(Job).filter(Job.field == edu):
+                jobStr = [str(row.companyName), str(row.field), str(row.jobName), str(row.position),
+                          str(row.salary), str(row.degree)]
+                jobLs.append(jobStr)
+        print(jobLs)
+        session.commit()
+        session.close()
+        return jobLs
