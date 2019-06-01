@@ -15,7 +15,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(599, 631)
         Form.setStyleSheet("QWidget{\n"
-"    background-image: url(:/bg/grey.png);\n"
+"    background-color: rgb(60,60,60);\n"
 "    color: white\n"
 "}\n"
 "\n"
@@ -283,7 +283,6 @@ class Ui_Form(object):
         self.del_button.setText(QtWidgets.QApplication.translate("Form", "Delete", None, -1))
         self.backButton.setText(QtWidgets.QApplication.translate("Form", "Back", None, -1))
 
-import source_rc
 
 if __name__ == "__main__":
     import sys
