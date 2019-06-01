@@ -78,8 +78,7 @@ class MainSystem():
         if boolExist:
             addrTarget = session.query(Address).filter(com.companyName == Address.companyName).first()
             session.commit()
-            session.close()
-            return Address(companyName = addrTarget.companyName, no = addrTarget.no,soi = addrTarget.soi,street = addrTarget.street,district = addrTarget.district,city = addrTarget.city,province = addrTarget.province,zipcode = addrTarget.zipcode)
+            return Address(companyName = addrTarget.companyName, number = addrTarget.number,soi = addrTarget.soi,street = addrTarget.street,district = addrTarget.district,city = addrTarget.city,province = addrTarget.province,zipcode = addrTarget.zipcode)
         else:
             session.commit()
             session.close()
@@ -159,4 +158,13 @@ class MainSystem():
         session.commit()
         session.close()
         return jobLs
+    def deleteJob(self,com,jname):
+        Session = sessionmaker(bind=engine)
+        session = Session()
 
+        delTarget = session.query(Job).filter(Job.companyName ==com.companyName,Job.jobName == jname).first()
+
+        session.delete(delTarget)
+        session.commit()
+        session.close()
+        return
