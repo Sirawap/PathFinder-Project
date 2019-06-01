@@ -23,10 +23,10 @@ class Edit_User_Profile_GUI(QWidget):
         self.clickedColumn = 0
         self.addTable() ######edited by bill
         self.ui.pushButton.clicked.connect(self.addEdu)
-        self.ui.pushButton_confirm_profile.clicked.connect(self.connect)
+        self.ui.pushButton_confirm_profile.clicked.connect(self.confirm)
         self.ui.tableWidget.cellClicked.connect(self.itemClicked)######edited by bill
         self.ui.del_button.clicked.connect(self.deleteEducation)
-
+        self.ui.backButton.clicked.connect(self.cancel)
     def confirm(self): ######edited method name by bill
         name = self.ui.lineEdit_name.text()
         surname = self.ui.lineEdit_name_2.text()
@@ -49,7 +49,7 @@ class Edit_User_Profile_GUI(QWidget):
         uni = self.ui.lineEdit_university.text()
 
         self.mainControl.addUserEducation(self.mainUser, field, degree, major, uni)
-    def cancle(self):
+    def cancel(self):
         self.close()
 
     ######edited by bill

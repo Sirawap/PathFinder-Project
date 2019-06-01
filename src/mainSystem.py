@@ -79,4 +79,4 @@ class MainSystem():
             addrTarget = session.query(Address).filter(com.companyName == Address.companyName).first()
             return Address(companyName = addrTarget.companyName, no = addrTarget.no,soi = addrTarget.soi,street = addrTarget.street,district = addrTarget.district,city = addrTarget.city,province = addrTarget.province,zipcode = addrTarget.zipcode)
         else:
-            return
+            return None

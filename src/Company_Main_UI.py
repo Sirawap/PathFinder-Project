@@ -32,7 +32,7 @@ class Comp_Main_GUI(QMainWindow):
         self.compE_P_ui.show()
 
     def openViewProfile(self):
-        self.compV_P_ui = src.Company_Profile_GUI.Edit_Company_Profile_GUI(self.mainCompany)
+        self.compV_P_ui = src.Company_Profile_GUI.View_Company_Profile_GUI(self.mainCompany)
         self.compV_P_ui.show()
 
     def openPostJob(self):
