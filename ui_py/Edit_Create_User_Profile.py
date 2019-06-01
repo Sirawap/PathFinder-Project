@@ -196,6 +196,7 @@ class Ui_Form(object):
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(0)
         self.tableWidget.setRowCount(0)
+        self.tableWidget.setStyleSheet("background-color: rgb(255,255,255);\ncolor:black;")
         self.horizontalLayout_4.addWidget(self.tableWidget)
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")

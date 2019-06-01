@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'User_main_screen.ui',
 # licensing of 'User_main_screen.ui' applies.
 #
-# Created: Sat Jun  1 13:30:08 2019
+# Created: Sat Jun  1 14:06:33 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -49,7 +49,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 648, 461))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 644, 447))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName("verticalLayout")
@@ -128,14 +128,7 @@ class Ui_MainWindow(object):
         self.pushButton_commit_sen_method.setObjectName("pushButton_commit_sen_method")
         self.horizontalLayout_7.addWidget(self.pushButton_commit_sen_method)
         self.verticalLayout.addLayout(self.horizontalLayout_7)
-        self.scrollArea_2 = QtWidgets.QScrollArea(self.scrollAreaWidgetContents)
-        self.scrollArea_2.setWidgetResizable(True)
-        self.scrollArea_2.setObjectName("scrollArea_2")
-        self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 628, 261))
-        self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
-        self.tableWidget = QtWidgets.QTableWidget(self.scrollAreaWidgetContents_2)
-        self.tableWidget.setGeometry(QtCore.QRect(0, 0, 611, 331))
+        self.tableWidget = QtWidgets.QTableWidget(self.scrollAreaWidgetContents)
         self.tableWidget.setStyleSheet("background-color: rgb(65,65,65);\n"
 "color: rgb(0,0,0);")
         self.tableWidget.setObjectName("tableWidget")
@@ -151,8 +144,8 @@ class Ui_MainWindow(object):
         self.tableWidget.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(4, item)
-        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
-        self.verticalLayout.addWidget(self.scrollArea_2)
+        self.tableWidget.setColumnWidth(4,250)
+        self.verticalLayout.addWidget(self.tableWidget)
         self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_8.setObjectName("horizontalLayout_8")
         spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
@@ -165,7 +158,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.scrollArea, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 668, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 668, 26))
         self.menubar.setObjectName("menubar")
         self.menuMain = QtWidgets.QMenu(self.menubar)
         self.menuMain.setObjectName("menuMain")

@@ -56,8 +56,8 @@ QTableWidget{
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>648</width>
-         <height>461</height>
+         <width>644</width>
+         <height>447</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout">
@@ -223,75 +223,52 @@ QTableWidget{
          </layout>
         </item>
         <item>
-         <widget class="QScrollArea" name="scrollArea_2">
-          <property name="widgetResizable">
-           <bool>true</bool>
-          </property>
-          <widget class="QWidget" name="scrollAreaWidgetContents_2">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>628</width>
-             <height>261</height>
-            </rect>
-           </property>
-           <widget class="QTableWidget" name="tableWidget">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>611</width>
-              <height>331</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(65,65,65);
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(65,65,65);
 color: rgb(0,0,0);</string>
-            </property>
-            <column>
-             <property name="text">
-              <string>Company</string>
-             </property>
-             <property name="background">
-              <color>
-               <red>250</red>
-               <green>250</green>
-               <blue>250</blue>
-              </color>
-             </property>
-             <property name="foreground">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Job name</string>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Position</string>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Salary</string>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Education background</string>
-             </property>
-            </column>
-           </widget>
-          </widget>
+          </property>
+          <column>
+           <property name="text">
+            <string>Company</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>250</red>
+             <green>250</green>
+             <blue>250</blue>
+            </color>
+           </property>
+           <property name="foreground">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Job name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Position</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Salary</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Education background</string>
+           </property>
+          </column>
          </widget>
         </item>
         <item>
@@ -330,7 +307,7 @@ color: rgb(0,0,0);</string>
      <x>0</x>
      <y>0</y>
      <width>668</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMain">
