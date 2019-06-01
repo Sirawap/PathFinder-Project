@@ -18,10 +18,13 @@ class temp(QWidget):
         # model = QStandardItemModel()
         # model.setHorizontalHeaderLabels(['No','Name','Surname','age','tel'])
 
+        style = "::section {""background-color: lightblue; }"
+        self.ui.tableWidget.horizontalHeader().setStyleSheet(style)
         self.ui.tableWidget.setColumnCount(5)
         self.ui.tableWidget.setColumnWidth(4,500)
         self.ui.tableWidget.setRowCount(2)
         self.ui.tableWidget.setHorizontalHeaderLabels(['No','Name','Surname','age','tel'])
+
 
         # self.ui.combobox.setCurrentIndex(2)
 
