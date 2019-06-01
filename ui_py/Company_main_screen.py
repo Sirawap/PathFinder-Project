@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_main_screen.ui',
 # licensing of 'Company_main_screen.ui' applies.
 #
-# Created: Sat Jun  1 16:45:11 2019
+# Created: Sat Jun  1 17:19:45 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,7 +13,7 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(744, 540)
+        MainWindow.resize(705, 538)
         MainWindow.setStyleSheet("QWidget{\n"
 "    background-color: rgb(60,60,60);\n"
 "    font: \"Arial\";\n"
@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 724, 479))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 685, 477))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName("verticalLayout")
@@ -52,11 +52,49 @@ class Ui_MainWindow(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(3, item)
         self.verticalLayout.addWidget(self.tableWidget)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
+        self.pushButton_delete_job = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_delete_job.setObjectName("pushButton_delete_job")
+        self.horizontalLayout_2.addWidget(self.pushButton_delete_job)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem1)
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
+        self.label_2 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label_2.setFont(font)
+        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_2.setObjectName("label_2")
+        self.verticalLayout.addWidget(self.label_2)
+        self.tableWidget_request_from_jobseeker = QtWidgets.QTableWidget(self.scrollAreaWidgetContents)
+        self.tableWidget_request_from_jobseeker.setObjectName("tableWidget_request_from_jobseeker")
+        self.tableWidget_request_from_jobseeker.setColumnCount(0)
+        self.tableWidget_request_from_jobseeker.setRowCount(0)
+        self.verticalLayout.addWidget(self.tableWidget_request_from_jobseeker)
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_3.addItem(spacerItem2)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.pushButton = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton.setObjectName("pushButton")
+        self.horizontalLayout.addWidget(self.pushButton)
+        self.pushButton_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.horizontalLayout.addWidget(self.pushButton_2)
+        self.horizontalLayout_3.addLayout(self.horizontalLayout)
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_3.addItem(spacerItem3)
+        self.verticalLayout.addLayout(self.horizontalLayout_3)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
-        self.gridLayout.addWidget(self.scrollArea, 0, 0, 1, 1)
+        self.gridLayout.addWidget(self.scrollArea, 0, 1, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 744, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 705, 21))
         self.menubar.setObjectName("menubar")
         self.menuMain = QtWidgets.QMenu(self.menubar)
         self.menuMain.setObjectName("menuMain")
@@ -83,7 +121,6 @@ class Ui_MainWindow(object):
         self.menuMain.addAction(self.actionView_Profile)
         self.menuMain.addSeparator()
         self.menuJob_Negitiate.addAction(self.actionPost_Job)
-        self.menuJob_Negitiate.addAction(self.actionView_Recived_Job_Offer)
         self.menubar.addAction(self.menuMain.menuAction())
         self.menubar.addAction(self.menuJob_Negitiate.menuAction())
 
@@ -97,12 +134,16 @@ class Ui_MainWindow(object):
         self.tableWidget.horizontalHeaderItem(1).setText(QtWidgets.QApplication.translate("MainWindow", "Position", None, -1))
         self.tableWidget.horizontalHeaderItem(2).setText(QtWidgets.QApplication.translate("MainWindow", "Salary", None, -1))
         self.tableWidget.horizontalHeaderItem(3).setText(QtWidgets.QApplication.translate("MainWindow", "description", None, -1))
+        self.pushButton_delete_job.setText(QtWidgets.QApplication.translate("MainWindow", "Delete Job", None, -1))
+        self.label_2.setText(QtWidgets.QApplication.translate("MainWindow", "All Requested Job from Job Seeker", None, -1))
+        self.pushButton.setText(QtWidgets.QApplication.translate("MainWindow", "Interest", None, -1))
+        self.pushButton_2.setText(QtWidgets.QApplication.translate("MainWindow", "Not interest", None, -1))
         self.menuMain.setTitle(QtWidgets.QApplication.translate("MainWindow", "Main", None, -1))
         self.menuJob_Negitiate.setTitle(QtWidgets.QApplication.translate("MainWindow", "Job Negitiate", None, -1))
         self.actionLog_Out.setText(QtWidgets.QApplication.translate("MainWindow", "Log Out", None, -1))
         self.actionEdit_Profile.setText(QtWidgets.QApplication.translate("MainWindow", "Edit Profile", None, -1))
         self.actionView_Profile.setText(QtWidgets.QApplication.translate("MainWindow", "View Profile", None, -1))
-        self.actionPost_Job.setText(QtWidgets.QApplication.translate("MainWindow", "Post Job", None, -1))
+        self.actionPost_Job.setText(QtWidgets.QApplication.translate("MainWindow", "Post New Job", None, -1))
         self.actionView_Recived_Job_Offer.setText(QtWidgets.QApplication.translate("MainWindow", "View Recived Job Offer", None, -1))
 
 
