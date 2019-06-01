@@ -13,6 +13,7 @@ class View_Job_detail_GUI(QWidget):
         self.ui.pushButton_request_Job.clicked.connect(self.requestJob)
 
         ##Edit duao
+        ###########
         self.ui.label_company.setText("PornHub")
         self.ui.label_jobName.setText("Project Manhattan")
         self.ui.label_Position.setText("Pornstar(M)")
