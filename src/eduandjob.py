@@ -7,16 +7,16 @@ engine = create_engine("mysql+pymysql://root:pathfinder@127.0.0.1:3307/pathfinde
 
 
 class Job(base):
-    __tablename__ = "job"
-
+    __tablename__ = "jobs"
 
     companyName = Column("companyName",primary_key=True)
     jobName = Column("jobName",primary_key=True)
     salary = Column("salary",unique=False)
-    ShortDescription = Column("Shortdescription",unique=False)
-    eduLevel = Column("eduLevel",unique=False)
+    sdesc = Column("sdesc",unique=False)
+    degree = Column("degree",unique=False)
     field = Column("Field",unique=False)
     exp = Column("exp",unique=False)
+    position = Column("position",unique=False)
 
 
 class Education(base):

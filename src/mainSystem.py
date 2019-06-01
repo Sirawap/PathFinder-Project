@@ -131,4 +131,32 @@ class MainSystem():
             session.close()
             return "Update Successfully"
 
+    def addJob(self,com,jname,salary,sdesc,degree,field,exp,position):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        count = session.query(Job).filter(Job.companyName == com.companyName, Job.jobName==jname).count()
+        if count == 0:
+            job = Job(companyName = com.companyName,jobName = jname,salary=salary,sdesc=sdesc,degree=degree,field=field,exp=exp,position=position)
+            session.add(job)
+            session.commit()
+            session.close()
+            return "New Job Posted Successfully"
+        else :
+            session.commit()
+            session.close()
+            return "Job Already Exists!"
+
+    def getAllJob(self,com):
+
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        jobStr = ""
+        jobLs = []
+        for row in session.query(Job).filter(com.companyName == Job.companyName):
+            jobStr = [str(row.jobName),str(row.position),str(row.salary),str(row.sdesc)]
+            jobLs.append(jobStr)
+
+        session.commit()
+        session.close()
+        return jobLs
 

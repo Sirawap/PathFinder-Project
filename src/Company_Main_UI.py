@@ -7,6 +7,7 @@ import src.Company_Profile_GUI
 import src.EditComp_Profile_GUI
 import src.Post_New_Job
 import src.View_All_recived_job_offer_GUI
+from src.mainSystem import MainSystem
 
 class Comp_Main_GUI(QMainWindow):
     def __init__(self,mainCompany):
@@ -14,13 +15,16 @@ class Comp_Main_GUI(QMainWindow):
 
         self.comp_ui = ui_py.Company_main_screen.Ui_MainWindow()
         self.comp_ui.setupUi(self)
+        self.mainControl = MainSystem()
         self.mainCompany = mainCompany
         self.comp_ui.actionLog_Out.triggered.connect(self.logOut)
         self.comp_ui.actionEdit_Profile.triggered.connect(self.openEditProfile)
         self.comp_ui.actionView_Profile.triggered.connect(self.openViewProfile)
         self.comp_ui.actionPost_Job.triggered.connect(self.openPostJob)
         self.comp_ui.actionView_Recived_Job_Offer.triggered.connect(self.openRecivedJobOffer)
+        self.allJob =  self.mainControl.getAllJob(self.mainCompany)
 
+        self.addTable()
 
     def logOut(self):
         self.login_ui = src.login_GUI.Login_GUI()
@@ -42,6 +46,15 @@ class Comp_Main_GUI(QMainWindow):
     def openRecivedJobOffer(self):
         self.viewReply_ui = src.View_All_recived_job_offer_GUI.View_All_Reply()
         self.viewReply_ui.show()
+
+    def addTable(self, column_size=4, header=['Job Name', 'Position', 'Salary', 'description']):
+        self.comp_ui.tableWidget.setColumnCount(column_size)
+        self.comp_ui.tableWidget.setRowCount(len(self.allJob))
+        self.comp_ui.tableWidget.setHorizontalHeaderLabels(header)
+
+        for i in range(len(self.allJob)):
+            for j in range(column_size):
+                self.comp_ui.tableWidget.setItem(i, j, QTableWidgetItem(self.allJob[i][j]))
 
 # if __name__ == '__main__':
 #     app = QApplication(sys.argv);
