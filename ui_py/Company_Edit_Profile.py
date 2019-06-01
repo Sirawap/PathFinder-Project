@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_Edit_Profile.ui',
 # licensing of 'Company_Edit_Profile.ui' applies.
 #
-# Created: Sat Jun  1 15:37:36 2019
+# Created: Sat Jun  1 15:44:27 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -190,7 +190,6 @@ class Ui_Form(object):
         self.comboBox_Business.addItem("")
         self.comboBox_Business.addItem("")
         self.comboBox_Business.addItem("")
-        self.comboBox_Business.addItem("")
         self.horizontalLayout_12.addWidget(self.comboBox_Business)
         self.horizontalLayout_12.setStretch(0, 1)
         self.horizontalLayout_12.setStretch(1, 3)
@@ -258,17 +257,16 @@ class Ui_Form(object):
         self.label_16.setText(QtWidgets.QApplication.translate("Form", " Zip Code:", None, -1))
         self.label_5.setText(QtWidgets.QApplication.translate("Form", "Company business type:", None, -1))
         self.comboBox_Business.setItemText(0, QtWidgets.QApplication.translate("Form", "  -- None --", None, -1))
-        self.comboBox_Business.setItemText(1, QtWidgets.QApplication.translate("Form", "New Item", None, -1))
-        self.comboBox_Business.setItemText(2, QtWidgets.QApplication.translate("Form", "Alocohol", None, -1))
-        self.comboBox_Business.setItemText(3, QtWidgets.QApplication.translate("Form", "Construction", None, -1))
-        self.comboBox_Business.setItemText(4, QtWidgets.QApplication.translate("Form", "Domestic", None, -1))
-        self.comboBox_Business.setItemText(5, QtWidgets.QApplication.translate("Form", "Financial instructor", None, -1))
-        self.comboBox_Business.setItemText(6, QtWidgets.QApplication.translate("Form", "Health Service", None, -1))
-        self.comboBox_Business.setItemText(7, QtWidgets.QApplication.translate("Form", "Manufacturer", None, -1))
-        self.comboBox_Business.setItemText(8, QtWidgets.QApplication.translate("Form", "Mining", None, -1))
-        self.comboBox_Business.setItemText(9, QtWidgets.QApplication.translate("Form", "Retail sales", None, -1))
-        self.comboBox_Business.setItemText(10, QtWidgets.QApplication.translate("Form", "Service", None, -1))
-        self.comboBox_Business.setItemText(11, QtWidgets.QApplication.translate("Form", "Transportation", None, -1))
+        self.comboBox_Business.setItemText(1, QtWidgets.QApplication.translate("Form", "Alocohol", None, -1))
+        self.comboBox_Business.setItemText(2, QtWidgets.QApplication.translate("Form", "Construction", None, -1))
+        self.comboBox_Business.setItemText(3, QtWidgets.QApplication.translate("Form", "Domestic", None, -1))
+        self.comboBox_Business.setItemText(4, QtWidgets.QApplication.translate("Form", "Financial instructor", None, -1))
+        self.comboBox_Business.setItemText(5, QtWidgets.QApplication.translate("Form", "Health Service", None, -1))
+        self.comboBox_Business.setItemText(6, QtWidgets.QApplication.translate("Form", "Manufacturer", None, -1))
+        self.comboBox_Business.setItemText(7, QtWidgets.QApplication.translate("Form", "Mining", None, -1))
+        self.comboBox_Business.setItemText(8, QtWidgets.QApplication.translate("Form", "Retail sales", None, -1))
+        self.comboBox_Business.setItemText(9, QtWidgets.QApplication.translate("Form", "Service", None, -1))
+        self.comboBox_Business.setItemText(10, QtWidgets.QApplication.translate("Form", "Transportation", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Tel :", None, -1))
         self.label_4.setText(QtWidgets.QApplication.translate("Form", "E-mail :", None, -1))
         self.pushButton_CancelCompAdd.setText(QtWidgets.QApplication.translate("Form", "Back", None, -1))
