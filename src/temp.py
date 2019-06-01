@@ -16,6 +16,7 @@ class temp(QWidget):
         # model.setHorizontalHeaderLabels(['No','Name','Surname','age','tel'])
 
         self.ui.tableWidget.setColumnCount(5)
+        self.ui.tableWidget.setColumnWidth(4,500)
         self.ui.tableWidget.setRowCount(2)
         self.ui.tableWidget.setHorizontalHeaderLabels(['No','Name','Surname','age','tel'])
 
