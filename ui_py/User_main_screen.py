@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'User_main_screen.ui',
 # licensing of 'User_main_screen.ui' applies.
 #
-# Created: Sat Jun  1 12:34:05 2019
+# Created: Sat Jun  1 12:38:57 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,7 +13,7 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(723, 634)
+        MainWindow.resize(748, 634)
         MainWindow.setStyleSheet("QMainWindow{\n"
 "    background-color: rgb(60,60,60);\n"
 "    font: \"Arial\";\n"
@@ -125,7 +125,7 @@ class Ui_MainWindow(object):
         self.tableWidget.setStyleSheet("background-color: rgb(65,65,65);\n"
 "color: rgb(0,0,0);")
         self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(4)
+        self.tableWidget.setColumnCount(5)
         self.tableWidget.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(0, item)
@@ -135,11 +135,14 @@ class Ui_MainWindow(object):
         self.tableWidget.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, item)
+        self.tableWidget.setColumnWidth(4,200)
         self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 723, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 748, 26))
         self.menubar.setObjectName("menubar")
         self.menuMain = QtWidgets.QMenu(self.menubar)
         self.menuMain.setObjectName("menuMain")
@@ -191,6 +194,7 @@ class Ui_MainWindow(object):
         self.tableWidget.horizontalHeaderItem(1).setText(QtWidgets.QApplication.translate("MainWindow", "Job name", None, -1))
         self.tableWidget.horizontalHeaderItem(2).setText(QtWidgets.QApplication.translate("MainWindow", "Position", None, -1))
         self.tableWidget.horizontalHeaderItem(3).setText(QtWidgets.QApplication.translate("MainWindow", "Salary", None, -1))
+        self.tableWidget.horizontalHeaderItem(4).setText(QtWidgets.QApplication.translate("MainWindow", "Education background", None, -1))
         self.menuMain.setTitle(QtWidgets.QApplication.translate("MainWindow", "Main", None, -1))
         self.menuJob_Negotiate.setTitle(QtWidgets.QApplication.translate("MainWindow", "Job Negotiate", None, -1))
         self.actionLog_Out.setText(QtWidgets.QApplication.translate("MainWindow", "Log Out", None, -1))

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>723</width>
+    <width>748</width>
     <height>634</height>
    </rect>
   </property>
@@ -296,6 +296,11 @@ color: rgb(0,0,0);</string>
           <string>Salary</string>
          </property>
         </column>
+        <column>
+         <property name="text">
+          <string>Education background</string>
+         </property>
+        </column>
        </widget>
       </widget>
      </widget>
@@ -307,7 +312,7 @@ color: rgb(0,0,0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>723</width>
+     <width>748</width>
      <height>26</height>
     </rect>
    </property>
