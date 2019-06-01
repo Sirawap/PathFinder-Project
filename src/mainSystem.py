@@ -68,3 +68,15 @@ class MainSystem():
         session.close()
         return
 
+    def getCompanyAddress(self,com):
+
+        Session = sessionmaker(bind=engine)
+        session = Session()
+
+        checkExist = session.query(Address).filter(com.companyName == Address.companyName)
+        boolExist = session.query(checkExist.exists()).scalar()
+        if boolExist:
+            addrTarget = session.query(Address).filter(com.companyName == Address.companyName).first()
+            return Address(companyName = addrTarget.companyName, no = addrTarget.no,soi = addrTarget.soi,street = addrTarget.street,district = addrTarget.district,city = addrTarget.city,province = addrTarget.province,zipcode = addrTarget.zipcode)
+        else:
+            return

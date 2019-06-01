@@ -1,16 +1,18 @@
 from PySide2.QtWidgets import *
 import ui_py.Company_view_profile
 import src.Company
-
+from src.mainSystem import MainSystem
 class View_Company_Profile_GUI(QWidget):
-    def __init__(self,company = src.Company.Company()):
+    def __init__(self,company):
         QWidget.__init__(self,None)
 
         self.mainCompany = company
 
         self.ui = ui_py.Company_view_profile.Ui_Form()
         self.ui.setupUi(self)
-
+        self.mainControl = MainSystem()
+        self.mainCompany = company
+        self.comadr = self.mainControl.getCompanyAddress(self.mainCompany)
         self.ui.label_5.setText(self.mainCompany.companyName)
         self.ui.label_7.setText(self.mainCompany.tel)
         self.ui.label_9.setText(self.mainCompany.email)

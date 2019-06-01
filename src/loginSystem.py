@@ -32,7 +32,7 @@ class LoginSystem():
 
 
 
-    def createUser(self,usr,pwd,fname,surname,age,email,tel,lang):
+    def createUser(self,usr,pwd,fname,surname,age,email,tel):
         Session = sessionmaker(bind = engine)
         session = Session()
         ca = UserAcc(username = usr, password = pwd)
@@ -43,7 +43,7 @@ class LoginSystem():
             session.close()
             return "Username for User already exists"
         else:
-            user = Jobseeker(username = usr,fname= fname,surname = surname,email = email,lang=lang,age=age,tel=tel)
+            user = Jobseeker(username = usr,fname= fname,surname = surname,email = email,age=age,tel=tel)
             session.add(user)
             session.add(ca)
             session.commit()

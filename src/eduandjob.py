@@ -29,3 +29,14 @@ class Education(base):
     university = Column("university", unique=False)
 
 
+class Address(base):
+    __tablename__ = "companyAddr"
+
+    companyName = Column("companyName",primary_key=True)
+    no = Column("no",unique=False)
+    soi = Column("soi", unique=False)
+    street = Column("street", unique=False)
+    district = Column("district", unique=False)
+    city = Column("city", unique=False)
+    province = Column("province", unique=False)
+    zipcode = Column("zipcode", unique=False)
