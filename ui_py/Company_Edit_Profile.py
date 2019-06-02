@@ -277,7 +277,6 @@ class Ui_Form(object):
         self.label_10.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
         self.label_12.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
 
-import source_rc
 
 if __name__ == "__main__":
     import sys

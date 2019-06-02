@@ -37,11 +37,12 @@ class User_Main_GUI(QMainWindow):
         self.userE_P_ui.show()
 
     def openViewProfile(self):
+        self.mainUser = self.mainControl.reloadUser(self.mainUser)
         self.userV_P_ui = src.User_Profile_GUI.View_User_Profile_GUI(self.mainUser)
         self.userV_P_ui.show()
 
     def listJob(self):
-
+        self.mainUser = self.mainControl.reloadUser(self.mainUser)
         if self.user_ui.radioButton_Show_all.isChecked():
             self.allJob = self.mainControl.getAllJobUser()
         elif self.user_ui.radioButton_search__keyword.isChecked():
@@ -59,7 +60,7 @@ class User_Main_GUI(QMainWindow):
         self.addTable()
         return
     def sendRequest(self):
-
+        self.mainUser = self.mainControl.reloadUser(self.mainUser)
         companyName = self.user_ui.tableWidget.item(self.user_ui.tableWidget.currentRow(),0).text()
         jobName = self.user_ui.tableWidget.item(self.user_ui.tableWidget.currentRow(),2).text()
         self.mainControl.sendRequest(self.mainUser,companyName,jobName)
@@ -68,6 +69,7 @@ class User_Main_GUI(QMainWindow):
 
 
     def refresh(self):
+        self.mainUser = self.mainControl.reloadUser(self.mainUser)
         self.allReq = self.mainControl.getAllRequestUser(self.mainUser)
         self.addReqTable()
 

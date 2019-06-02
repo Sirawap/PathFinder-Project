@@ -19,15 +19,10 @@ class Edit_Company_Profile_GUI(QWidget):
         self.ui.pushButton_CancelCompAdd.clicked.connect(self.closed)
 
     def comp_edit(self):
-        name = self.ui.lineEdit_comp_name.text()
         tel = self.ui.lineEdit_tel.text()
         mail = self.ui.lineEdit_web.text()
         business = self.ui.comboBox_Business.currentText()
         str = ''
-        if name == '':
-            str += "Please enter your company name\n"
-            self.ui.error_label_prof.setText(str)
-            return
         if tel == '' or mail == '':
             str += "Please enter your company contact\n"
             self.ui.error_label_prof.setText(str)
@@ -39,7 +34,7 @@ class Edit_Company_Profile_GUI(QWidget):
         if "@" not in mail:
             self.ui.error_label_prof.setText("Unvalid email form")
             return
-        str = self.mainControl.editCompanyProfile(self.mainCompany,name,tel,mail,business)
+        str = self.mainControl.editCompanyProfile(self.mainCompany,tel,mail,business)
         self.ui.error_label_prof.setText(str)
         return
 
