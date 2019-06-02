@@ -6,6 +6,7 @@ import src.login_GUI
 import src.Company_Profile_GUI
 import src.EditComp_Profile_GUI
 import src.Post_New_Job
+import src.View_job_detail_GUI
 
 from src.mainSystem import MainSystem
 
@@ -23,10 +24,15 @@ class Comp_Main_GUI(QMainWindow):
         self.comp_ui.actionPost_Job.triggered.connect(self.openPostJob)
         self.comp_ui.pushButton_delete_job.clicked.connect(self.deleteJob)
         self.comp_ui.actionView_Recived_Job_Offer.triggered.connect(self.openRecivedJobOffer)
+        self.comp_ui.pushButton_refuresh.clicked.connect(self.refresh)
+        self.comp_ui.pushButton_interest.clicked.connect(self.reqInterest)
+        self.comp_ui.pushButton_not_interest.clicked.connect(self.reqNotIn)
+        self.comp_ui.tableWidget.doubleClicked.connect(self.viewJobDetail)
         self.allJob =  self.mainControl.getAllJob(self.mainCompany)
-        #self.allRequest = self.mainControl.getAllRequest(self.mainCompany)
+        self.allReq = self.mainControl.getAllRequestCompany(self.mainCompany)
 
         self.addTable()
+        self.addReqTable()
 
     def logOut(self):
         self.login_ui = src.login_GUI.Login_GUI()
@@ -69,6 +75,44 @@ class Comp_Main_GUI(QMainWindow):
         for i in range(len(self.allJob)):
             for j in range(column_size):
                 self.comp_ui.tableWidget.setItem(i, j, QTableWidgetItem(self.allJob[i][j]))
+    def refresh(self):
+        self.allReq = self.mainControl.getAllRequestCompany(self.mainCompany)
+        self.addReqTable()
+
+    def reqInterest(self):
+        fname = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 1)
+        username = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 2)
+        jobName = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(),3)
+        self.mainControl.acceptReq(self.mainCompany,fname,username,jobName)
+        self.addReqTable()
+
+    def reqNotIn(self):
+        fname = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 1)
+        username = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 2)
+        jobName = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(),3)
+        self.mainControl.declineReq(self.mainCompany,fname,username,jobName)
+        self.addReqTable()
+
+    def addReqTable(self, column_size=5, header=['Company', 'Name',"Username", "Job Name", 'Status']):
+        style = "::section {""background-color: lightblue; }"  ##set header color
+        self.comp_ui.tableWidget_request_from_jobseeker.horizontalHeader().setStyleSheet(style)
+
+        self.comp_ui.tableWidget_request_from_jobseeker.setColumnWidth(3, 200)  ### ADDED BY BILL FOR DESCRIPTION COLUMN SIZE
+        self.comp_ui.tableWidget_request_from_jobseeker.setColumnCount(column_size)
+        self.comp_ui.tableWidget_request_from_jobseeker.setRowCount(len(self.allReq))
+        self.comp_ui.tableWidget_request_from_jobseeker.setHorizontalHeaderLabels(header)
+
+        for i in range(len(self.allReq)):
+            for j in range(column_size):
+                self.comp_ui.tableWidget_request_from_jobseeker.setItem(i, j, QTableWidgetItem(self.allReq[i][j]))
+
+    def viewJobDetail(self):
+        jobName = self.comp_ui.tableWidget.item(self.comp_ui.tableWidget.currentRow(), 0).text()
+        job = self.mainControl.getJobDetail(self.mainCompany,jobName)
+        print(job)
+
+        self.job_detail_ui = src.View_job_detail_GUI.View_Job_detail_GUI(job)
+        self.job_detail_ui.show()
 
 # if __name__ == '__main__':
 #     app = QApplication(sys.argv);
