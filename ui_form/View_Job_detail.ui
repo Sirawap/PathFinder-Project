@@ -19,19 +19,6 @@
 	color: white;
 }</string>
   </property>
-  <widget class="QPushButton" name="pushButton_request_Job">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>470</y>
-     <width>121</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Request this job</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -88,8 +75,8 @@
   <widget class="QLabel" name="error_label">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>440</y>
+     <x>90</x>
+     <y>450</y>
      <width>371</width>
      <height>41</height>
     </rect>
@@ -293,19 +280,6 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_view_company_profile">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>470</y>
-     <width>121</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>View company profile</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_company">

@@ -70,12 +70,12 @@ class temp(QWidget):
 
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    w = temp()
-    w.show()
-
-    sys.exit(app.exec_())
-    # sr = "asdasd"
+    # app = QApplication(sys.argv)
+    # w = temp()
+    # w.show()
     #
-    # if "@" not in sr:
-    #     print("poop")
+    # sys.exit(app.exec_())
+    sr = "12a"
+
+    if sr.isdecimal():
+        print("poop")
