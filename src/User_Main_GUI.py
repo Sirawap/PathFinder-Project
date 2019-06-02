@@ -22,6 +22,7 @@ class User_Main_GUI(QMainWindow):
         self.user_ui.pushButton_sendRequest.clicked.connect(self.sendRequest)
         self.user_ui.pushButton_refresh.clicked.connect(self.refresh)
         self.allEdu = self.mainControl.getAllEdu(self.mainUser)
+        self.user_ui.tableWidget.doubleClicked.connect(self.viewJobDetail)
         self.allJob = None
         self.allReq = self.mainControl.getAllRequestUser(self.mainUser)
         self.addReqTable()
@@ -70,7 +71,7 @@ class User_Main_GUI(QMainWindow):
         self.allReq = self.mainControl.getAllRequestUser(self.mainUser)
         self.addReqTable()
 
-    def addTable(self, column_size=6, header=['Company', 'Job Name',"Field", 'Position', 'Salary','Background Education']):
+    def addTable(self, column_size=6, header=['Company', 'Field',"Job Name ",'Position', 'Salary','Background Education']):
          self.user_ui.tableWidget.setColumnWidth(3, 200)  ### ADDED BY BILL FOR DESCRIPTION COLUMN SIZE
          style = "::section {""background-color: gray;" \
                 "color: white; }"
@@ -98,6 +99,16 @@ class User_Main_GUI(QMainWindow):
                 self.user_ui.tableWidget_requested_job.setItem(i, j, QTableWidgetItem(self.allReq[i][j]))
 
 
+    def viewJobDetail(self):
+        companyName = self.user_ui.tableWidget.item(self.user_ui.tableWidget.currentRow(), 0).text()
+        jobName = self.user_ui.tableWidget.item(self.user_ui.tableWidget.currentRow(), 2).text()
+        print(companyName)
+        print(jobName)
+        job = self.mainControl.getJobDetailUser(companyName,jobName)
+        print(job)
+
+        self.job_detail_ui = src.View_job_detail_GUI.View_Job_detail_GUI(job)
+        self.job_detail_ui.show()
 
 #
 # if __name__ == '__main__':

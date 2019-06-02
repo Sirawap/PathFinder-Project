@@ -80,16 +80,16 @@ class Comp_Main_GUI(QMainWindow):
         self.addReqTable()
 
     def reqInterest(self):
-        fname = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 1)
-        username = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 2)
-        jobName = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(),3)
+        fname = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 1).text()
+        username = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 2).text()
+        jobName = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(),3).text()
         self.mainControl.acceptReq(self.mainCompany,fname,username,jobName)
         self.addReqTable()
 
     def reqNotIn(self):
-        fname = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 1)
-        username = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 2)
-        jobName = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(),3)
+        fname = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 1).text()
+        username = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 2).text()
+        jobName = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(),3).text()
         self.mainControl.declineReq(self.mainCompany,fname,username,jobName)
         self.addReqTable()
 

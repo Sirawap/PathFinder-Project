@@ -357,3 +357,13 @@ class MainSystem():
 
         return detail
 
+    def getJobDetailUser(self,companyName,jobName):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        detail = ""
+
+        for row in session.query(Job).filter(Job.companyName == companyName, Job.jobName == jobName):
+            detail = [str(row.companyName), str(row.jobName), str(row.position), str(row.salary), str(row.sdesc),
+                      str(row.degree), str(row.field), str(row.exp)]
+
+        return detail
