@@ -13,7 +13,7 @@ class Edit_Company_Profile_GUI(QWidget):
         self.ui.pushButton_UpdateCompAdd.clicked.connect(self.addr_edit)
         self.mainCompany = company
         self.mainControl = MainSystem()
-        self.ui.lineEdit_comp_name.setText(self.mainCompany.companyName)
+        self.ui.label_companyName.setText(self.mainCompany.companyName)
         self.ui.lineEdit_tel.setText(self.mainCompany.tel)
         self.ui.lineEdit_web.setText(self.mainCompany.email)
         self.ui.pushButton_CancelCompAdd.clicked.connect(self.closed)

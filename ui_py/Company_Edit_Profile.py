@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_Edit_Profile.ui',
 # licensing of 'Company_Edit_Profile.ui' applies.
 #
-# Created: Sat Jun  1 16:09:55 2019
+# Created: Sun Jun  2 11:33:42 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -15,7 +15,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(588, 418)
         Form.setStyleSheet("QWidget{\n"
-"    background-color: rgb(60,60,60);\n"
+"    background-image: url(:/bg/grey.png);\n"
 "    color: white\n"
 "}\n"
 "\n"
@@ -79,10 +79,10 @@ class Ui_Form(object):
         self.label_2 = QtWidgets.QLabel(self.layoutWidget)
         self.label_2.setObjectName("label_2")
         self.horizontalLayout.addWidget(self.label_2)
-        self.lineEdit_comp_name = QtWidgets.QLineEdit(self.layoutWidget)
-        self.lineEdit_comp_name.setText("")
-        self.lineEdit_comp_name.setObjectName("lineEdit_comp_name")
-        self.horizontalLayout.addWidget(self.lineEdit_comp_name)
+        self.label_companyName = QtWidgets.QLabel(self.layoutWidget)
+        self.label_companyName.setText("")
+        self.label_companyName.setObjectName("label_companyName")
+        self.horizontalLayout.addWidget(self.label_companyName)
         self.layoutWidget1 = QtWidgets.QWidget(self.scrollAreaWidgetContents)
         self.layoutWidget1.setGeometry(QtCore.QRect(21, 197, 158, 22))
         self.layoutWidget1.setObjectName("layoutWidget1")
@@ -277,6 +277,7 @@ class Ui_Form(object):
         self.label_10.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
         self.label_12.setText(QtWidgets.QApplication.translate("Form", "*", None, -1))
 
+import source_rc
 
 if __name__ == "__main__":
     import sys

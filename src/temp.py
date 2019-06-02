@@ -27,7 +27,7 @@ class temp(QWidget):
         self.ui.tableWidget.setHorizontalHeaderLabels(['No','Name','Surname','age','tel'])
 
 
-        # self.ui.combobox.setCurrentIndex(2)
+        self.ui.combobox.setCurrentIndex(self.ui.combobox)
 
 
         # rowPosition = self.ui.tableWidget.rowCount()
@@ -70,12 +70,12 @@ class temp(QWidget):
 
 
 if __name__ == "__main__":
-    # app = QApplication(sys.argv)
-    # w = temp()
-    # w.show()
-    #
-    # sys.exit(app.exec_())
-    sr = "12a"
+    app = QApplication(sys.argv)
+    w = temp()
+    w.show()
 
-    if sr.isdecimal():
-        print("poop")
+    sys.exit(app.exec_())
+    # sr = "12a"
+    #
+    # if sr.isdecimal():
+    #     print("poop")

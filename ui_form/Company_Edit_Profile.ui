@@ -152,7 +152,7 @@ QLabel#error_label_prof{
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_comp_name">
+         <widget class="QLabel" name="label_companyName">
           <property name="text">
            <string/>
           </property>
