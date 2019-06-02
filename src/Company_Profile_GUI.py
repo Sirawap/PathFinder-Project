@@ -16,6 +16,7 @@ class View_Company_Profile_GUI(QWidget):
         self.ui.label_5.setText(self.mainCompany.companyName)
         self.ui.label_7.setText(self.mainCompany.tel)
         self.ui.label_9.setText(self.mainCompany.email)
+        self.ui.label_comp_type.setText(self.mainCompany.type)
         if self.comadr != None:
 
             self.ui.label_10.setText(self.comadr.number)
