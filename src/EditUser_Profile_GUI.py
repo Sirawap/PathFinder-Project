@@ -27,7 +27,7 @@ class Edit_User_Profile_GUI(QWidget):
         self.ui.tableWidget.cellClicked.connect(self.itemClicked)######edited by bill
         self.ui.del_button.clicked.connect(self.deleteEducation)
         self.ui.backButton.clicked.connect(self.cancel)
-    def confirm(self): ######edited method name by bill
+    def confirm(self):
         name = self.ui.lineEdit_name.text()
         surname = self.ui.lineEdit_name_2.text()
         age = self.ui.lineEdit_name_4.text()
@@ -56,6 +56,9 @@ class Edit_User_Profile_GUI(QWidget):
 
     ######edited by bill
     def addTable(self,column_size = 4,header = ['Field','Degree','Major','Uni']):
+        style = "::section {""background-color: gray;" \
+                "color: white; }"
+        self.ui.tableWidget.horizontalHeader().setStyleSheet(style)
         self.ui.tableWidget.setColumnCount(column_size)
         self.ui.tableWidget.setRowCount(len(self.allEdu))
         self.ui.tableWidget.setHorizontalHeaderLabels(header)

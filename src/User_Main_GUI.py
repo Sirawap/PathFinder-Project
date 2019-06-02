@@ -58,7 +58,7 @@ class User_Main_GUI(QMainWindow):
     def addTable(self, column_size=6, header=['Company', 'Job Name',"Field", 'Position', 'Salary','Background Education']):
          self.user_ui.tableWidget.setColumnWidth(3, 200)  ### ADDED BY BILL FOR DESCRIPTION COLUMN SIZE
          style = "::section {""background-color: gray;" \
-                "color: red; }"
+                "color: white; }"
          self.user_ui.tableWidget.horizontalHeader().setStyleSheet(style)
          self.user_ui.tableWidget.setColumnCount(column_size)
          self.user_ui.tableWidget.setRowCount(len(self.allJob))
