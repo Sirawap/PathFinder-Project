@@ -6,7 +6,7 @@ import src.login_GUI
 import src.Company_Profile_GUI
 import src.EditComp_Profile_GUI
 import src.Post_New_Job
-import src.View_All_recived_job_offer_GUI
+
 from src.mainSystem import MainSystem
 
 class Comp_Main_GUI(QMainWindow):
