@@ -39,8 +39,8 @@ class Post_New_Job(QWidget):
             return
             #plus experience
 
-        if not salary.isdigit():
-            self.ui.error_label.setText("salary must be decimal")
+        if not is_float(salary):
+            self.ui.error_label.setText("salary must be a floating number or integer")
             return
 
         str = self.mainControl.addJob(self.mainCompany,job_name,salary,description,education,field,experience,position)
@@ -51,6 +51,16 @@ class Post_New_Job(QWidget):
     def closed(self):
         self.close()
 
+def is_float(s):
+    try:
+        float(s) # for int, long and float
+    except ValueError:
+        try:
+            complex(s) # for complex
+        except ValueError:
+            return False
+
+    return True
 #
 # if __name__ == "__main__":
 #     app = QApplication(sys.argv)

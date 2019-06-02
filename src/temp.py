@@ -66,7 +66,16 @@ class temp(QWidget):
         print("fuck")
         self.temp2.close()
 
+def is_float(s):
+    try:
+        float(s) # for int, long and float
+    except ValueError:
+        try:
+            complex(s) # for complex
+        except ValueError:
+            return False
 
+    return True
 
 
 if __name__ == "__main__":
@@ -75,7 +84,7 @@ if __name__ == "__main__":
     # w.show()
     #
     # sys.exit(app.exec_())
-    sr = "12.2"
+    sr = "122"
 
-    if sr.is:
+    if is_float(sr):
         print("poop")
