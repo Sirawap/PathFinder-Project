@@ -286,7 +286,23 @@ class MainSystem():
         for row in session.query(Request).filter(Request.username == user.username):
             target = session.query(Jobseeker).filter(user.username == Jobseeker.username).first()
             name = target.fname
-            reqStr = [str(row.companyName),name,str(row.jobName),str(row.stat)]
+            reqStr = [str(row.companyName),str(row.fname),str(row.jobName),str(row.stat)]
+            reqLs.append(reqStr)
+        session.commit()
+        session.close()
+
+        return reqLs
+    def getAllRequestCompany(self,com):
+
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        reqStr = ''
+        reqLs = []
+
+        for row in session.query(Request).filter(Request.companyName == com.companyName):
+            target = session.query(Jobseeker).filter(row.username == Jobseeker.username).first()
+            name = target.fname
+            reqStr = [str(row.companyName),str(row.fname),str(row.username),str(row.jobName),str(row.stat)]
             reqLs.append(reqStr)
         session.commit()
         session.close()
@@ -302,8 +318,42 @@ class MainSystem():
         if boolExist:
             return "Request Already Exists!"
         else:
-            req = Request(companyName = companyName,username = user.username,jobName = jobName, stat = "Pending")
+            req = Request(companyName = companyName,username = user.username,fname =user.fname,jobName = jobName, stat = "Pending")
             session.add(req)
             session.commit()
             session.close()
             return "Request Sent!"
+
+    def acceptReq(self,com,fname,username,jobName):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+
+        edit =session.query(Request).filter(Request.companyName == com.companyName,Request.fname == fname,Request.username == username,Request.jobName == jobName).first()
+
+        edit.stat = "Accepted"
+
+        session.commit()
+        session.close()
+
+    def declineReq(self, com, fname, username, jobName):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+
+        edit = session.query(Request).filter(Request.companyName == com.companyName, Request.fname == fname,
+                                             Request.username == username, Request.jobName == jobName).first()
+
+        edit.stat = "Not Accepted"
+
+        session.commit()
+        session.close()
+
+    def getJobDetail(self,com,jobName):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        detail = ""
+
+        for row in session.query(Job).filter(Job.companyName == com.companyName,Job.jobName == jobName):
+            detail = [str(row.companyName),str(row.jobName),str(row.position),str(row.salary),str(row.sdesc),str(row.degree),str(row.field),str(row.exp)]
+
+        return detail
+

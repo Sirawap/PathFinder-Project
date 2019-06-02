@@ -45,6 +45,7 @@ class Request(base):
     __tablename__ = "request"
     companyName = Column("companyName", primary_key=True)
     username = Column("username", primary_key=True)
+    fname = Column("fname",primary_key=True)
     jobName = Column("jobName", primary_key=True)
     stat = Column("stat", unique=False)
 
