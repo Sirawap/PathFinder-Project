@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_view_profile.ui',
 # licensing of 'Company_view_profile.ui' applies.
 #
-# Created: Sat Jun  1 14:44:42 2019
+# Created: Sun Jun  2 11:39:38 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -118,6 +118,15 @@ class Ui_Form(object):
         self.gridLayout_2.addLayout(self.horizontalLayout_8, 0, 0, 1, 1)
         self.horizontalLayout_9 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_9.setObjectName("horizontalLayout_9")
+        self.horizontalLayout_12 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_12.setObjectName("horizontalLayout_12")
+        self.label_6 = QtWidgets.QLabel(self.layoutWidget1)
+        self.label_6.setObjectName("label_6")
+        self.horizontalLayout_12.addWidget(self.label_6)
+        self.label_comp_type = QtWidgets.QLabel(self.layoutWidget1)
+        self.label_comp_type.setObjectName("label_comp_type")
+        self.horizontalLayout_12.addWidget(self.label_comp_type)
+        self.horizontalLayout_9.addLayout(self.horizontalLayout_12)
         self.gridLayout_2.addLayout(self.horizontalLayout_9, 0, 1, 1, 1)
         self.horizontalLayout_10 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_10.setObjectName("horizontalLayout_10")
@@ -161,6 +170,8 @@ class Ui_Form(object):
         self.label_23.setText(QtWidgets.QApplication.translate("Form", "Null", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("Form", "Company name:", None, -1))
         self.label_5.setText(QtWidgets.QApplication.translate("Form", "Null", None, -1))
+        self.label_6.setText(QtWidgets.QApplication.translate("Form", "Company Type", None, -1))
+        self.label_comp_type.setText(QtWidgets.QApplication.translate("Form", "Null", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Tel :", None, -1))
         self.label_7.setText(QtWidgets.QApplication.translate("Form", "Null", None, -1))
         self.label_4.setText(QtWidgets.QApplication.translate("Form", "Email :", None, -1))
