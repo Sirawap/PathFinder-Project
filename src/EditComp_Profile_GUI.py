@@ -32,6 +32,13 @@ class Edit_Company_Profile_GUI(QWidget):
             str += "Please enter your company contact\n"
             self.ui.error_label_prof.setText(str)
             return
+        if not tel.isdecimal():
+            self.ui.error_label_prof.setText("Tel number must be an integer")
+            return
+
+        if "@" not in mail:
+            self.ui.error_label_prof.setText("Unvalid email form")
+            return
         str = self.mainControl.editCompanyProfile(self.mainCompany,name,tel,mail,business)
         self.ui.error_label_prof.setText(str)
         return

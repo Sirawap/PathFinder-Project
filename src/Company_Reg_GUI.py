@@ -27,6 +27,15 @@ class Company_GUI(QWidget):
         if cname == "" or email == "" or tel == "" or usr =="" or pwd == "" or rpwd =="":
             self.user_ui.error_label.setText("Please fill (*) info")
             return
+
+        if not tel.isdecimal():
+            self.user_ui.error_label.setText("Tel number must be an integer")
+            return
+
+        if "@" not in email:
+            self.user_ui.error_label.setText("Unvalid email form")
+            return
+
         if pwd != rpwd:
             self.user_ui.error_label.setText("Passwords dont match!")
             return

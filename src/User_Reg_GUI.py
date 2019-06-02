@@ -28,7 +28,7 @@ class User_GUI(QWidget):
             self.user_ui.error_label.setText("Please fill (*) info")
             return
 
-        if type(tel) != int:
+        if not tel.isdecimal():
             self.user_ui.error_label.setText("Tel number must be an integer")
             return
 
@@ -36,7 +36,7 @@ class User_GUI(QWidget):
             self.user_ui.error_label.setText("Unvalid email form")
             return
 
-        if type(age) != int:
+        if not age.isdecimal():
             self.user_ui.error_label.setText("Age must be an integer")
             return
 
