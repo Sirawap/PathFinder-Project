@@ -156,11 +156,15 @@ class MainSystem():
     def deleteJob(self,com,jname):
         Session = sessionmaker(bind=engine)
         session = Session()
+        for row in session.query(Request).filter(Request.companyName == com.companyName,Request.jobName == jname):
+            session.delete(row)
 
         delTarget = session.query(Job).filter(Job.companyName ==com.companyName,Job.jobName == jname).first()
 
         session.delete(delTarget)
         session.commit()
+
+
         session.close()
         return
 

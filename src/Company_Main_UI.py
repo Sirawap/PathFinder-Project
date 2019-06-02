@@ -83,6 +83,8 @@ class Comp_Main_GUI(QMainWindow):
     def refresh(self):
         self.mainCompany = self.mainControl.reloadCompany(self.mainCompany)
         self.allReq = self.mainControl.getAllRequestCompany(self.mainCompany)
+        self.allJob = self.mainControl.getAllJob(self.mainCompany)
+        self.addTable()
         self.addReqTable()
 
     def reqInterest(self):
