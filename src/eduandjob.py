@@ -40,3 +40,11 @@ class Address(base):
     city = Column("city", unique=False)
     province = Column("province", unique=False)
     zipcode = Column("zipcode", unique=False)
+
+class Request(base):
+    __tablename__ = "request"
+    companyName = Column("companyName", primary_key=True)
+    username = Column("username", primary_key=True)
+    jobName = Column("jobName", primary_key=True)
+    stat = Column("stat", unique=False)
+

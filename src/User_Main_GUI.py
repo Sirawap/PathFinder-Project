@@ -19,8 +19,12 @@ class User_Main_GUI(QMainWindow):
         self.user_ui.actionEdit_Profile.triggered.connect(self.openEditProfile)
         self.user_ui.actionView_Profile.triggered.connect(self.openViewProfile)
         self.user_ui.pushButton_commit_sen_method.clicked.connect(self.listJob)
+        self.user_ui.pushButton_sendRequest.clicked.connect(self.sendRequest)
+        self.user_ui.pushButton_refresh.clicked.connect(self.refresh)
         self.allEdu = self.mainControl.getAllEdu(self.mainUser)
         self.allJob = None
+        self.allReq = self.mainControl.getAllRequestUser(self.mainUser)
+        self.addReqTable()
 
     def logOut(self):
         self.login_ui = src.login_GUI.Login_GUI()
@@ -53,7 +57,18 @@ class User_Main_GUI(QMainWindow):
 
         self.addTable()
         return
+    def sendRequest(self):
 
+        companyName = self.user_ui.tableWidget.item(self.user_ui.tableWidget.currentRow(),0).text()
+        jobName = self.user_ui.tableWidget.item(self.user_ui.tableWidget.currentRow(),2).text()
+        self.mainControl.sendRequest(self.mainUser,companyName,jobName)
+        self.allReq = self.mainControl.getAllRequestUser(self.mainUser)
+
+
+
+    def refresh(self):
+        self.allReq = self.mainControl.getAllRequestUser(self.mainUser)
+        self.addReqTable()
 
     def addTable(self, column_size=6, header=['Company', 'Job Name',"Field", 'Position', 'Salary','Background Education']):
          self.user_ui.tableWidget.setColumnWidth(3, 200)  ### ADDED BY BILL FOR DESCRIPTION COLUMN SIZE
@@ -69,12 +84,22 @@ class User_Main_GUI(QMainWindow):
              for j in range(column_size):
                  self.user_ui.tableWidget.setItem(i, j, QTableWidgetItem(self.allJob[i][j]))
 
+    def addReqTable(self, column_size=4,header=['Company', 'Name', "Job Name", 'Status']):
+        self.user_ui.tableWidget_requested_job.setColumnWidth(3, 200)  ### ADDED BY BILL FOR DESCRIPTION COLUMN SIZE
+        style = "::section {""background-color: gray;" \
+                    "color: red; }"
+        self.user_ui.tableWidget_requested_job.horizontalHeader().setStyleSheet(style)
+        self.user_ui.tableWidget_requested_job.setColumnCount(column_size)
+        self.user_ui.tableWidget_requested_job.setRowCount(len(self.allReq))
+        self.user_ui.tableWidget_requested_job.setHorizontalHeaderLabels(header)
+        print(self.allReq)
 
-    def openView_Sended_Job_Request(self):
-        pass
+        for i in range(len(self.allReq)):
+            for j in range(column_size):
+                self.user_ui.tableWidget_requested_job.setItem(i, j, QTableWidgetItem(self.allReq[i][j]))
 
-    def openView_Reply_Tray(self):
-        pass
+
+
 #
 # if __name__ == '__main__':
 #     app = QApplication(sys.argv);

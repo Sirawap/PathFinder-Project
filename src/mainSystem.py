@@ -275,3 +275,35 @@ class MainSystem():
         session.commit()
         session.close()
         return jobLs
+
+    def getAllRequestUser(self,user):
+
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        reqStr = ''
+        reqLs = []
+
+        for row in session.query(Request).filter(Request.username == user.username):
+            target = session.query(Jobseeker).filter(user.username == Jobseeker.username).first()
+            name = target.fname
+            reqStr = [str(row.companyName),name,str(row.jobName),str(row.stat)]
+            reqLs.append(reqStr)
+        session.commit()
+        session.close()
+
+        return reqLs
+
+    def sendRequest(self,user,companyName,jobName):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+
+        checkExist = session.query(Request).filter(Request.companyName ==companyName,Request.jobName==jobName,Request.username == user.username)
+        boolExist = session.query(checkExist.exists()).scalar()
+        if boolExist:
+            return "Request Already Exists!"
+        else:
+            req = Request(companyName = companyName,username = user.username,jobName = jobName, stat = "Pending")
+            session.add(req)
+            session.commit()
+            session.close()
+            return "Request Sent!"
