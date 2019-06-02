@@ -236,7 +236,7 @@ QTableWidget{
             <item>
              <widget class="QTableWidget" name="tableWidget">
               <property name="styleSheet">
-               <string notr="true"/>
+               <string notr="true">color: white;</string>
               </property>
              </widget>
             </item>
@@ -299,7 +299,11 @@ QTableWidget{
            </property>
            <layout class="QVBoxLayout" name="verticalLayout">
             <item>
-             <widget class="QTableWidget" name="tableWidget_requested_job"/>
+             <widget class="QTableWidget" name="tableWidget_requested_job">
+              <property name="styleSheet">
+               <string notr="true">color: white;</string>
+              </property>
+             </widget>
             </item>
             <item>
              <widget class="QPushButton" name="pushButton_refresh">

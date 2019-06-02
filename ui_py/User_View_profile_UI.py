@@ -82,9 +82,9 @@ class Ui_Form(object):
         self.frame_experience.setObjectName("frame_experience")
         self.tableWidget_educatio_background = QtWidgets.QTableWidget(Form)
         self.tableWidget_educatio_background.setGeometry(QtCore.QRect(40, 210, 460, 121))
-        self.tableWidget_educatio_background.setStyleSheet("color: black;\n"
-"")
-        self.tableWidget_educatio_background.setStyleSheet("background-color: rgb(255,255,255);\ncolor:black;")
+        self.tableWidget_educatio_background.horizontalHeader().setStyleSheet("::section {""background-color: gray; }")
+        self.tableWidget_educatio_background.setStyleSheet("color: white;\n")
+        self.tableWidget_educatio_background.setStyleSheet("background-color: rgb(60,60,60);\ncolor:white;")
         self.tableWidget_educatio_background.setObjectName("tableWidget_educatio_background")
         self.tableWidget_educatio_background.setColumnCount(0)
         self.tableWidget_educatio_background.setRowCount(0)

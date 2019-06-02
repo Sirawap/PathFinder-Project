@@ -39,20 +39,21 @@ class temp(QWidget):
                 self.ui.tableWidget.setItem(i,j,QTableWidgetItem(self.data[i][j]))
 
 
-        self.ui.tableWidget.cellClicked.connect(self.itemclick)
+        self.ui.tableWidget.doubleClicked.connect(self.itemclick)
 
         self.ui.pushButton.clicked.connect(self.openNewWidget) ###look at here
 
 
 
-    def itemclick(self,row,column):
-        x = self.data[column]
-        self.ui.tableWidget.removeRow(row)
-        print('No :', x[0])
-        print('Name :', x[1])
-        print('Surname :', x[2])
-        print('Age :', x[3])
-        print('Tel :', x[4])
+    def itemclick(self):
+        print("popo")
+        # x = self.data[column]
+        # self.ui.tableWidget.removeRow(row)
+        # print('No :', x[0])
+        # print('Name :', x[1])
+        # print('Surname :', x[2])
+        # print('Age :', x[3])
+        # print('Tel :', x[4])
         #change print to  write in database
 
     def openNewWidget(self):###look at here
@@ -74,3 +75,7 @@ if __name__ == "__main__":
     w.show()
 
     sys.exit(app.exec_())
+    # sr = "asdasd"
+    #
+    # if "@" not in sr:
+    #     print("poop")

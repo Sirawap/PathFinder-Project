@@ -70,7 +70,7 @@
             <item>
              <widget class="QTableWidget" name="tableWidget">
               <property name="styleSheet">
-               <string notr="true">color: black;</string>
+               <string notr="true">color: white;</string>
               </property>
              </widget>
             </item>
@@ -146,7 +146,11 @@
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_2">
             <item>
-             <widget class="QTableWidget" name="tableWidget_request_from_jobseeker"/>
+             <widget class="QTableWidget" name="tableWidget_request_from_jobseeker">
+              <property name="styleSheet">
+               <string notr="true">color: white;</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
