@@ -25,6 +25,8 @@ class MainSystem():
         edit.email = email
 
         session.commit()
+
+
         session.close()
 
     def addUserEducation(self,user,field,degree,major,university):
@@ -84,21 +86,14 @@ class MainSystem():
             session.close()
             return None
 
-    def editCompanyProfile(self,com,name,tel,mail,type):
+    def editCompanyProfile(self,com,tel,mail,type):
         Session = sessionmaker(bind=engine)
         session = Session()
 
-        checkExist = session.query(Company).filter(name == Company.companyName)
-        boolExist = session.query(checkExist.exists()).scalar()
-        if boolExist and com.companyName != name:
-            session.commit()
-            session.close()
-            return "Company name already Exists!"
         if type == "-- None --":
             type = None
         edit = session.query(Company).filter(Company.username == com.username,Company.companyName == com.companyName).first()
 
-        edit.companyName = name
         edit.tel = tel
         edit.email = mail
         edit.type = type
@@ -330,7 +325,7 @@ class MainSystem():
 
         edit =session.query(Request).filter(Request.companyName == com.companyName,Request.fname == fname,Request.username == username,Request.jobName == jobName).first()
 
-        edit.stat = "Accepted"
+        edit.stat = "Interest"
 
         session.commit()
         session.close()
@@ -342,7 +337,7 @@ class MainSystem():
         edit = session.query(Request).filter(Request.companyName == com.companyName, Request.fname == fname,
                                              Request.username == username, Request.jobName == jobName).first()
 
-        edit.stat = "Not Accepted"
+        edit.stat = "Not Interest"
 
         session.commit()
         session.close()
@@ -367,3 +362,19 @@ class MainSystem():
                       str(row.degree), str(row.field), str(row.exp)]
 
         return detail
+    def reloadCompany(self,com):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+
+        target = session.query(Company).filter(Company.username == com.username).first()
+
+        return Company(username = target.username,companyName = target.companyName,email = target.email,tel = target.tel,type = target.type)
+
+    def reloadUser(self,user):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+
+        target = session.query(Jobseeker).filter(Jobseeker.username == user.username).first()
+
+        return Jobseeker(username=target.username,fname=target.fname,surname=target.surname,email=target.email,age=target.age,tel=target.tel)
+

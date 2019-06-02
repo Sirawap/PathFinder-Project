@@ -56,8 +56,6 @@ class Edit_User_Profile_GUI(QWidget):
 
         print("F for reespect")
 
-
-        self.close() ##close after confirm
     def addEdu(self):
         degree = self.ui.comboBox_degree.currentText()
         field = self.ui.comboBox_subject.currentText()

@@ -23,7 +23,7 @@ class Comp_Main_GUI(QMainWindow):
         self.comp_ui.actionView_Profile.triggered.connect(self.openViewProfile)
         self.comp_ui.actionPost_Job.triggered.connect(self.openPostJob)
         self.comp_ui.pushButton_delete_job.clicked.connect(self.deleteJob)
-        self.comp_ui.actionView_Recived_Job_Offer.triggered.connect(self.openRecivedJobOffer)
+
         self.comp_ui.pushButton_refuresh.clicked.connect(self.refresh)
         self.comp_ui.pushButton_interest.clicked.connect(self.reqInterest)
         self.comp_ui.pushButton_not_interest.clicked.connect(self.reqNotIn)
@@ -41,22 +41,25 @@ class Comp_Main_GUI(QMainWindow):
 
     def openEditProfile(self):
         self.compE_P_ui = src.EditComp_Profile_GUI.Edit_Company_Profile_GUI(self.mainCompany)
+
         self.compE_P_ui.show()
 
     def openViewProfile(self):
+        self.mainCompany = self.mainControl.reloadCompany(self.mainCompany)
         self.compV_P_ui = src.Company_Profile_GUI.View_Company_Profile_GUI(self.mainCompany)
         self.compV_P_ui.show()
 
     def openPostJob(self):
+        self.mainCompany = self.mainControl.reloadCompany(self.mainCompany)
         self.post_job_ui = src.Post_New_Job.Post_New_Job(self.mainCompany)
         self.post_job_ui.show()
 
 
-    def openRecivedJobOffer(self):
-        self.viewReply_ui = src.View_All_recived_job_offer_GUI.View_All_Reply()
-        self.viewReply_ui.show()
+    # def openRecivedJobOffer(self):
+    #     self.viewReply_ui = src.View_All_recived_job_offer_GUI.View_All_Reply()
+    #     self.viewReply_ui.show()
     def deleteJob(self):
-
+        self.mainCompany = self.mainControl.reloadCompany(self.mainCompany)
         jobname = self.comp_ui.tableWidget.item(self.comp_ui.tableWidget.currentRow(),0).text()
         print(jobname)
         self.mainControl.deleteJob(self.mainCompany,jobname)
@@ -76,10 +79,12 @@ class Comp_Main_GUI(QMainWindow):
             for j in range(column_size):
                 self.comp_ui.tableWidget.setItem(i, j, QTableWidgetItem(self.allJob[i][j]))
     def refresh(self):
+        self.mainCompany = self.mainControl.reloadCompany(self.mainCompany)
         self.allReq = self.mainControl.getAllRequestCompany(self.mainCompany)
         self.addReqTable()
 
     def reqInterest(self):
+        self.mainCompany = self.mainControl.reloadCompany(self.mainCompany)
         fname = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 1).text()
         username = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 2).text()
         jobName = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(),3).text()
@@ -87,6 +92,7 @@ class Comp_Main_GUI(QMainWindow):
         self.addReqTable()
 
     def reqNotIn(self):
+        self.mainCompany = self.mainControl.reloadCompany(self.mainCompany)
         fname = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 1).text()
         username = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 2).text()
         jobName = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(),3).text()
@@ -107,6 +113,7 @@ class Comp_Main_GUI(QMainWindow):
                 self.comp_ui.tableWidget_request_from_jobseeker.setItem(i, j, QTableWidgetItem(self.allReq[i][j]))
 
     def viewJobDetail(self):
+        self.mainCompany = self.mainControl.reloadCompany(self.mainCompany)
         jobName = self.comp_ui.tableWidget.item(self.comp_ui.tableWidget.currentRow(), 0).text()
         job = self.mainControl.getJobDetail(self.mainCompany,jobName)
         print(job)
