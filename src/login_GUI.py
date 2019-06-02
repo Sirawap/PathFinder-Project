@@ -95,10 +95,10 @@ class Login_GUI(QWidget):
             self.psd = psd
 
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    w = Login_GUI()
-    w.show()
-
-    sys.exit(app.exec_())
+# if __name__ == "__main__":
+#     app = QApplication(sys.argv)
+#     w = Login_GUI()
+#     w.show()
+#
+#     sys.exit(app.exec_())
 

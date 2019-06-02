@@ -378,3 +378,10 @@ class MainSystem():
 
         return Jobseeker(username=target.username,fname=target.fname,surname=target.surname,email=target.email,age=target.age,tel=target.tel)
 
+    def getUser(self,username):
+        Session = sessionmaker(bind=engine)
+        session = Session()
+
+        target = session.query(Jobseeker).filter(Jobseeker.username == username).first()
+        return Jobseeker(username=target.username, fname=target.fname, surname=target.surname, email=target.email,
+                         age=target.age, tel=target.tel)

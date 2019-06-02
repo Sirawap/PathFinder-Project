@@ -7,6 +7,7 @@ import src.Company_Profile_GUI
 import src.EditComp_Profile_GUI
 import src.Post_New_Job
 import src.View_job_detail_GUI
+import src.User_Profile_GUI
 
 from src.mainSystem import MainSystem
 
@@ -28,6 +29,7 @@ class Comp_Main_GUI(QMainWindow):
         self.comp_ui.pushButton_interest.clicked.connect(self.reqInterest)
         self.comp_ui.pushButton_not_interest.clicked.connect(self.reqNotIn)
         self.comp_ui.tableWidget.doubleClicked.connect(self.viewJobDetail)
+        self.comp_ui.tableWidget_request_from_jobseeker.doubleClicked.connect(self.viewRequesteeProfile)
         self.allJob =  self.mainControl.getAllJob(self.mainCompany)
         self.allReq = self.mainControl.getAllRequestCompany(self.mainCompany)
 
@@ -120,6 +122,13 @@ class Comp_Main_GUI(QMainWindow):
 
         self.job_detail_ui = src.View_job_detail_GUI.View_Job_detail_GUI(job)
         self.job_detail_ui.show()
+
+    def viewRequesteeProfile(self):
+        self.mainCompany = self.mainControl.reloadCompany(self.mainCompany)
+        username = self.comp_ui.tableWidget_request_from_jobseeker.item(self.comp_ui.tableWidget_request_from_jobseeker.currentRow(), 2).text()
+        tempUser = self.mainControl.getUser(username)
+        self.user_detail = src.User_Profile_GUI.View_User_Profile_GUI(tempUser)
+        self.user_detail.show()
 
 # if __name__ == '__main__':
 #     app = QApplication(sys.argv);
