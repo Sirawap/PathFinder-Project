@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'View_Job_detail.ui',
 # licensing of 'View_Job_detail.ui' applies.
 #
-# Created: Sat Jun  1 12:22:45 2019
+# Created: Sun Jun  2 11:00:33 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -18,9 +18,6 @@ class Ui_Form(object):
 "    background-color: rgb(60,60,60);\n"
 "    color: white;\n"
 "}")
-        self.pushButton_request_Job = QtWidgets.QPushButton(Form)
-        self.pushButton_request_Job.setGeometry(QtCore.QRect(320, 470, 121, 28))
-        self.pushButton_request_Job.setObjectName("pushButton_request_Job")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(150, 10, 301, 71))
         font = QtGui.QFont()
@@ -39,7 +36,7 @@ class Ui_Form(object):
         self.label_10.setGeometry(QtCore.QRect(100, 230, 221, 16))
         self.label_10.setObjectName("label_10")
         self.error_label = QtWidgets.QLabel(Form)
-        self.error_label.setGeometry(QtCore.QRect(100, 440, 371, 41))
+        self.error_label.setGeometry(QtCore.QRect(90, 450, 371, 41))
         self.error_label.setText("")
         self.error_label.setObjectName("error_label")
         self.label_2 = QtWidgets.QLabel(Form)
@@ -89,9 +86,6 @@ class Ui_Form(object):
         self.textEdit_experience = QtWidgets.QTextEdit(Form)
         self.textEdit_experience.setGeometry(QtCore.QRect(170, 390, 321, 51))
         self.textEdit_experience.setObjectName("textEdit_experience")
-        self.pushButton_view_company_profile = QtWidgets.QPushButton(Form)
-        self.pushButton_view_company_profile.setGeometry(QtCore.QRect(140, 470, 121, 28))
-        self.pushButton_view_company_profile.setObjectName("pushButton_view_company_profile")
         self.label_company = QtWidgets.QLabel(Form)
         self.label_company.setGeometry(QtCore.QRect(170, 80, 121, 16))
         self.label_company.setObjectName("label_company")
@@ -104,7 +98,6 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QtWidgets.QApplication.translate("Form", "Form", None, -1))
-        self.pushButton_request_Job.setText(QtWidgets.QApplication.translate("Form", "Request this job", None, -1))
         self.label.setText(QtWidgets.QApplication.translate("Form", "Job Detail", None, -1))
         self.label_5.setText(QtWidgets.QApplication.translate("Form", "Salary   :", None, -1))
         self.label_10.setText(QtWidgets.QApplication.translate("Form", "Short description (100 characters)", None, -1))
@@ -130,7 +123,6 @@ class Ui_Form(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None, -1))
-        self.pushButton_view_company_profile.setText(QtWidgets.QApplication.translate("Form", "View company profile", None, -1))
         self.label_company.setText(QtWidgets.QApplication.translate("Form", "txt", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Form", "Company:", None, -1))
 

@@ -34,6 +34,22 @@ class Edit_User_Profile_GUI(QWidget):
         tel = self.ui.lineEdit_userTel.text()
         email = self.ui.lineEdit_name_3.text()
 
+        if name == "" or surname == "":
+            self.ui.error_label_personal_info.setText("Please fill (*) info")
+            return
+
+        if not tel.isdecimal():
+            self.ui.error_label_personal_info.setText("Tel number must be an integer")
+            return
+
+        if "@" not in email:
+            self.ui.error_label_personal_info.setText("Unvalid email form")
+            return
+
+        if not age.isdecimal():
+            self.ui.error_label_personal_info.setText("Age must be an integer")
+            return
+
 
 
         self.mainControl.editUserProfile(self.mainUser,name,surname,age,tel,email)
