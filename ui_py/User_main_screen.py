@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'User_main_screen.ui',
 # licensing of 'User_main_screen.ui' applies.
 #
-# Created: Sun Jun  2 00:29:56 2019
+# Created: Sun Jun  2 09:33:40 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -44,7 +44,7 @@ class Ui_MainWindow(object):
 "QTableWidget{\n"
 "    background-color: rgb(60,60,60);\n"
 "    font: \"Arial\";\n"
-"    color: black;\n"
+"    color: white;\n"
 "}")
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
@@ -129,13 +129,12 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 628, 184))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 628, 169))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.tableWidget = QtWidgets.QTableWidget(self.scrollAreaWidgetContents_2)
-        self.tableWidget.setStyleSheet("background-color: rgb(65,65,65);\n"
-"color: rgb(0,0,0);")
+        self.tableWidget.setStyleSheet("")
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(0)
         self.tableWidget.setRowCount(0)
@@ -161,7 +160,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 628, 184))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 628, 199))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout.setObjectName("verticalLayout")

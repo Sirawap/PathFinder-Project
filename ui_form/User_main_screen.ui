@@ -229,15 +229,14 @@ QTableWidget{
              <x>0</x>
              <y>0</y>
              <width>628</width>
-             <height>184</height>
+             <height>169</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_2">
             <item>
              <widget class="QTableWidget" name="tableWidget">
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(65,65,65);
-color: rgb(0,0,0);</string>
+               <string notr="true"/>
               </property>
              </widget>
             </item>
@@ -295,7 +294,7 @@ color: rgb(0,0,0);</string>
              <x>0</x>
              <y>0</y>
              <width>628</width>
-             <height>184</height>
+             <height>199</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout">
