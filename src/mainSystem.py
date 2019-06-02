@@ -44,7 +44,7 @@ class MainSystem():
             session.add(edu)
             session.commit()
             session.close()
-            return
+            return None
     def getAllEdu(self,user):
 
         Session = sessionmaker(bind=engine)
@@ -101,12 +101,12 @@ class MainSystem():
         session.close()
         return "Update Successfully"
 
-    def editCompanyAddress(self,com,no,soi,street,district,city,province,zip):
+    def editCompanyAddress(self,com,number,soi,street,district,city,province,zip):
         Session = sessionmaker(bind=engine)
         session = Session()
         edit = session.query(Address).filter_by(companyName = com.companyName).count()
         if edit == 0:
-            adr = Address(companyName = com.companyName,no =no,soi =soi,street = street,district = district,city= city,province= province,zipcode = zip)
+            adr = Address(companyName = com.companyName,number =number,soi =soi,street = street,district = district,city= city,province= province,zipcode = zip)
             session.add(adr)
             session.commit()
             session.close()
