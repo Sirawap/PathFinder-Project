@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'User_View_profile_UI.ui',
 # licensing of 'User_View_profile_UI.ui' applies.
 #
-# Created: Sat Jun  1 13:23:46 2019
+# Created: Sun Jun  2 10:39:29 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,13 +13,12 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(558, 491)
+        Form.resize(558, 369)
         Form.setStyleSheet("QWidget{\n"
 "    background-color: rgb(60,60,60);\n"
 "    font: \"Arial\";\n"
 "    color: white;\n"
-"}"
-'''QTableWidget{color:white;}''')
+"}")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(160, 10, 221, 71))
         font = QtGui.QFont()
@@ -63,28 +62,16 @@ class Ui_Form(object):
         self.label_home = QtWidgets.QLabel(Form)
         self.label_home.setGeometry(QtCore.QRect(380, 140, 91, 21))
         self.label_home.setObjectName("label_home")
-        self.label_27 = QtWidgets.QLabel(Form)
-        self.label_27.setGeometry(QtCore.QRect(40, 350, 271, 24))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        self.label_27.setFont(font)
-        self.label_27.setObjectName("label_27")
         self.label_28 = QtWidgets.QLabel(Form)
         self.label_28.setGeometry(QtCore.QRect(40, 170, 211, 24))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label_28.setFont(font)
         self.label_28.setObjectName("label_28")
-        self.frame_experience = QtWidgets.QFrame(Form)
-        self.frame_experience.setGeometry(QtCore.QRect(40, 380, 460, 71))
-        self.frame_experience.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_experience.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_experience.setObjectName("frame_experience")
         self.tableWidget_educatio_background = QtWidgets.QTableWidget(Form)
         self.tableWidget_educatio_background.setGeometry(QtCore.QRect(40, 210, 460, 121))
-        self.tableWidget_educatio_background.setStyleSheet("color: black;\n"
-"")
-        self.tableWidget_educatio_background.setStyleSheet("background-color: rgb(255,255,255);\ncolor:black;")
+        self.tableWidget_educatio_background.setStyleSheet("color: white;")
+        self.tableWidget_educatio_background.horizontalHeader().setStyleSheet("::section {""background-color: gray; }")
         self.tableWidget_educatio_background.setObjectName("tableWidget_educatio_background")
         self.tableWidget_educatio_background.setColumnCount(0)
         self.tableWidget_educatio_background.setRowCount(0)
@@ -107,10 +94,9 @@ class Ui_Form(object):
         self.label_12.setText(QtWidgets.QApplication.translate("Form", "19", None, -1))
         self.label_15.setText(QtWidgets.QApplication.translate("Form", "Home :", None, -1))
         self.label_home.setText(QtWidgets.QApplication.translate("Form", "02 -3291790", None, -1))
-        self.label_27.setText(QtWidgets.QApplication.translate("Form", "Working expereince/Projects", None, -1))
         self.label_28.setText(QtWidgets.QApplication.translate("Form", "Education Background", None, -1))
 
-#import source_rc
+# import source_rc
 
 if __name__ == "__main__":
     import sys

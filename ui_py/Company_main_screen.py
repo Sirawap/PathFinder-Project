@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'Company_main_screen.ui',
 # licensing of 'Company_main_screen.ui' applies.
 #
-# Created: Sun Jun  2 09:51:54 2019
+# Created: Sun Jun  2 10:23:54 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -47,7 +47,7 @@ class Ui_MainWindow(object):
         self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout.setObjectName("verticalLayout")
         self.tableWidget = QtWidgets.QTableWidget(self.scrollAreaWidgetContents_2)
-        self.tableWidget.setStyleSheet("color: black;")
+        self.tableWidget.setStyleSheet("color: white;")
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(0)
         self.tableWidget.setRowCount(0)
@@ -80,6 +80,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_5)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.tableWidget_request_from_jobseeker = QtWidgets.QTableWidget(self.scrollAreaWidgetContents_5)
+        self.tableWidget_request_from_jobseeker.setStyleSheet("color: white;")
         self.tableWidget_request_from_jobseeker.setObjectName("tableWidget_request_from_jobseeker")
         self.tableWidget_request_from_jobseeker.setColumnCount(0)
         self.tableWidget_request_from_jobseeker.setRowCount(0)

@@ -38,8 +38,8 @@ QLabel#error_label_education,#error_label_personal_info{
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>575</width>
-        <height>607</height>
+        <width>579</width>
+        <height>611</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -361,8 +361,8 @@ QLabel#error_label_education,#error_label_personal_info{
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>549</width>
-              <height>268</height>
+              <width>557</width>
+              <height>328</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout">
@@ -399,7 +399,12 @@ QLabel#error_label_education,#error_label_personal_info{
              <item row="3" column="0">
               <layout class="QHBoxLayout" name="horizontalLayout_4">
                <item>
-                <widget class="QTableWidget" name="tableWidget"/>
+                <widget class="QTableWidget" name="tableWidget">
+                 <property name="styleSheet">
+                  <string notr="true">color: white;
+</string>
+                 </property>
+                </widget>
                </item>
                <item>
                 <layout class="QVBoxLayout" name="verticalLayout">

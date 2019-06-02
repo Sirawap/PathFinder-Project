@@ -86,8 +86,7 @@ class User_Main_GUI(QMainWindow):
 
     def addReqTable(self, column_size=4,header=['Company', 'Name', "Job Name", 'Status']):
         self.user_ui.tableWidget_requested_job.setColumnWidth(3, 200)  ### ADDED BY BILL FOR DESCRIPTION COLUMN SIZE
-        style = "::section {""background-color: gray;" \
-                    "color: red; }"
+        style = "::section {""background-color: gray;}"
         self.user_ui.tableWidget_requested_job.horizontalHeader().setStyleSheet(style)
         self.user_ui.tableWidget_requested_job.setColumnCount(column_size)
         self.user_ui.tableWidget_requested_job.setRowCount(len(self.allReq))

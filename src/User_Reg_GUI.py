@@ -28,6 +28,18 @@ class User_GUI(QWidget):
             self.user_ui.error_label.setText("Please fill (*) info")
             return
 
+        if type(tel) != int:
+            self.user_ui.error_label.setText("Tel number must be an integer")
+            return
+
+        if "@" not in email:
+            self.user_ui.error_label.setText("Unvalid email form")
+            return
+
+        if type(age) != int:
+            self.user_ui.error_label.setText("Age must be an integer")
+            return
+
 
         if pwd != rpwd:
             self.user_ui.error_label.setText("Passwords dont match!")
@@ -37,6 +49,7 @@ class User_GUI(QWidget):
             self.user_ui.error_label.setText(rettext)
 
             return
+
 
 
 
