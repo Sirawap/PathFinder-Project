@@ -104,7 +104,7 @@ class Comp_Main_GUI(QMainWindow):
         self.addReqTable()
 
     def addReqTable(self, column_size=5, header=['Company', 'Name',"Username", "Job Name", 'Status']):
-        style = "::section {""background-color: lightblue; }"  ##set header color
+        style = "::section {""background-color: gray; }"  ##set header color
         self.comp_ui.tableWidget_request_from_jobseeker.horizontalHeader().setStyleSheet(style)
 
         self.comp_ui.tableWidget_request_from_jobseeker.setColumnWidth(3, 200)  ### ADDED BY BILL FOR DESCRIPTION COLUMN SIZE

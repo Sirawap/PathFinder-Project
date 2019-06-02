@@ -53,6 +53,7 @@ class Edit_User_Profile_GUI(QWidget):
 
 
         self.mainControl.editUserProfile(self.mainUser,name,surname,age,tel,email)
+        self.ui.error_label_personal_info.setText("Successful")
 
         print("F for reespect")
 
@@ -62,7 +63,13 @@ class Edit_User_Profile_GUI(QWidget):
         major = self.ui.lineEdit_major.text()
         uni = self.ui.lineEdit_university.text()
 
-        self.mainControl.addUserEducation(self.mainUser, field, degree, major, uni)
+        error = self.mainControl.addUserEducation(self.mainUser, field, degree, major, uni)
+        if type(error)== str:
+            self.ui.error_label_education.setText(error)
+        else:
+            self.ui.error_label_education.setText("Success!")
+            self.allEdu = self.mainControl.getAllEdu(self.mainUser)
+            self.addTable()
 
 
     def cancel(self):

@@ -44,7 +44,7 @@ class MainSystem():
             session.add(edu)
             session.commit()
             session.close()
-            return
+            return None
     def getAllEdu(self,user):
 
         Session = sessionmaker(bind=engine)
